@@ -54,6 +54,7 @@ Right click on the runner file and select run as JUnit test
 
 #### Quick Walkthrough 
 Basic Framework Hierarchy : 3 features are picked to proceed with the automation , Search, Map & Traffic and each test are written at API level and each folder contain a parallel runner and sequential runner which will benefit when test are being written and execute test individually and to debug.
+
 ![image](https://user-images.githubusercontent.com/70334232/178342035-2d1a5cde-12b1-4e55-aa2a-606b8afe0044.png)
  
   Major components are 
