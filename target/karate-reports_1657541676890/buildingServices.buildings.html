@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("659db096-c325-4f5d-ad34-b3dfabd2473f",{name:"SusanAbraham"});
+    posthog.capture("report_feature",{karate_version:"1.2.1.RC2",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>buildingServices.buildings</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-07-09 01:40:12 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Gets all buildings in the current subscription</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">buildingServices/buildings.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Buildings API test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Gets all buildings in the current subscription</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2484</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getBuildingResponse = call read(buildingsConstants.BuildingResponse)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:40:09.582 karate.env system property was: null 
+13:40:09.594 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/constants.js
+13:40:09.627 &lt;&lt; lock released, cached callSingle: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrlAdmin</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjYwajdaeHo1cW9RWXk3d0Fxc0ZhazJpVDFUbGVPTDJnWlBvOGNJcjh4bUEifQ.eyJpc3MiOiJodHRwczovL3Rlc3RtYXBpcWIyYy5iMmNsb2dpbi5jb20vYTU2MjdkMzgtZDBiMS00ZThjLWEzMjQtNjJhNzMxNzI0NWViL3YyLjAvIiwiZXhwIjoxNjU3MzcwMzcyLCJuYmYiOjE2NTczNjY3NzIsImF1ZCI6IjBhMzY0OGJiLTE4N2MtNGZhMy1iYmI0LTYxMThiMGE1Mzg2ZCIsInNpZ25faW5fbmFtZSI6InMuYWJyYWhhbUBtYXBpcS5jb20iLCJzdWJzY3JpcHRpb25faWQiOiIzZjEzYzM4My05OTA3LTQwODEtYTNhMi1hMjYyNjU5M2Y4ODciLCJ0aWQiOiJmNDQ4OGFhZS00ZTM5LTQxNjEtYThkZi0wZTM2Y2UzOGY5NDQiLCJnaXZlbl9uYW1lIjoiU3VzYW4iLCJmYW1pbHlfbmFtZSI6IkFicmFoYW0iLCJuYW1lIjoiU3VzYW4gQWJyYWhhbSIsImVtYWlsIjoicy5hYnJhaGFtQGF0bGFzLm1hcGlxLmNvbSIsImpvYl90aXRsZSI6IlFBL1NvZnR3YXJlIFRlc3RlciIsImlkcCI6Im1hcGlxdGVhbWFjY291bnRfM2YxM2MzODMtOTkwNy00MDgxLWEzYTItYTI2MjY1OTNmODg3X2h0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbS9mNDQ4OGFhZS00ZTM5LTQxNjEtYThkZi0wZTM2Y2UzOGY5NDQvdjIuMCIsImV4dGVybmFsX2lkIjoibVhtVjVOWnFjbE5EZU1ub1dxUVR6OWJFcmxwQWNKWFZVODIwcTNBSXpaTSIsInN1YiI6IjA3NGMwM2UxLWFhNTYtNGI0NS04NDhlLWNmOWRmNWM3Njc4NiIsInJvbGVzIjpbIkFjY291bnRWaWV3ZXIiLCJTdWJzY3JpcHRpb25BZG1pbmlzdHJhdG9yIiwiVXNlciJdLCJub25jZSI6IjdjMWE5NDBjLWZjYWUtNGQyOC05NTliLWY1MWJiN2Q0NmQ0NiIsInNjcCI6IkRlZmF1bHQiLCJhenAiOiI4MDljNjM0NC0wNzgzLTQ5MGYtYjYxNC0yOTRkZDBjNTZlZGQiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2NTczNjY3NzJ9.VQis9HNI6hYR0tt85or2V-nIQVDMGcGpm6dwXG8k_jLXPSX618D7XtGT0oOBteSxePJOifBIiZe8lqvhp6WiOo4R1ePo4lj1fa1Ht5ntxDwcn9ccpAvv3hO7xb7YtUd7pZFPST-54oNMtk9TCoA9uBbvWVgJ-QlF6E9f6v1aK_4A9wLlVkWya9C7UsFbqh9fiN-WHxvbQX_r9x2tJfR-Ane69bFksFqWHA4eDnZ4ebPYuLnTkiaccnrdSOuVvXgfzlo7zHTT_jvpy0FozzWxr_aPfOaP5-O0C26KtMi649krFIdWnOd5iJA9UYrVBs68kfb7VwMoTsHlWAgplWGg5Q&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2322</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">13:40:10.223 request:
+1 &gt; GET https://test-bldg-appaf9fa8e5.azurewebsites.net/api/admin/buildings
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjYwajdaeHo1cW9RWXk3d0Fxc0ZhazJpVDFUbGVPTDJnWlBvOGNJcjh4bUEifQ.eyJpc3MiOiJodHRwczovL3Rlc3RtYXBpcWIyYy5iMmNsb2dpbi5jb20vYTU2MjdkMzgtZDBiMS00ZThjLWEzMjQtNjJhNzMxNzI0NWViL3YyLjAvIiwiZXhwIjoxNjU3MzcwMzcyLCJuYmYiOjE2NTczNjY3NzIsImF1ZCI6IjBhMzY0OGJiLTE4N2MtNGZhMy1iYmI0LTYxMThiMGE1Mzg2ZCIsInNpZ25faW5fbmFtZSI6InMuYWJyYWhhbUBtYXBpcS5jb20iLCJzdWJzY3JpcHRpb25faWQiOiIzZjEzYzM4My05OTA3LTQwODEtYTNhMi1hMjYyNjU5M2Y4ODciLCJ0aWQiOiJmNDQ4OGFhZS00ZTM5LTQxNjEtYThkZi0wZTM2Y2UzOGY5NDQiLCJnaXZlbl9uYW1lIjoiU3VzYW4iLCJmYW1pbHlfbmFtZSI6IkFicmFoYW0iLCJuYW1lIjoiU3VzYW4gQWJyYWhhbSIsImVtYWlsIjoicy5hYnJhaGFtQGF0bGFzLm1hcGlxLmNvbSIsImpvYl90aXRsZSI6IlFBL1NvZnR3YXJlIFRlc3RlciIsImlkcCI6Im1hcGlxdGVhbWFjY291bnRfM2YxM2MzODMtOTkwNy00MDgxLWEzYTItYTI2MjY1OTNmODg3X2h0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbS9mNDQ4OGFhZS00ZTM5LTQxNjEtYThkZi0wZTM2Y2UzOGY5NDQvdjIuMCIsImV4dGVybmFsX2lkIjoibVhtVjVOWnFjbE5EZU1ub1dxUVR6OWJFcmxwQWNKWFZVODIwcTNBSXpaTSIsInN1YiI6IjA3NGMwM2UxLWFhNTYtNGI0NS04NDhlLWNmOWRmNWM3Njc4NiIsInJvbGVzIjpbIkFjY291bnRWaWV3ZXIiLCJTdWJzY3JpcHRpb25BZG1pbmlzdHJhdG9yIiwiVXNlciJdLCJub25jZSI6IjdjMWE5NDBjLWZjYWUtNGQyOC05NTliLWY1MWJiN2Q0NmQ0NiIsInNjcCI6IkRlZmF1bHQiLCJhenAiOiI4MDljNjM0NC0wNzgzLTQ5MGYtYjYxNC0yOTRkZDBjNTZlZGQiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE2NTczNjY3NzJ9.VQis9HNI6hYR0tt85or2V-nIQVDMGcGpm6dwXG8k_jLXPSX618D7XtGT0oOBteSxePJOifBIiZe8lqvhp6WiOo4R1ePo4lj1fa1Ht5ntxDwcn9ccpAvv3hO7xb7YtUd7pZFPST-54oNMtk9TCoA9uBbvWVgJ-QlF6E9f6v1aK_4A9wLlVkWya9C7UsFbqh9fiN-WHxvbQX_r9x2tJfR-Ane69bFksFqWHA4eDnZ4ebPYuLnTkiaccnrdSOuVvXgfzlo7zHTT_jvpy0FozzWxr_aPfOaP5-O0C26KtMi649krFIdWnOd5iJA9UYrVBs68kfb7VwMoTsHlWAgplWGg5Q
+1 &gt; Host: test-bldg-appaf9fa8e5.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:40:11.853 response time in milliseconds: 1611
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 09 Jul 2022 11:40:11 GMT
+1 &lt; Server: Microsoft-IIS/10.0
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Request-Context: appId=cid-v1:4aabe844-a21a-4561-8331-8d36987699ad
+1 &lt; api-supported-versions: 1.0
+1 &lt; X-Powered-By: ASP.NET
+[{&quot;id&quot;:&quot;8aa29cf7-c778-47c5-b7c8-a48bb650d87f&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;123456789&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:515,&quot;liveVersion&quot;:500},{&quot;id&quot;:&quot;6f3f8447-28e6-4bd0-a0dd-bddae660dd7f&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Aaaamsterdam&quot;,&quot;capacity&quot;:224,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:145,&quot;liveVersion&quot;:143},{&quot;id&quot;:&quot;5dfa157a-d0b0-424a-ad76-33a56655ca02&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;abc&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:1,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;6d842022-53dc-4ad9-8c71-87ab59b3c676&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Another facility test-Dragan&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:14,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;72faee4f-88bf-4bac-b5b0-2e9faf6fd25d&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Bas building&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:59,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;b69a484a-de87-452e-85fc-713a577bdd9b&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Bas test facilities&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:18,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;884e91d8-8b0d-4794-8c9e-c4ab2a8a3398&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Charlie&#39;s test Room&quot;,&quot;capacity&quot;:1,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:848,&quot;liveVersion&quot;:824},{&quot;id&quot;:&quot;70f6ee23-a05a-4f11-ad2c-0994c9d3a9be&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Delete this building ifyouwant:)&quot;,&quot;capacity&quot;:10,&quot;openingDays&quot;:[&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:49,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;15d53466-ce93-41c7-8b6f-fbad8af2bbda&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;DELETE THIS ONE IF YOUWANT:)&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:50,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;74fb96c3-4d6e-4b93-aee4-863bc44a3d52&quot;,&quot;ianaTimeZoneId&quot;:&quot;Pacific/Apia&quot;,&quot;displayName&quot;:&quot;Dragan +13h building&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:157,&quot;liveVersion&quot;:133},{&quot;id&quot;:&quot;1feacec3-8c32-4fb8-ab8a-f0b18b1ee303&quot;,&quot;ianaTimeZoneId&quot;:&quot;Pacific/Honolulu&quot;,&quot;displayName&quot;:&quot;Dragan -10h building&quot;,&quot;capacity&quot;:18,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:90,&quot;liveVersion&quot;:24},{&quot;id&quot;:&quot;4728f4dd-b328-4789-a773-89ac1a122ec6&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Dragan Closed building&quot;,&quot;capacity&quot;:48,&quot;openingDays&quot;:[],&quot;version&quot;:152,&quot;liveVersion&quot;:33},{&quot;id&quot;:&quot;5b254d03-5a4a-44f1-8299-16a42ca05ee5&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Dragan facilities testing 15.06.&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:20,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;525a6f59-e3e7-4f86-975a-4c274a3f21e0&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Dragan Map Testing Building&quot;,&quot;capacity&quot;:12,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:72,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;640537be-c5ea-4638-9d2a-271d77378dad&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Dragan Opened building&quot;,&quot;capacity&quot;:12,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;,&quot;Tuesday&quot;],&quot;version&quot;:860,&quot;liveVersion&quot;:854},{&quot;id&quot;:&quot;543178eb-49ee-4300-96c5-1d8a7353318a&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;DRAGAN TEST MAP RESTYLE&quot;,&quot;capacity&quot;:37,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:469,&quot;liveVersion&quot;:448},{&quot;id&quot;:&quot;fcb0b091-0e41-4770-8f66-36ef2dc7863b&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;dragan vega&quot;,&quot;capacity&quot;:16,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:446,&quot;liveVersion&quot;:186},{&quot;id&quot;:&quot;fdb55b2c-5163-4a9d-8d6a-a46a3e3b55e2&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Esther with Facilities&quot;,&quot;capacity&quot;:93,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:231,&quot;liveVersion&quot;:83},{&quot;id&quot;:&quot;b0fa3e3c-59e7-4355-9122-ee231ba6725d&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Facilities - Dragan 15.06.&quot;,&quot;capacity&quot;:66,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:920,&quot;liveVersion&quot;:758},{&quot;id&quot;:&quot;fc5c810c-1a90-468e-8a26-6ad13b492e15&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Floor plan&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:99,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;c59baad0-6eac-4dd3-9575-96695bc914ee&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Heinz building&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:64,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;088b3f44-2d11-4677-9d34-0f6298c88d22&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Joeys Building&quot;,&quot;capacity&quot;:4,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:13,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;528be37c-b06c-48d5-80d9-d081eaaa5c67&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Left panel buildiing&quot;,&quot;capacity&quot;:2,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:48,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;47af57b2-aa74-4a22-ae68-1d08306bc7a5&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Map_Regression&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:62,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;4143aeda-20cc-42d7-a057-45c78c5f6807&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Mapiq Gym&quot;,&quot;capacity&quot;:10,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:20,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;d3cd19bf-2c8a-4798-ac8e-9edb705ce173&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Mapiq&#39;s Gym&quot;,&quot;capacity&quot;:5,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:14,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;45506efe-4d3d-4a52-ba9f-be6083d041b4&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Maps session&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:10,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;f75e7000-30ea-40f7-bddb-2a2cc0ab7867&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;My appartment&quot;,&quot;capacity&quot;:12,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:91,&quot;liveVersion&quot;:82},{&quot;id&quot;:&quot;12238e74-1fbe-46e0-bc1d-f34cb634db93&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;New 01.06.2022.&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:118,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;4ade9bef-7998-4ec6-961e-2f3aab294827&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;new b&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:22,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;244c1093-e238-45d2-b26e-e56d121acdb8&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;new bas&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:3,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;3a9f38ce-f712-432a-8498-ab6cb09b2e29&quot;,&quot;ianaTimeZoneId&quot;:&quot;US/Eastern&quot;,&quot;displayName&quot;:&quot;New York HQ&quot;,&quot;capacity&quot;:27,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:382,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;4daffb7c-f071-41cc-b2b6-c485f81302e8&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Open/Enclosed Areas and M. rooms&quot;,&quot;capacity&quot;:12,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:109,&quot;liveVersion&quot;:109},{&quot;id&quot;:&quot;53977d96-c418-4624-a149-11ba54707b02&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Pheobe&#39;s Building&quot;,&quot;capacity&quot;:42,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:108,&quot;liveVersion&quot;:63},{&quot;id&quot;:&quot;93084745-9cd3-4068-aeeb-280065de0482&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Review facilities&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:14,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;544ba518-a1c2-4e57-b174-a697f507ee4f&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Room picture&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:6,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;919051e0-3208-4b28-8394-4729d7cbca6d&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;sdfsdfsdf&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:11,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;f11a8093-b9d5-4ff5-a790-4321e683e68a&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Simon’s place&quot;,&quot;capacity&quot;:87,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:285,&quot;liveVersion&quot;:222},{&quot;id&quot;:&quot;6e128716-0dd3-4512-b6bd-1c6567ed0af3&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Stan&quot;,&quot;capacity&quot;:90,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:837,&quot;liveVersion&quot;:830},{&quot;id&quot;:&quot;1737d841-27b1-413d-ab1a-87e1727b3452&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Stan 2&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:14,&quot;liveVersion&quot;:14},{&quot;id&quot;:&quot;d0b6bea6-7b77-4c42-b74b-2ab20688f340&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Stan 3&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:65,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;0a608560-a09e-4951-a334-a32802836616&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Susan Test Building 17.06.2022&quot;,&quot;capacity&quot;:2,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:250,&quot;liveVersion&quot;:227},{&quot;id&quot;:&quot;1607fd8a-2edb-4f77-bc29-11b9fc656669&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Test Build&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:22,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;28f9f07a-7741-48db-bdc4-e8c8f189a721&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Test Building&quot;,&quot;capacity&quot;:5,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:16,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;602bb78e-83c6-4309-9e1d-9098448261aa&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Test Building111&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:8,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;3185d387-ce46-43ee-8eb1-9d41a45ca213&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;TestAutomationBuilding&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:1,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;6640b6f9-5a0e-425d-87d1-af52cab03e29&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Tier Testing 2/6/22&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:41,&quot;liveVersion&quot;:41}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def buildingResp = $.[*]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert buildingResp.length &gt; 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print buildingResp.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">13:40:12.127 [print] 47 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match each buildingResp contains getBuildingResponse.buildingsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell failed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">13:40:12.163 classpath:buildingServices/buildings.feature:14
+And match each buildingResp contains getBuildingResponse.buildingsSchema
+match failed: EACH_CONTAINS
+  $ | match each failed at index 0 (LIST:MAP)
+  [{&quot;id&quot;:&quot;8aa29cf7-c778-47c5-b7c8-a48bb650d87f&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;123456789&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:515,&quot;liveVersion&quot;:500},{&quot;id&quot;:&quot;6f3f8447-28e6-4bd0-a0dd-bddae660dd7f&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Aaaamsterdam&quot;,&quot;capacity&quot;:224,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:145,&quot;liveVersion&quot;:143},{&quot;id&quot;:&quot;5dfa157a-d0b0-424a-ad76-33a56655ca02&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;abc&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:1,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;6d842022-53dc-4ad9-8c71-87ab59b3c676&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Another facility test-Dragan&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:14,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;72faee4f-88bf-4bac-b5b0-2e9faf6fd25d&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Bas building&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:59,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;b69a484a-de87-452e-85fc-713a577bdd9b&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Bas test facilities&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:18,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;884e91d8-8b0d-4794-8c9e-c4ab2a8a3398&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Charlie&#39;s test Room&quot;,&quot;capacity&quot;:1,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:848,&quot;liveVersion&quot;:824},{&quot;id&quot;:&quot;70f6ee23-a05a-4f11-ad2c-0994c9d3a9be&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Delete this building ifyouwant:)&quot;,&quot;capacity&quot;:10,&quot;openingDays&quot;:[&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:49,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;15d53466-ce93-41c7-8b6f-fbad8af2bbda&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;DELETE THIS ONE IF YOUWANT:)&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:50,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;74fb96c3-4d6e-4b93-aee4-863bc44a3d52&quot;,&quot;ianaTimeZoneId&quot;:&quot;Pacific/Apia&quot;,&quot;displayName&quot;:&quot;Dragan +13h building&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:157,&quot;liveVersion&quot;:133},{&quot;id&quot;:&quot;1feacec3-8c32-4fb8-ab8a-f0b18b1ee303&quot;,&quot;ianaTimeZoneId&quot;:&quot;Pacific/Honolulu&quot;,&quot;displayName&quot;:&quot;Dragan -10h building&quot;,&quot;capacity&quot;:18,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:90,&quot;liveVersion&quot;:24},{&quot;id&quot;:&quot;4728f4dd-b328-4789-a773-89ac1a122ec6&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Dragan Closed building&quot;,&quot;capacity&quot;:48,&quot;openingDays&quot;:[],&quot;version&quot;:152,&quot;liveVersion&quot;:33},{&quot;id&quot;:&quot;5b254d03-5a4a-44f1-8299-16a42ca05ee5&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Dragan facilities testing 15.06.&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:20,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;525a6f59-e3e7-4f86-975a-4c274a3f21e0&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Dragan Map Testing Building&quot;,&quot;capacity&quot;:12,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:72,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;640537be-c5ea-4638-9d2a-271d77378dad&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Dragan Opened building&quot;,&quot;capacity&quot;:12,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;,&quot;Tuesday&quot;],&quot;version&quot;:860,&quot;liveVersion&quot;:854},{&quot;id&quot;:&quot;543178eb-49ee-4300-96c5-1d8a7353318a&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;DRAGAN TEST MAP RESTYLE&quot;,&quot;capacity&quot;:37,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:469,&quot;liveVersion&quot;:448},{&quot;id&quot;:&quot;fcb0b091-0e41-4770-8f66-36ef2dc7863b&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;dragan vega&quot;,&quot;capacity&quot;:16,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:446,&quot;liveVersion&quot;:186},{&quot;id&quot;:&quot;fdb55b2c-5163-4a9d-8d6a-a46a3e3b55e2&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Esther with Facilities&quot;,&quot;capacity&quot;:93,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:231,&quot;liveVersion&quot;:83},{&quot;id&quot;:&quot;b0fa3e3c-59e7-4355-9122-ee231ba6725d&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Facilities - Dragan 15.06.&quot;,&quot;capacity&quot;:66,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:920,&quot;liveVersion&quot;:758},{&quot;id&quot;:&quot;fc5c810c-1a90-468e-8a26-6ad13b492e15&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Floor plan&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:99,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;c59baad0-6eac-4dd3-9575-96695bc914ee&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Heinz building&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:64,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;088b3f44-2d11-4677-9d34-0f6298c88d22&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Joeys Building&quot;,&quot;capacity&quot;:4,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:13,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;528be37c-b06c-48d5-80d9-d081eaaa5c67&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Left panel buildiing&quot;,&quot;capacity&quot;:2,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:48,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;47af57b2-aa74-4a22-ae68-1d08306bc7a5&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Map_Regression&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:62,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;4143aeda-20cc-42d7-a057-45c78c5f6807&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Mapiq Gym&quot;,&quot;capacity&quot;:10,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:20,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;d3cd19bf-2c8a-4798-ac8e-9edb705ce173&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Mapiq&#39;s Gym&quot;,&quot;capacity&quot;:5,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:14,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;45506efe-4d3d-4a52-ba9f-be6083d041b4&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Maps session&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:10,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;f75e7000-30ea-40f7-bddb-2a2cc0ab7867&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;My appartment&quot;,&quot;capacity&quot;:12,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:91,&quot;liveVersion&quot;:82},{&quot;id&quot;:&quot;12238e74-1fbe-46e0-bc1d-f34cb634db93&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;New 01.06.2022.&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:118,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;4ade9bef-7998-4ec6-961e-2f3aab294827&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;new b&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:22,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;244c1093-e238-45d2-b26e-e56d121acdb8&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;new bas&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:3,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;3a9f38ce-f712-432a-8498-ab6cb09b2e29&quot;,&quot;ianaTimeZoneId&quot;:&quot;US/Eastern&quot;,&quot;displayName&quot;:&quot;New York HQ&quot;,&quot;capacity&quot;:27,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:382,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;4daffb7c-f071-41cc-b2b6-c485f81302e8&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;Open/Enclosed Areas and M. rooms&quot;,&quot;capacity&quot;:12,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:109,&quot;liveVersion&quot;:109},{&quot;id&quot;:&quot;53977d96-c418-4624-a149-11ba54707b02&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Pheobe&#39;s Building&quot;,&quot;capacity&quot;:42,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:108,&quot;liveVersion&quot;:63},{&quot;id&quot;:&quot;93084745-9cd3-4068-aeeb-280065de0482&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Review facilities&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:14,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;544ba518-a1c2-4e57-b174-a697f507ee4f&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Room picture&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:6,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;919051e0-3208-4b28-8394-4729d7cbca6d&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;sdfsdfsdf&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:11,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;f11a8093-b9d5-4ff5-a790-4321e683e68a&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Simon\u2019s place&quot;,&quot;capacity&quot;:87,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:285,&quot;liveVersion&quot;:222},{&quot;id&quot;:&quot;6e128716-0dd3-4512-b6bd-1c6567ed0af3&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Stan&quot;,&quot;capacity&quot;:90,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:837,&quot;liveVersion&quot;:830},{&quot;id&quot;:&quot;1737d841-27b1-413d-ab1a-87e1727b3452&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Stan 2&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:14,&quot;liveVersion&quot;:14},{&quot;id&quot;:&quot;d0b6bea6-7b77-4c42-b74b-2ab20688f340&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;Stan 3&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:65,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;0a608560-a09e-4951-a334-a32802836616&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Susan Test Building 17.06.2022&quot;,&quot;capacity&quot;:2,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:250,&quot;liveVersion&quot;:227},{&quot;id&quot;:&quot;1607fd8a-2edb-4f77-bc29-11b9fc656669&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Test Build&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:22,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;28f9f07a-7741-48db-bdc4-e8c8f189a721&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Test Building&quot;,&quot;capacity&quot;:5,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:16,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;602bb78e-83c6-4309-9e1d-9098448261aa&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Test Building111&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:8,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;3185d387-ce46-43ee-8eb1-9d41a45ca213&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Amsterdam&quot;,&quot;displayName&quot;:&quot;TestAutomationBuilding&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:1,&quot;liveVersion&quot;:null},{&quot;id&quot;:&quot;6640b6f9-5a0e-425d-87d1-af52cab03e29&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Berlin&quot;,&quot;displayName&quot;:&quot;Tier Testing 2/6/22&quot;,&quot;capacity&quot;:0,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:41,&quot;liveVersion&quot;:41}]
+  {&quot;id&quot;:&quot;#string&quot;,&quot;name&quot;:&quot;#string&quot;,&quot;ianaTimezone&quot;:&quot;##string&quot;,&quot;capacity&quot;:&quot;##number&quot;,&quot;version&quot;:&quot;##number&quot;,&quot;floors&quot;:&quot;##[] {\&quot;id\&quot;: \&quot;##string\&quot;, \&quot;name\&quot;: \&quot;##string\&quot;, \&quot;number\&quot;: \&quot;##number\&quot;, \&quot;capacity\&quot;: \&quot;##number\&quot;, \&quot;hasMap\&quot;:\&quot;##boolean\&quot;}&quot;}
+
+    $[0] | actual does not contain expected | actual does not contain key - &#39;name&#39; (MAP:MAP)
+    {&quot;id&quot;:&quot;8aa29cf7-c778-47c5-b7c8-a48bb650d87f&quot;,&quot;ianaTimeZoneId&quot;:&quot;Europe/Belgrade&quot;,&quot;displayName&quot;:&quot;123456789&quot;,&quot;capacity&quot;:6,&quot;openingDays&quot;:[&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],&quot;version&quot;:515,&quot;liveVersion&quot;:500}
+    {&quot;id&quot;:&quot;#string&quot;,&quot;capacity&quot;:&quot;##number&quot;,&quot;version&quot;:&quot;##number&quot;,&quot;name&quot;:&quot;#string&quot;,&quot;ianaTimezone&quot;:&quot;##string&quot;,&quot;floors&quot;:&quot;##[] {\&quot;id\&quot;: \&quot;##string\&quot;, \&quot;name\&quot;: \&quot;##string\&quot;, \&quot;number\&quot;: \&quot;##number\&quot;, \&quot;capacity\&quot;: \&quot;##number\&quot;, \&quot;hasMap\&quot;:\&quot;##boolean\&quot;}&quot;}
+
+
+classpath:buildingServices/buildings.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

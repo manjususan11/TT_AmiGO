@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>searchAPI.fuzzySearch</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-07-11 04:07:06 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Happy path test : Verify that fuzzy search is successfully returning 200OK with valid input parameters</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>Functional test : Verify that the fuzzy serach is returning expected location with valid schema</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:24]"><span>[3:24]</span> <span>Negative test : Verify that invalid inputs returns right error code</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:31]"><span>[4:31]</span> <span>Stress test : Verify that the API handles a larger payload(request body)</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:39]"><span>[5:39]</span> <span>Exploratory test : Verify the search with location coordinates</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">searchAPI/fuzzySearch.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">AmiGO Search API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Happy path test : Verify that fuzzy search is successfully returning 200OK with valid input parameters</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>135</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getSearchResponse = call read(searchAPIConstants.SearchResponse)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:07:06.347 karate.env system property was: null 
+16:07:06.355 this thread waited 7 milliseconds for callSingle lock: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url fuzzySearchPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = searchAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">127</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">16:07:06.369 request:
+1 &gt; GET https://api.tomtom.com/search/2/search/amsterdam.json?key=JUCzL7OUquHARYUshR9piC68zaNygc6A
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:07:06.494 response time in milliseconds: 124
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 14:07:04 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; vary: Accept-Encoding
+1 &lt; access-control-allow-origin: *
+1 &lt; tracking-id: e928dcd6-ce65-45a1-a0c7-020b2aedbc55
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-apigee.target-latency: 11
+1 &lt; x-envoy-upstream-service-time: 31
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;summary&quot;:{&quot;query&quot;:&quot;amsterdam&quot;,&quot;queryType&quot;:&quot;NON_NEAR&quot;,&quot;queryTime&quot;:9,&quot;numResults&quot;:10,&quot;offset&quot;:0,&quot;totalResults&quot;:5752,&quot;fuzzyLevel&quot;:1},&quot;results&quot;:[{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;NL/GEO/p0/8218&quot;,&quot;score&quot;:2.5612204075,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySubdivision&quot;:&quot;North Holland&quot;,&quot;countryCode&quot;:&quot;NL&quot;,&quot;country&quot;:&quot;Netherlands&quot;,&quot;countryCodeISO3&quot;:&quot;NLD&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam&quot;},&quot;position&quot;:{&quot;lat&quot;:52.37317,&quot;lon&quot;:4.89066},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:52.43123,&quot;lon&quot;:4.7289},&quot;btmRightPoint&quot;:{&quot;lat&quot;:52.27801,&quot;lon&quot;:5.10767}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:52.43123,&quot;lon&quot;:4.7289},&quot;btmRightPoint&quot;:{&quot;lat&quot;:52.27801,&quot;lon&quot;:5.10767}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005858-5800-1200-0000-00007736ad05&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/53587&quot;,&quot;score&quot;:2.3925077915,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Montgomery&quot;,&quot;countrySubdivision&quot;:&quot;NY&quot;,&quot;countrySubdivisionName&quot;:&quot;New York&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, NY&quot;},&quot;position&quot;:{&quot;lat&quot;:42.93775,&quot;lon&quot;:-74.19034},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.96628,&quot;lon&quot;:-74.22237},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.9191,&quot;lon&quot;:-74.16134}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.96628,&quot;lon&quot;:-74.22237},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.9191,&quot;lon&quot;:-74.16134}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;0000554e-3100-3c00-0000-00005969bad7&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/8147&quot;,&quot;score&quot;:2.3901236057,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Botetourt&quot;,&quot;countrySubdivision&quot;:&quot;VA&quot;,&quot;countrySubdivisionName&quot;:&quot;Virginia&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, VA&quot;},&quot;position&quot;:{&quot;lat&quot;:37.42815,&quot;lon&quot;:-79.90579},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.50323,&quot;lon&quot;:-80.07375},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.35607,&quot;lon&quot;:-79.87161}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.50323,&quot;lon&quot;:-80.07375},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.35607,&quot;lon&quot;:-79.87161}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005858-5800-1200-0000-00007d2c8181&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/33551&quot;,&quot;score&quot;:2.38306427,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Jefferson&quot;,&quot;countrySubdivision&quot;:&quot;OH&quot;,&quot;countrySubdivisionName&quot;:&quot;Ohio&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, OH&quot;},&quot;position&quot;:{&quot;lat&quot;:40.47222,&quot;lon&quot;:-80.92388},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:40.47894,&quot;lon&quot;:-80.92681},&quot;btmRightPoint&quot;:{&quot;lat&quot;:40.46314,&quot;lon&quot;:-80.91608}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:40.47894,&quot;lon&quot;:-80.92681},&quot;btmRightPoint&quot;:{&quot;lat&quot;:40.46314,&quot;lon&quot;:-80.91608}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;9a53d00a-1808-4522-883c-71defb4dc4ac&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/16830&quot;,&quot;score&quot;:2.3823521137,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Hancock&quot;,&quot;countrySubdivision&quot;:&quot;IA&quot;,&quot;countrySubdivisionName&quot;:&quot;Iowa&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, IA&quot;},&quot;position&quot;:{&quot;lat&quot;:42.93775,&quot;lon&quot;:-93.79319},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.99523,&quot;lon&quot;:-93.85267},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.90801,&quot;lon&quot;:-93.73407}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.99523,&quot;lon&quot;:-93.85267},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.90801,&quot;lon&quot;:-93.73407}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005858-5800-1200-0000-00007d2c203b&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/37720&quot;,&quot;score&quot;:2.3821973801,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Bates&quot;,&quot;countrySubdivision&quot;:&quot;MO&quot;,&quot;countrySubdivisionName&quot;:&quot;Missouri&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, MO&quot;},&quot;position&quot;:{&quot;lat&quot;:38.35003,&quot;lon&quot;:-94.58947},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:38.35686,&quot;lon&quot;:-94.59456},&quot;btmRightPoint&quot;:{&quot;lat&quot;:38.34178,&quot;lon&quot;:-94.58333}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:38.35686,&quot;lon&quot;:-94.59456},&quot;btmRightPoint&quot;:{&quot;lat&quot;:38.34178,&quot;lon&quot;:-94.58333}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;0000554d-3700-3c00-0000-000059960c8b&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/103322&quot;,&quot;score&quot;:2.3817329407,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Gallatin&quot;,&quot;countrySubdivision&quot;:&quot;MT&quot;,&quot;countrySubdivisionName&quot;:&quot;Montana&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, MT&quot;},&quot;position&quot;:{&quot;lat&quot;:45.75822,&quot;lon&quot;:-111.32014},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:45.7729,&quot;lon&quot;:-111.35457},&quot;btmRightPoint&quot;:{&quot;lat&quot;:45.71821,&quot;lon&quot;:-111.31433}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:45.7729,&quot;lon&quot;:-111.35457},&quot;btmRightPoint&quot;:{&quot;lat&quot;:45.71821,&quot;lon&quot;:-111.31433}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;0000554d-5400-3c00-0000-00005969bb9f&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;SR/GEO/p0/41&quot;,&quot;score&quot;:2.3631653786,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Nieuw Amsterdam&quot;,&quot;countrySubdivision&quot;:&quot;Commewijne&quot;,&quot;countryCode&quot;:&quot;SR&quot;,&quot;country&quot;:&quot;Suriname&quot;,&quot;countryCodeISO3&quot;:&quot;SUR&quot;,&quot;freeformAddress&quot;:&quot;Nieuw Amsterdam, Commewijne&quot;},&quot;position&quot;:{&quot;lat&quot;:5.88532,&quot;lon&quot;:-55.0914},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:5.89218,&quot;lon&quot;:-55.13647},&quot;btmRightPoint&quot;:{&quot;lat&quot;:5.79406,&quot;lon&quot;:-55.0643}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:5.89218,&quot;lon&quot;:-55.13647},&quot;btmRightPoint&quot;:{&quot;lat&quot;:5.79406,&quot;lon&quot;:-55.0643}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005831-3700-1200-0000-00007d3420f2&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/54358&quot;,&quot;score&quot;:2.3629200459,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam Town&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Montgomery&quot;,&quot;countrySubdivision&quot;:&quot;NY&quot;,&quot;countrySubdivisionName&quot;:&quot;New York&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam Town, NY&quot;},&quot;position&quot;:{&quot;lat&quot;:42.95749,&quot;lon&quot;:-74.23964},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.98445,&quot;lon&quot;:-74.28931},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.89697,&quot;lon&quot;:-74.08398}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.98445,&quot;lon&quot;:-74.28931},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.89697,&quot;lon&quot;:-74.08398}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005858-5800-1200-0000-00007d2c62f2&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;GY/GEO/p0/7&quot;,&quot;score&quot;:2.3589038849,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;New Amsterdam&quot;,&quot;countrySubdivision&quot;:&quot;East Berbice-Corentyne&quot;,&quot;countryCode&quot;:&quot;GY&quot;,&quot;country&quot;:&quot;Guyana&quot;,&quot;countryCodeISO3&quot;:&quot;GUY&quot;,&quot;freeformAddress&quot;:&quot;New Amsterdam, East Berbice-Corentyne&quot;},&quot;position&quot;:{&quot;lat&quot;:6.24806,&quot;lon&quot;:-57.517},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:6.2639,&quot;lon&quot;:-57.52532},&quot;btmRightPoint&quot;:{&quot;lat&quot;:6.18896,&quot;lon&quot;:-57.50512}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:6.2639,&quot;lon&quot;:-57.52532},&quot;btmRightPoint&quot;:{&quot;lat&quot;:6.18896,&quot;lon&quot;:-57.50512}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005831-3700-1200-0000-00007d342157&quot;}}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:13]</span>
+                <span class="scenario-name">Functional test : Verify that the fuzzy serach is returning expected location with valid schema</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>143</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getSearchResponse = call read(searchAPIConstants.SearchResponse)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:07:06.347 karate.env system property was: null 
+16:07:06.348 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/constants.js
+16:07:06.351 &lt;&lt; lock released, cached callSingle: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url fuzzySearchPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = searchAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">16:07:06.368 request:
+1 &gt; GET https://api.tomtom.com/search/2/search/amsterdam.json?key=JUCzL7OUquHARYUshR9piC68zaNygc6A
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:07:06.480 response time in milliseconds: 111
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 14:07:04 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; vary: Accept-Encoding
+1 &lt; access-control-allow-origin: *
+1 &lt; tracking-id: 972fbeca-3572-40f2-9e30-67af63da379a
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-apigee.target-latency: 15
+1 &lt; x-envoy-upstream-service-time: 29
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;summary&quot;:{&quot;query&quot;:&quot;amsterdam&quot;,&quot;queryType&quot;:&quot;NON_NEAR&quot;,&quot;queryTime&quot;:7,&quot;numResults&quot;:10,&quot;offset&quot;:0,&quot;totalResults&quot;:5752,&quot;fuzzyLevel&quot;:1},&quot;results&quot;:[{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;NL/GEO/p0/8218&quot;,&quot;score&quot;:2.5612204075,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySubdivision&quot;:&quot;North Holland&quot;,&quot;countryCode&quot;:&quot;NL&quot;,&quot;country&quot;:&quot;Netherlands&quot;,&quot;countryCodeISO3&quot;:&quot;NLD&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam&quot;},&quot;position&quot;:{&quot;lat&quot;:52.37317,&quot;lon&quot;:4.89066},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:52.43123,&quot;lon&quot;:4.7289},&quot;btmRightPoint&quot;:{&quot;lat&quot;:52.27801,&quot;lon&quot;:5.10767}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:52.43123,&quot;lon&quot;:4.7289},&quot;btmRightPoint&quot;:{&quot;lat&quot;:52.27801,&quot;lon&quot;:5.10767}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005858-5800-1200-0000-00007736ad05&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/53587&quot;,&quot;score&quot;:2.3925077915,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Montgomery&quot;,&quot;countrySubdivision&quot;:&quot;NY&quot;,&quot;countrySubdivisionName&quot;:&quot;New York&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, NY&quot;},&quot;position&quot;:{&quot;lat&quot;:42.93775,&quot;lon&quot;:-74.19034},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.96628,&quot;lon&quot;:-74.22237},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.9191,&quot;lon&quot;:-74.16134}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.96628,&quot;lon&quot;:-74.22237},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.9191,&quot;lon&quot;:-74.16134}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;0000554e-3100-3c00-0000-00005969bad7&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/8147&quot;,&quot;score&quot;:2.3901236057,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Botetourt&quot;,&quot;countrySubdivision&quot;:&quot;VA&quot;,&quot;countrySubdivisionName&quot;:&quot;Virginia&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, VA&quot;},&quot;position&quot;:{&quot;lat&quot;:37.42815,&quot;lon&quot;:-79.90579},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.50323,&quot;lon&quot;:-80.07375},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.35607,&quot;lon&quot;:-79.87161}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.50323,&quot;lon&quot;:-80.07375},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.35607,&quot;lon&quot;:-79.87161}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005858-5800-1200-0000-00007d2c8181&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/33551&quot;,&quot;score&quot;:2.38306427,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Jefferson&quot;,&quot;countrySubdivision&quot;:&quot;OH&quot;,&quot;countrySubdivisionName&quot;:&quot;Ohio&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, OH&quot;},&quot;position&quot;:{&quot;lat&quot;:40.47222,&quot;lon&quot;:-80.92388},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:40.47894,&quot;lon&quot;:-80.92681},&quot;btmRightPoint&quot;:{&quot;lat&quot;:40.46314,&quot;lon&quot;:-80.91608}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:40.47894,&quot;lon&quot;:-80.92681},&quot;btmRightPoint&quot;:{&quot;lat&quot;:40.46314,&quot;lon&quot;:-80.91608}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;9a53d00a-1808-4522-883c-71defb4dc4ac&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/16830&quot;,&quot;score&quot;:2.3823521137,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Hancock&quot;,&quot;countrySubdivision&quot;:&quot;IA&quot;,&quot;countrySubdivisionName&quot;:&quot;Iowa&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, IA&quot;},&quot;position&quot;:{&quot;lat&quot;:42.93775,&quot;lon&quot;:-93.79319},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.99523,&quot;lon&quot;:-93.85267},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.90801,&quot;lon&quot;:-93.73407}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.99523,&quot;lon&quot;:-93.85267},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.90801,&quot;lon&quot;:-93.73407}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005858-5800-1200-0000-00007d2c203b&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/37720&quot;,&quot;score&quot;:2.3821973801,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Bates&quot;,&quot;countrySubdivision&quot;:&quot;MO&quot;,&quot;countrySubdivisionName&quot;:&quot;Missouri&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, MO&quot;},&quot;position&quot;:{&quot;lat&quot;:38.35003,&quot;lon&quot;:-94.58947},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:38.35686,&quot;lon&quot;:-94.59456},&quot;btmRightPoint&quot;:{&quot;lat&quot;:38.34178,&quot;lon&quot;:-94.58333}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:38.35686,&quot;lon&quot;:-94.59456},&quot;btmRightPoint&quot;:{&quot;lat&quot;:38.34178,&quot;lon&quot;:-94.58333}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;0000554d-3700-3c00-0000-000059960c8b&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/103322&quot;,&quot;score&quot;:2.3817329407,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Gallatin&quot;,&quot;countrySubdivision&quot;:&quot;MT&quot;,&quot;countrySubdivisionName&quot;:&quot;Montana&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam, MT&quot;},&quot;position&quot;:{&quot;lat&quot;:45.75822,&quot;lon&quot;:-111.32014},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:45.7729,&quot;lon&quot;:-111.35457},&quot;btmRightPoint&quot;:{&quot;lat&quot;:45.71821,&quot;lon&quot;:-111.31433}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:45.7729,&quot;lon&quot;:-111.35457},&quot;btmRightPoint&quot;:{&quot;lat&quot;:45.71821,&quot;lon&quot;:-111.31433}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;0000554d-5400-3c00-0000-00005969bb9f&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;SR/GEO/p0/41&quot;,&quot;score&quot;:2.3631653786,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Nieuw Amsterdam&quot;,&quot;countrySubdivision&quot;:&quot;Commewijne&quot;,&quot;countryCode&quot;:&quot;SR&quot;,&quot;country&quot;:&quot;Suriname&quot;,&quot;countryCodeISO3&quot;:&quot;SUR&quot;,&quot;freeformAddress&quot;:&quot;Nieuw Amsterdam, Commewijne&quot;},&quot;position&quot;:{&quot;lat&quot;:5.88532,&quot;lon&quot;:-55.0914},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:5.89218,&quot;lon&quot;:-55.13647},&quot;btmRightPoint&quot;:{&quot;lat&quot;:5.79406,&quot;lon&quot;:-55.0643}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:5.89218,&quot;lon&quot;:-55.13647},&quot;btmRightPoint&quot;:{&quot;lat&quot;:5.79406,&quot;lon&quot;:-55.0643}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005831-3700-1200-0000-00007d3420f2&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;US/GEO/p0/54358&quot;,&quot;score&quot;:2.3629200459,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;Amsterdam Town&quot;,&quot;countrySecondarySubdivision&quot;:&quot;Montgomery&quot;,&quot;countrySubdivision&quot;:&quot;NY&quot;,&quot;countrySubdivisionName&quot;:&quot;New York&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;Amsterdam Town, NY&quot;},&quot;position&quot;:{&quot;lat&quot;:42.95749,&quot;lon&quot;:-74.23964},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.98445,&quot;lon&quot;:-74.28931},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.89697,&quot;lon&quot;:-74.08398}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:42.98445,&quot;lon&quot;:-74.28931},&quot;btmRightPoint&quot;:{&quot;lat&quot;:42.89697,&quot;lon&quot;:-74.08398}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005858-5800-1200-0000-00007d2c62f2&quot;}}},{&quot;type&quot;:&quot;Geography&quot;,&quot;id&quot;:&quot;GY/GEO/p0/7&quot;,&quot;score&quot;:2.3589038849,&quot;entityType&quot;:&quot;Municipality&quot;,&quot;address&quot;:{&quot;municipality&quot;:&quot;New Amsterdam&quot;,&quot;countrySubdivision&quot;:&quot;East Berbice-Corentyne&quot;,&quot;countryCode&quot;:&quot;GY&quot;,&quot;country&quot;:&quot;Guyana&quot;,&quot;countryCodeISO3&quot;:&quot;GUY&quot;,&quot;freeformAddress&quot;:&quot;New Amsterdam, East Berbice-Corentyne&quot;},&quot;position&quot;:{&quot;lat&quot;:6.24806,&quot;lon&quot;:-57.517},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:6.2639,&quot;lon&quot;:-57.52532},&quot;btmRightPoint&quot;:{&quot;lat&quot;:6.18896,&quot;lon&quot;:-57.50512}},&quot;boundingBox&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:6.2639,&quot;lon&quot;:-57.52532},&quot;btmRightPoint&quot;:{&quot;lat&quot;:6.18896,&quot;lon&quot;:-57.50512}},&quot;dataSources&quot;:{&quot;geometry&quot;:{&quot;id&quot;:&quot;00005831-3700-1200-0000-00007d342157&quot;}}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def searchResp = $.[*]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert searchResp.length &gt; 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print searchResp.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">16:07:06.487 [print] 2 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#validating the schema of expected response</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match searchResp contains getSearchResponse.searchSummarySchema</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:24]</span>
+                <span class="scenario-name">Negative test : Verify that invalid inputs returns right error code</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>138</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getSearchResponse = call read(searchAPIConstants.SearchResponse)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:07:06.347 karate.env system property was: null 
+16:07:06.352 this thread waited 3 milliseconds for callSingle lock: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url fuzzySearchBrokenPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = searchAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">126</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">16:07:06.368 request:
+1 &gt; GET https://api.tomtom.com/search/2/search/.json?key=JUCzL7OUquHARYUshR9piC68zaNygc6A
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:07:06.492 response time in milliseconds: 123
+1 &lt; 400
+1 &lt; date: Mon, 11 Jul 2022 14:07:04 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; content-length: 236
+1 &lt; access-control-allow-origin: *
+1 &lt; tracking-id: aafb3ec2-e839-4fa6-ae21-94196ddf0e0b
+1 &lt; x-apigee.target-latency: 10
+1 &lt; x-envoy-upstream-service-time: 27
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+{&quot;errorText&quot;:&quot;Empty query allowed only with the filters provided or in wildcard context.&quot;,&quot;detailedError&quot;:{&quot;code&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Empty query allowed only with the filters provided or in wildcard context.&quot;},&quot;httpStatusCode&quot;:400}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:31]</span>
+                <span class="scenario-name">Stress test : Verify that the API handles a larger payload(request body)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>185</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getSearchResponse = call read(searchAPIConstants.SearchResponse)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:07:06.347 karate.env system property was: null 
+16:07:06.351 this thread waited 3 milliseconds for callSingle lock: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url geometrySearchPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = searchAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;geometryList&quot;:[{&quot;type&quot;:&quot;POLYGON&quot;,&quot;vertices&quot;:[&quot;37.7524152343544,-122.43576049804686&quot;,&quot;37.70660472542312,-122.43301391601562&quot;,&quot;37.712059855877314,-122.36434936523438&quot;,&quot;37.75350561243041,-122.37396240234374&quot;]},{&quot;type&quot;:&quot;CIRCLE&quot;,&quot;position&quot;:&quot;37.71205,-121.36434&quot;,&quot;radius&quot;:6000},{&quot;type&quot;:&quot;CIRCLE&quot;,&quot;position&quot;:&quot;37.31205,-121.36434&quot;,&quot;radius&quot;:1000}]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">172</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">16:07:06.422 request:
+1 &gt; POST https://api.tomtom.com/search/2/geometrySearch/pizza.json?view=Unified&amp;relatedPois=off&amp;key=JUCzL7OUquHARYUshR9piC68zaNygc6A
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 340
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;geometryList&quot;:[{&quot;type&quot;:&quot;POLYGON&quot;,&quot;vertices&quot;:[&quot;37.7524152343544,-122.43576049804686&quot;,&quot;37.70660472542312,-122.43301391601562&quot;,&quot;37.712059855877314,-122.36434936523438&quot;,&quot;37.75350561243041,-122.37396240234374&quot;]},{&quot;type&quot;:&quot;CIRCLE&quot;,&quot;position&quot;:&quot;37.71205,-121.36434&quot;,&quot;radius&quot;:6000},{&quot;type&quot;:&quot;CIRCLE&quot;,&quot;position&quot;:&quot;37.31205,-121.36434&quot;,&quot;radius&quot;:1000}]}
+
+16:07:06.539 response time in milliseconds: 115
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 14:07:05 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; vary: Accept-Encoding,X-HTTP-Method-Override
+1 &lt; access-control-allow-origin: *
+1 &lt; tracking-id: 1b4ec64a-957c-4a39-9543-773431c732cb
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-apigee.target-latency: 15
+1 &lt; x-envoy-upstream-service-time: 34
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;summary&quot;:{&quot;query&quot;:&quot;pizza&quot;,&quot;queryType&quot;:&quot;NON_NEAR&quot;,&quot;queryTime&quot;:10,&quot;numResults&quot;:10,&quot;offset&quot;:0,&quot;totalResults&quot;:39,&quot;fuzzyLevel&quot;:1},&quot;results&quot;:[{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069019716710&quot;,&quot;score&quot;:2.1455290318,&quot;info&quot;:&quot;search:ta:840069019716710-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;Gialina Pizzeria&quot;,&quot;phone&quot;:&quot;+1 415-239-8500&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;url&quot;:&quot;gialina.com/&quot;,&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;2842&quot;,&quot;streetName&quot;:&quot;Diamond Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Glen Park&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94131&quot;,&quot;extendedPostalCode&quot;:&quot;94131-3005&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;2842 Diamond Street, San Francisco, CA 94131&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.73404,&quot;lon&quot;:-122.43416},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.73494,&quot;lon&quot;:-122.4353},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.73314,&quot;lon&quot;:-122.43302}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.734,&quot;lon&quot;:-122.43403}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840061002780086&quot;,&quot;score&quot;:2.1455180645,&quot;info&quot;:&quot;search:ta:840061002780086-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;All Nite Pizza&quot;,&quot;phone&quot;:&quot;+1 415-822-0120&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;5155&quot;,&quot;streetName&quot;:&quot;3rd Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Bayview&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94124&quot;,&quot;extendedPostalCode&quot;:&quot;94124-2355&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;5155 3rd Street, San Francisco, CA 94124&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.73129,&quot;lon&quot;:-122.39166},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.73219,&quot;lon&quot;:-122.3928},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.73039,&quot;lon&quot;:-122.39052}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.73135,&quot;lon&quot;:-122.39182}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069020989433&quot;,&quot;score&quot;:2.1455087662,&quot;info&quot;:&quot;search:ta:840069020989433-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;Firewood Café&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;url&quot;:&quot;firewoodcafe.com&quot;,&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetName&quot;:&quot;3rd Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Bayview&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94124&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;3rd Street, San Francisco, CA 94124&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.74535,&quot;lon&quot;:-122.38702},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.74625,&quot;lon&quot;:-122.38816},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.74445,&quot;lon&quot;:-122.38588}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.74535,&quot;lon&quot;:-122.38702}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069006941877&quot;,&quot;score&quot;:2.1454970837,&quot;info&quot;:&quot;search:ta:840069006941877-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;Cecilia&#39;s Pizza Restaurant&quot;,&quot;phone&quot;:&quot;+1 415-821-5852&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;3515&quot;,&quot;streetName&quot;:&quot;Mission Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Bernal Heights&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94110&quot;,&quot;extendedPostalCode&quot;:&quot;94110-5429&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;3515 Mission Street, San Francisco, CA 94110&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.74069,&quot;lon&quot;:-122.42269},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.74159,&quot;lon&quot;:-122.42383},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.73979,&quot;lon&quot;:-122.42155}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.7408,&quot;lon&quot;:-122.42298}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069021346566&quot;,&quot;score&quot;:2.1454849243,&quot;info&quot;:&quot;search:ta:840069021346566-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;Round Pizza&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;4517&quot;,&quot;streetName&quot;:&quot;Mission Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Mission Terrace&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94112&quot;,&quot;extendedPostalCode&quot;:&quot;94112-2600&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;4517 Mission Street, San Francisco, CA 94112&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.7258,&quot;lon&quot;:-122.43383},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.7267,&quot;lon&quot;:-122.43497},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.7249,&quot;lon&quot;:-122.43269}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.72597,&quot;lon&quot;:-122.43384}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069005734516&quot;,&quot;score&quot;:2.1454739571,&quot;info&quot;:&quot;search:ta:840069005734516-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;Montella Pizzeria&quot;,&quot;phone&quot;:&quot;+1 415-642-1160&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;3161&quot;,&quot;streetName&quot;:&quot;24th Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Mission&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94110&quot;,&quot;extendedPostalCode&quot;:&quot;94110-4034&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;3161 24th Street, San Francisco, CA 94110&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.75233,&quot;lon&quot;:-122.4153},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.75323,&quot;lon&quot;:-122.41644},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.75143,&quot;lon&quot;:-122.41416}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.75243,&quot;lon&quot;:-122.41531}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069002602194&quot;,&quot;score&quot;:2.145465374,&quot;info&quot;:&quot;search:ta:840069002602194-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;Round Table Pizza&quot;,&quot;phone&quot;:&quot;+1 415-586-1200&quot;,&quot;brands&quot;:[{&quot;name&quot;:&quot;Round Table Pizza&quot;}],&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;url&quot;:&quot;https://ordering.roundtablepizza.com/Site/rtsf&quot;,&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;4523&quot;,&quot;streetName&quot;:&quot;Mission Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Mission Terrace&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94112&quot;,&quot;extendedPostalCode&quot;:&quot;94112-2600&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;4523 Mission Street, San Francisco, CA 94112&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.72572,&quot;lon&quot;:-122.43368},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.72662,&quot;lon&quot;:-122.43482},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.72482,&quot;lon&quot;:-122.43254}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.72585,&quot;lon&quot;:-122.43393}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069019610631&quot;,&quot;score&quot;:2.145465374,&quot;info&quot;:&quot;search:ta:840069019610631-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;The Pizza Shop&quot;,&quot;phone&quot;:&quot;+1 415-824-1840&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;url&quot;:&quot;www.yelp.com/biz/the-pizza-shop-san-francisco?ob=1&quot;,&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;3104&quot;,&quot;streetName&quot;:&quot;24th Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Mission&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94110&quot;,&quot;extendedPostalCode&quot;:&quot;94110-4012&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;3104 24th Street, San Francisco, CA 94110&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.75258,&quot;lon&quot;:-122.41433},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.75348,&quot;lon&quot;:-122.41547},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.75168,&quot;lon&quot;:-122.41319}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.75249,&quot;lon&quot;:-122.41427}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069019270271&quot;,&quot;score&quot;:2.1454606056,&quot;info&quot;:&quot;search:ta:840069019270271-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;Cellarmaker House of Pizza&quot;,&quot;phone&quot;:&quot;+1 415-296-6351&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;url&quot;:&quot;cellarmakerbrewing.com&quot;,&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;3193&quot;,&quot;streetName&quot;:&quot;Mission Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Bernal Heights&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94110&quot;,&quot;extendedPostalCode&quot;:&quot;94110-4515&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;3193 Mission Street, San Francisco, CA 94110&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.74576,&quot;lon&quot;:-122.41957},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.74666,&quot;lon&quot;:-122.42071},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.74486,&quot;lon&quot;:-122.41843}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.74583,&quot;lon&quot;:-122.41974}}]},{&quot;type&quot;:&quot;POI&quot;,&quot;id&quot;:&quot;840069019098606&quot;,&quot;score&quot;:2.1454584599,&quot;info&quot;:&quot;search:ta:840069019098606-US&quot;,&quot;poi&quot;:{&quot;name&quot;:&quot;Pi Bar&quot;,&quot;phone&quot;:&quot;+1 415-970-9670&quot;,&quot;categorySet&quot;:[{&quot;id&quot;:7315036}],&quot;url&quot;:&quot;pibarsf.com&quot;,&quot;categories&quot;:[&quot;pizza&quot;,&quot;restaurant&quot;],&quot;classifications&quot;:[{&quot;code&quot;:&quot;RESTAURANT&quot;,&quot;names&quot;:[{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;restaurant&quot;},{&quot;nameLocale&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;pizza&quot;}]}]},&quot;address&quot;:{&quot;streetNumber&quot;:&quot;1432&quot;,&quot;streetName&quot;:&quot;Valencia Street&quot;,&quot;municipalitySubdivision&quot;:&quot;Mission&quot;,&quot;municipality&quot;:&quot;San Francisco&quot;,&quot;countrySecondarySubdivision&quot;:&quot;San Francisco&quot;,&quot;countrySubdivision&quot;:&quot;CA&quot;,&quot;countrySubdivisionName&quot;:&quot;California&quot;,&quot;postalCode&quot;:&quot;94110&quot;,&quot;extendedPostalCode&quot;:&quot;94110-3708&quot;,&quot;countryCode&quot;:&quot;US&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;countryCodeISO3&quot;:&quot;USA&quot;,&quot;freeformAddress&quot;:&quot;1432 Valencia Street, San Francisco, CA 94110&quot;,&quot;localName&quot;:&quot;San Francisco&quot;},&quot;position&quot;:{&quot;lat&quot;:37.74994,&quot;lon&quot;:-122.42065},&quot;viewport&quot;:{&quot;topLeftPoint&quot;:{&quot;lat&quot;:37.75084,&quot;lon&quot;:-122.42179},&quot;btmRightPoint&quot;:{&quot;lat&quot;:37.74904,&quot;lon&quot;:-122.41951}},&quot;entryPoints&quot;:[{&quot;type&quot;:&quot;main&quot;,&quot;position&quot;:{&quot;lat&quot;:37.74995,&quot;lon&quot;:-122.42045}}]}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:39]</span>
+                <span class="scenario-name">Exploratory test : Verify the search with location coordinates</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>126</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getSearchResponse = call read(searchAPIConstants.SearchResponse)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:07:06.372 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url fuzzyCoordinatesPath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = searchAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">113</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">16:07:06.381 request:
+1 &gt; GET https://api.tomtom.com/search/2/search/48.85826022.29449905431968.json?key=JUCzL7OUquHARYUshR9piC68zaNygc6A
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:07:06.492 response time in milliseconds: 110
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 14:07:04 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; vary: Accept-Encoding
+1 &lt; access-control-allow-origin: *
+1 &lt; tracking-id: ced5e233-9f60-44f9-af72-06e7dbb3a1ab
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-apigee.target-latency: 16
+1 &lt; x-envoy-upstream-service-time: 29
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;summary&quot;:{&quot;query&quot;:&quot;48 85826022 29449905431968&quot;,&quot;queryType&quot;:&quot;NON_NEAR&quot;,&quot;queryTime&quot;:12,&quot;numResults&quot;:0,&quot;offset&quot;:0,&quot;totalResults&quot;:0,&quot;fuzzyLevel&quot;:2},&quot;results&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def searchResp = $.results[0].address.municipality</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert searchResp.length &gt; 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print searchResp.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">16:07:06.497 [print] 11 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref failed">47</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>assert searchResp == &#39;Paris&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">16:07:06.502 classpath:searchAPI/fuzzySearch.feature:47
+And assert searchResp == &#39;Paris&#39;
+did not evaluate to &#39;true&#39;: searchResp == &#39;Paris&#39;
+classpath:searchAPI/fuzzySearch.feature:47
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"trafficAPI\/traffic[1:4]","start":1657542124047,"end":1657542125295,"title":"trafficAPI\/traffic[1:4] 14:22:04.047-14:22:05.295 Happy path test : Verify Traffic API returns 200OK"},{"id":2,"group":2,"content":"trafficAPI\/traffic[2:11]","start":1657542124047,"end":1657542125292,"title":"trafficAPI\/traffic[2:11] 14:22:04.047-14:22:05.292 Negative test : Verify that invalid inputs returns right error code"},{"id":3,"group":3,"content":"trafficAPI\/traffic[3.1:25]","start":1657542124048,"end":1657542125294,"title":"trafficAPI\/traffic[3.1:25] 14:22:04.048-14:22:05.294 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":4,"group":4,"content":"trafficAPI\/traffic[3.2:26]","start":1657542124047,"end":1657542125318,"title":"trafficAPI\/traffic[3.2:26] 14:22:04.047-14:22:05.318 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":5,"group":5,"content":"trafficAPI\/traffic[3.3:27]","start":1657542124047,"end":1657542125310,"title":"trafficAPI\/traffic[3.3:27] 14:22:04.047-14:22:05.310 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":6,"group":2,"content":"trafficAPI\/traffic[3.4:28]","start":1657542125322,"end":1657542125446,"title":"trafficAPI\/traffic[3.4:28] 14:22:05.322-14:22:05.446 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":7,"group":3,"content":"trafficAPI\/traffic[3.5:29]","start":1657542125341,"end":1657542125512,"title":"trafficAPI\/traffic[3.5:29] 14:22:05.341-14:22:05.512 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":8,"group":1,"content":"trafficAPI\/traffic[3.6:30]","start":1657542125329,"end":1657542125513,"title":"trafficAPI\/traffic[3.6:30] 14:22:05.329-14:22:05.513 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":9,"group":5,"content":"trafficAPI\/traffic[3.7:31]","start":1657542125335,"end":1657542125461,"title":"trafficAPI\/traffic[3.7:31] 14:22:05.335-14:22:05.461 Functional test : Verify Traffic API returning resposne with different bbox values"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

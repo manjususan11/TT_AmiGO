@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"trafficAPI\/traffic[1:4]","start":1657550582146,"end":1657550584312,"title":"trafficAPI\/traffic[1:4] 16:43:02.146-16:43:04.312 Happy path test : Verify Traffic API returns 200OK"},{"id":2,"group":1,"content":"trafficAPI\/traffic[2:11]","start":1657550584342,"end":1657550584512,"title":"trafficAPI\/traffic[2:11] 16:43:04.342-16:43:04.512 Negative test : Verify that invalid inputs returns right error code"},{"id":3,"group":1,"content":"trafficAPI\/traffic[3.1:25]","start":1657550584536,"end":1657550584659,"title":"trafficAPI\/traffic[3.1:25] 16:43:04.536-16:43:04.659 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":4,"group":1,"content":"trafficAPI\/traffic[3.2:26]","start":1657550584679,"end":1657550584837,"title":"trafficAPI\/traffic[3.2:26] 16:43:04.679-16:43:04.837 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":5,"group":1,"content":"trafficAPI\/traffic[3.3:27]","start":1657550584864,"end":1657550585016,"title":"trafficAPI\/traffic[3.3:27] 16:43:04.864-16:43:05.016 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":6,"group":1,"content":"trafficAPI\/traffic[3.4:28]","start":1657550585046,"end":1657550585188,"title":"trafficAPI\/traffic[3.4:28] 16:43:05.046-16:43:05.188 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":7,"group":1,"content":"trafficAPI\/traffic[3.5:29]","start":1657550585207,"end":1657550585383,"title":"trafficAPI\/traffic[3.5:29] 16:43:05.207-16:43:05.383 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":8,"group":1,"content":"trafficAPI\/traffic[3.6:30]","start":1657550585398,"end":1657550585592,"title":"trafficAPI\/traffic[3.6:30] 16:43:05.398-16:43:05.592 Functional test : Verify Traffic API returning resposne with different bbox values"},{"id":9,"group":1,"content":"trafficAPI\/traffic[3.7:31]","start":1657550585611,"end":1657550585798,"title":"trafficAPI\/traffic[3.7:31] 16:43:05.611-16:43:05.798 Functional test : Verify Traffic API returning resposne with different bbox values"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

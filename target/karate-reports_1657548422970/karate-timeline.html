@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-5-thread-1","id":1},{"content":"pool-5-thread-2","id":2},{"content":"pool-5-thread-3","id":3},{"content":"pool-5-thread-4","id":4},{"content":"pool-5-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"mapAPI\/mapDisplay[1:5]","start":1657548382905,"end":1657548383100,"title":"mapAPI\/mapDisplay[1:5] 16:06:22.905-16:06:23.100 Happy path test : Verify Map Display API returns 200OK"},{"id":2,"group":2,"content":"mapAPI\/mapDisplay[2:13]","start":1657548382910,"end":1657548383065,"title":"mapAPI\/mapDisplay[2:13] 16:06:22.910-16:06:23.065 Negative test : Verify that invalid inputs returns right error code"},{"id":3,"group":3,"content":"mapAPI\/mapDisplay[3.1:30]","start":1657548382912,"end":1657548383092,"title":"mapAPI\/mapDisplay[3.1:30] 16:06:22.912-16:06:23.092 Functional test : Verify Map Display API returning resposne with different view combinations"},{"id":4,"group":4,"content":"mapAPI\/mapDisplay[3.2:31]","start":1657548382909,"end":1657548383112,"title":"mapAPI\/mapDisplay[3.2:31] 16:06:22.909-16:06:23.112 Functional test : Verify Map Display API returning resposne with different view combinations"},{"id":5,"group":5,"content":"mapAPI\/mapDisplay[3.3:32]","start":1657548382906,"end":1657548383123,"title":"mapAPI\/mapDisplay[3.3:32] 16:06:22.906-16:06:23.123 Functional test : Verify Map Display API returning resposne with different view combinations"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

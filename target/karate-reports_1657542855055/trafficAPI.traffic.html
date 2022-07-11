@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>trafficAPI.traffic</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">9</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-07-11 02:34:13 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Happy path test : Verify Traffic API returns 200OK</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:11]"><span>[2:11]</span> <span>Negative test : Verify that invalid inputs returns right error code</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.1:25]"><span>[3.1:25]</span> <span>Functional test : Verify Traffic API returning resposne with different bbox values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.2:26]"><span>[3.2:26]</span> <span>Functional test : Verify Traffic API returning resposne with different bbox values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.3:27]"><span>[3.3:27]</span> <span>Functional test : Verify Traffic API returning resposne with different bbox values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.4:28]"><span>[3.4:28]</span> <span>Functional test : Verify Traffic API returning resposne with different bbox values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.5:29]"><span>[3.5:29]</span> <span>Functional test : Verify Traffic API returning resposne with different bbox values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.6:30]"><span>[3.6:30]</span> <span>Functional test : Verify Traffic API returning resposne with different bbox values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.7:31]"><span>[3.7:31]</span> <span>Functional test : Verify Traffic API returning resposne with different bbox values</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">trafficAPI/traffic.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">AmiGO Traffic API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Happy path test : Verify Traffic API returns 200OK</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>812</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">14:34:12.599 karate.env system property was: null 
+14:34:12.609 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/constants.js
+14:34:12.643 &lt;&lt; lock released, cached callSingle: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param bbox = &#39;4.8854592519716675,52.36934334773164,4.897883244144765,52.37496348620152&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">809</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">14:34:12.967 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?bbox=4.8854592519716675%2C52.36934334773164%2C4.897883244144765%2C52.37496348620152&amp;key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.417 response time in milliseconds: 446
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 12:34:11 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; tracking-id: b660ad0b-b7ae-4667-b2a3-4b7a6144e1e5
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;802eaf77412d683c1d21a4a9dbfcf869&quot;
+1 &lt; trafficmodelid: 1657542851
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 3
+1 &lt; x-envoy-upstream-service-time: 23
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;incidents&quot;:[{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8851555178,52.3723384836],[4.8853030393,52.3738539707],[4.8853084037,52.3739183451],[4.8853204737,52.3740417206],[4.8853312025,52.3740873147],[4.8853446135,52.3742629872],[4.8853687534,52.3743729548],[4.8853902111,52.3744091842],[4.8854586074,52.3744923377],[4.8861331830,52.3752138477]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8853084037,52.3739183451],[4.8853861878,52.3739062685],[4.8854559252,52.3738901493],[4.8855001817,52.3738767422],[4.8855806479,52.3738432245],[4.8858475277,52.3737225094],[4.8862203548,52.3735468348],[4.8863088677,52.3735119864],[4.8864094505,52.3734811293],[4.8865086923,52.3734529333],[4.8867179046,52.3734046776],[4.8869043181,52.3733698290],[4.8870813439,52.3733631254],[4.8873133550,52.3733429634],[4.8874353955,52.3733309378]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8874353955,52.3733309378],[4.8873053083,52.3722486223]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891976068,52.3732947075],[4.8890246043,52.3733040721],[4.8888341675,52.3733148184],[4.8886973748,52.3733228525],[4.8885458300,52.3733349292],[4.8874434421,52.3734368651],[4.8873187194,52.3734435687],[4.8871054838,52.3734650100],[4.8869995365,52.3734717136],[4.8869217525,52.3734784172],[4.8866803536,52.3735267240],[4.8863906751,52.3736112097],[4.8862914333,52.3736514311],[4.8861895094,52.3736876611],[4.8854934761,52.3739813378],[4.8853204737,52.3740417206]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8896535823,52.3731659567],[4.8896213958,52.3729822457],[4.8896053026,52.3728896735],[4.8895972559,52.3728427477],[4.8895892093,52.3727971523],[4.8895074019,52.3722915572]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891332338,52.3731887798],[4.8895878682,52.3731672872],[4.8896535823,52.3731659567]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8895074019,52.3722915572],[4.8896079848,52.3723170418],[4.8897622118,52.3723613072],[4.8899741063,52.3724243532],[4.8900572548,52.3724497866]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905963788,52.3716639050],[4.8902865837,52.3716357590],[4.8897166142,52.3715780851],[4.8893679271,52.3715365312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8904756794,52.3731283958],[4.8905977199,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905266414,52.3725919469],[4.8906352708,52.3726255167],[4.8907143960,52.3726429157],[4.8906848917,52.3728963772],[4.8906781862,52.3729580920],[4.8906647751,52.3730613593],[4.8906553874,52.3730975897],[4.8906513641,52.3731096154],[4.8906459997,52.3731203617],[4.8906366119,52.3731350995],[4.8906258831,52.3731458458],[4.8906044254,52.3731646262],[4.8905266414,52.3731887798],[4.8904555628,52.3732115517],[4.8903415689,52.3732383663],[4.8901994119,52.3732396968],[4.8900357971,52.3732517736],[4.8896696756,52.3732718845]]}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:11]</span>
+                <span class="scenario-name">Negative test : Verify that invalid inputs returns right error code</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>808</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">14:34:12.599 karate.env system property was: null 
+14:34:12.644 this thread waited 35 milliseconds for callSingle lock: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">806</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">14:34:12.967 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.419 response time in milliseconds: 443
+1 &lt; 400
+1 &lt; date: Mon, 11 Jul 2022 12:34:11 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; content-length: 101
+1 &lt; tracking-id: e1ace715-9982-4058-9183-dd539771ac49
+1 &lt; access-control-allow-origin: *
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 4
+1 &lt; x-envoy-upstream-service-time: 20
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+{&quot;detailedError&quot;:{&quot;code&quot;:&quot;INVALID_REQUEST&quot;,&quot;message&quot;:&quot;Missing required parameter: &#39;bbox&#39; or &#39;ids&#39;.&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:25]</span>
+                <span class="scenario-name">Functional test : Verify Traffic API returning resposne with different bbox values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>810</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.18">14:34:12.599 karate.env system property was: null 
+14:34:12.644 this thread waited 35 milliseconds for callSingle lock: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param bbox = &#39;4.8854592519716675,52.36934334773164,4.897883244144765,52.37496348620152&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">807</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.21">14:34:12.967 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?bbox=4.8854592519716675%2C52.36934334773164%2C4.897883244144765%2C52.37496348620152&amp;key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.419 response time in milliseconds: 446
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 12:34:11 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; tracking-id: e4e820c4-80e1-463e-958e-f5704e068a99
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;802eaf77412d683c1d21a4a9dbfcf869&quot;
+1 &lt; trafficmodelid: 1657542851
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 2
+1 &lt; x-envoy-upstream-service-time: 24
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;incidents&quot;:[{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8851555178,52.3723384836],[4.8853030393,52.3738539707],[4.8853084037,52.3739183451],[4.8853204737,52.3740417206],[4.8853312025,52.3740873147],[4.8853446135,52.3742629872],[4.8853687534,52.3743729548],[4.8853902111,52.3744091842],[4.8854586074,52.3744923377],[4.8861331830,52.3752138477]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8853084037,52.3739183451],[4.8853861878,52.3739062685],[4.8854559252,52.3738901493],[4.8855001817,52.3738767422],[4.8855806479,52.3738432245],[4.8858475277,52.3737225094],[4.8862203548,52.3735468348],[4.8863088677,52.3735119864],[4.8864094505,52.3734811293],[4.8865086923,52.3734529333],[4.8867179046,52.3734046776],[4.8869043181,52.3733698290],[4.8870813439,52.3733631254],[4.8873133550,52.3733429634],[4.8874353955,52.3733309378]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8874353955,52.3733309378],[4.8873053083,52.3722486223]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891976068,52.3732947075],[4.8890246043,52.3733040721],[4.8888341675,52.3733148184],[4.8886973748,52.3733228525],[4.8885458300,52.3733349292],[4.8874434421,52.3734368651],[4.8873187194,52.3734435687],[4.8871054838,52.3734650100],[4.8869995365,52.3734717136],[4.8869217525,52.3734784172],[4.8866803536,52.3735267240],[4.8863906751,52.3736112097],[4.8862914333,52.3736514311],[4.8861895094,52.3736876611],[4.8854934761,52.3739813378],[4.8853204737,52.3740417206]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8896535823,52.3731659567],[4.8896213958,52.3729822457],[4.8896053026,52.3728896735],[4.8895972559,52.3728427477],[4.8895892093,52.3727971523],[4.8895074019,52.3722915572]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891332338,52.3731887798],[4.8895878682,52.3731672872],[4.8896535823,52.3731659567]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8895074019,52.3722915572],[4.8896079848,52.3723170418],[4.8897622118,52.3723613072],[4.8899741063,52.3724243532],[4.8900572548,52.3724497866]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905963788,52.3716639050],[4.8902865837,52.3716357590],[4.8897166142,52.3715780851],[4.8893679271,52.3715365312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8904756794,52.3731283958],[4.8905977199,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905266414,52.3725919469],[4.8906352708,52.3726255167],[4.8907143960,52.3726429157],[4.8906848917,52.3728963772],[4.8906781862,52.3729580920],[4.8906647751,52.3730613593],[4.8906553874,52.3730975897],[4.8906513641,52.3731096154],[4.8906459997,52.3731203617],[4.8906366119,52.3731350995],[4.8906258831,52.3731458458],[4.8906044254,52.3731646262],[4.8905266414,52.3731887798],[4.8904555628,52.3732115517],[4.8903415689,52.3732383663],[4.8901994119,52.3732396968],[4.8900357971,52.3732517736],[4.8896696756,52.3732718845]]}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.2:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.2:26]</span>
+                <span class="scenario-name">Functional test : Verify Traffic API returning resposne with different bbox values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>819</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.18">14:34:12.599 karate.env system property was: null 
+14:34:12.644 this thread waited 35 milliseconds for callSingle lock: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param bbox = &#39;4.8854592519716675,52.36934334773164,3.897883244144765,52.37496348620152&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">816</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.21">14:34:12.967 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?bbox=4.8854592519716675%2C52.36934334773164%2C3.897883244144765%2C52.37496348620152&amp;key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.418 response time in milliseconds: 446
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 12:34:11 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; tracking-id: b884cc53-4aa1-4419-9343-ca5a1cb6f3c0
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;5df00c9302061b5ea959964ccca30d86&quot;
+1 &lt; trafficmodelid: 1657542851
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 2
+1 &lt; x-envoy-upstream-service-time: 18
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;incidents&quot;:[{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.5256375858,52.3716437934],[4.5255785772,52.3715646773],[4.5255195686,52.3714734839],[4.5254873821,52.3714131487],[4.5254511723,52.3713259466],[4.5254310557,52.3713045042],[4.5254163035,52.3712790191],[4.5254122802,52.3712575767],[4.5254136213,52.3712294304],[4.5254216680,52.3712052758],[4.5254297146,52.3711931984],[4.5254498312,52.3711703743]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6091280469,52.3707546763],[4.6092098543,52.3712790191],[4.6092246064,52.3715177501],[4.6092071721,52.3717148749],[4.6091615745,52.3719549341],[4.6091374347,52.3721467349],[4.6091495046,52.3722044080],[4.6091776678,52.3722433002],[4.6092313120,52.3722821924],[4.6092702040,52.3723076770],[4.6093345770,52.3723210845],[4.6094311365,52.3723250761],[4.6095867047,52.3723250761],[4.6096242556,52.3723250761],[4.6099032053,52.3723170418]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6302021632,52.3743716244],[4.6301941165,52.3742978350],[4.6301887521,52.3741999437]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6310416946,52.3761633061],[4.6310175547,52.3760305725],[4.6309880504,52.3759286426],[4.6309813449,52.3758977873],[4.6309813449,52.3758790080],[4.6309652516,52.3758428310],[4.6309156308,52.3758119756],[4.6308633277,52.3756188603],[4.6308123657,52.3754887347],[4.6307573804,52.3753465837],[4.6306943485,52.3752178390],[4.6305870602,52.3750435007],[4.6305253693,52.3749456111],[4.6304502675,52.3748530942],[4.6304180810,52.3748195260],[4.6303174981,52.3746559322],[4.6302571484,52.3745419227],[4.6302236208,52.3744239216],[4.6302021632,52.3743716244]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6317685732,52.3712562462],[4.6319844910,52.3712629501],[4.6320354530,52.3712642807],[4.6326711366,52.3712991309],[4.6328481624,52.3712951392],[4.6329420397,52.3712910964],[4.6330385992,52.3712817314],[4.6332022139,52.3712642807]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6424491295,52.3723371531],[4.6425537357,52.3724430828],[4.6427012572,52.3726295083],[4.6428474376,52.3728239671],[4.6429010817,52.3728816393],[4.6429118106,52.3728963772]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6454169938,52.3708404978],[4.6447933802,52.3707439294],[4.6445653924,52.3707117399],[4.6442555973,52.3707130705],[4.6437298843,52.3708042655],[4.6426194498,52.3709732470],[4.6425443479,52.3709920284]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.7025104949,52.3726563232],[4.7027277538,52.3725396475],[4.7029839048,52.3724001992]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8553776333,52.3743662514],[4.8553199658,52.3743595479],[4.8552113364,52.3743474714],[4.8550410161,52.3743179454],[4.8549243400,52.3742911315],[4.8547929118,52.3742535716],[4.8546520958,52.3742039863],[4.8545783350,52.3741476462],[4.8545005510,52.3741167897],[4.8533941398,52.3736608468],[4.8532023618,52.3735830649],[4.8530682514,52.3735401312],[4.8529824207,52.3735133168],[4.8528241703,52.3734703831],[4.8526967654,52.3734435687],[4.8525881359,52.3734234579],[4.8524097690,52.3733926008],[4.8523360083,52.3733832362],[4.8522407899,52.3733912703],[4.8520905862,52.3733671168],[4.8507722804,52.3731149885],[4.8500655184,52.3729714994],[4.8499407956,52.3729460152],[4.8495009134,52.3728749357],[4.8493547330,52.3728521636],[4.8489550838,52.3727877876]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8568622360,52.3712280487],[4.8567147145,52.3712079369],[4.8564129660,52.3711476013],[4.8561983893,52.3711127510]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8663867602,52.3711878250],[4.8665932903,52.3714037325],[4.8666362057,52.3714372521],[4.8666804621,52.3714547027],[4.8667260597,52.3714708228],[4.8670720646,52.3715458962],[4.8671458254,52.3715512696],[4.8671806941,52.3715445657],[4.8672182450,52.3715284968],[4.8672437260,52.3715056728],[4.8676205764,52.3709678736]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8703644762,52.3708887563],[4.8705334554,52.3709276497]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8718155513,52.3712213447],[4.8717256973,52.3710617804],[4.8716747353,52.3709343537],[4.8716371844,52.3707881964],[4.8716210911,52.3706795504],[4.8716103623,52.3705561654],[4.8716023157,52.3704167109],[4.8716049979,52.3702959864],[4.8716184089,52.3701739822]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8726094851,52.3725101715],[4.8726148496,52.3724806443],[4.8725933919,52.3724417523],[4.8723814974,52.3721185380],[4.8720180581,52.3715579734],[4.8718852887,52.3713393544]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8740136216,52.3718302222],[4.8736327479,52.3717390293],[4.8734289000,52.3716960938],[4.8733350227,52.3716719906],[4.8732263932,52.3716504973],[4.8731258104,52.3716290551],[4.8730694840,52.3716169779],[4.8728844116,52.3715740935],[4.8728200386,52.3715606345],[4.8726805637,52.3715244540],[4.8724874446,52.3714775267],[4.8724270949,52.3714614066],[4.8720019648,52.3713662213],[4.8718852887,52.3713393544],[4.8716224322,52.3712803496],[4.8705522308,52.3710362951]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8705334554,52.3709276497],[4.8712817917,52.3711006736],[4.8718155513,52.3712213447],[4.8719255218,52.3712468300],[4.8723573575,52.3713420667],[4.8724445293,52.3713648396],[4.8725544999,52.3713930370],[4.8727181146,52.3714372521],[4.8728937993,52.3714748144],[4.8732317576,52.3715566429],[4.8737413773,52.3716599134],[4.8740538547,52.3717376988]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8727181146,52.3714372521],[4.8727020214,52.3714721533],[4.8726805637,52.3715244540],[4.8726604471,52.3715633468],[4.8726456950,52.3716049007],[4.8726456950,52.3716290551],[4.8727275023,52.3717591409],[4.8732572386,52.3725879554],[4.8733698914,52.3727368189],[4.8734342644,52.3727917791],[4.8735026607,52.3728306708],[4.8735804448,52.3728615283],[4.8736756632,52.3728829698],[4.8738835344,52.3729326078],[4.8741088400,52.3729688384],[4.8741785774,52.3729728299],[4.8742375860,52.3729621347],[4.8742872069,52.3729500579],[4.8743354866,52.3729245736],[4.8744387517,52.3728749357]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8741651664,52.3717591409],[4.8741504142,52.3718006946],[4.8741262743,52.3718570376],[4.8740847001,52.3719965388],[4.8740592191,52.3721655157],[4.8740592191,52.3722191461],[4.8740726302,52.3723210845],[4.8741088400,52.3724270143],[4.8741691897,52.3725410292],[4.8742670903,52.3726603659],[4.8742563615,52.3727260725],[4.8744387517,52.3728749357],[4.8746868560,52.3730412483]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8749805579,52.3733456755],[4.8749255726,52.3732437394],[4.8748665640,52.3731780335],[4.8747928033,52.3731123275],[4.8746908793,52.3730439093],[4.8744387517,52.3728749357],[4.8742563615,52.3727260725],[4.8741758952,52.3726898929],[4.8741316388,52.3726241350],[4.8740538547,52.3725047983],[4.8739921639,52.3723693414],[4.8739546130,52.3722405880],[4.8739412019,52.3721292845],[4.8739425430,52.3720461266],[4.8739693651,52.3719562646]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8764933238,52.3722928877],[4.8764061520,52.3720139380],[4.8763860354,52.3719536036],[4.8763860354,52.3719039645],[4.8764021287,52.3718516643],[4.8764517496,52.3717604714],[4.8765576968,52.3716263940]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8765389214,52.3724350485],[4.8767816613,52.3731203617]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8827924917,52.3738740813],[4.8827737162,52.3736889916],[4.8827254364,52.3732155944]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8828635702,52.3745017021],[4.8828045616,52.3740175675]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8832095752,52.3727327762],[4.8832766304,52.3734878329],[4.8833262513,52.3738941919],[4.8833302746,52.3739236670],[4.8833342979,52.3739558542],[4.8833316157,52.3739934144],[4.8833235691,52.3741087557],[4.8833463678,52.3742106898],[4.8833638022,52.3743286915],[4.8833852599,52.3745674060],[4.8833933065,52.3746613051],[4.8834000120,52.3746948222],[4.8834147642,52.3747229663],[4.8834335396,52.3747497799],[4.8834925482,52.3748209076],[4.8836776206,52.3750126448],[4.8839096317,52.3752379490],[4.8842998931,52.3756644528],[4.8843937705,52.3757556376],[4.8844393680,52.3758012299],[4.8845251987,52.3759018297],[4.8845868895,52.3759715739]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8847236822,52.3739733038],[4.8846686969,52.3732933770],[4.8845909128,52.3723599766]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8848269472,52.3688395390],[4.8849811742,52.3703442967]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8741651664,52.3717591409],[4.8743408511,52.3717993640],[4.8747109959,52.3718798614],[4.8748182843,52.3718972606],[4.8757664452,52.3721051303],[4.8761714587,52.3722097301],[4.8762304673,52.3722245194],[4.8763002047,52.3722433002],[4.8763927410,52.3722660726],[4.8764933238,52.3722928877],[4.8772953043,52.3724994250],[4.8784634063,52.3728011950],[4.8800137231,52.3731753726],[4.8802457342,52.3732316627],[4.8808089981,52.3733671168],[4.8814755270,52.3735401312],[4.8817035148,52.3736004635],[4.8819046805,52.3736501006],[4.8826355824,52.3738338089],[4.8827924917,52.3738740813],[4.8829158733,52.3739062685],[4.8829775641,52.3739210060],[4.8830365727,52.3739357436],[4.8830915580,52.3739464897],[4.8831881175,52.3739666003],[4.8833316157,52.3739934144],[4.8834321985,52.3739974569],[4.8835596034,52.3739987874],[4.8838908563,52.3739987874],[4.8840906808,52.3739974569],[4.8842154036,52.3739961265],[4.8843387852,52.3739920839],[4.8843964527,52.3739894229],[4.8847236822,52.3739733038],[4.8849168012,52.3739625577],[4.8850079963,52.3739585663],[4.8850978503,52.3739505323],[4.8851729522,52.3739397862],[4.8853084037,52.3739183451]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8851555178,52.3723384836],[4.8853030393,52.3738539707],[4.8853084037,52.3739183451],[4.8853204737,52.3740417206],[4.8853312025,52.3740873147],[4.8853446135,52.3742629872],[4.8853687534,52.3743729548],[4.8853902111,52.3744091842],[4.8854586074,52.3744923377],[4.8861331830,52.3752138477]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8853084037,52.3739183451],[4.8853861878,52.3739062685],[4.8854559252,52.3738901493],[4.8855001817,52.3738767422],[4.8855806479,52.3738432245],[4.8858475277,52.3737225094],[4.8862203548,52.3735468348],[4.8863088677,52.3735119864],[4.8864094505,52.3734811293],[4.8865086923,52.3734529333],[4.8867179046,52.3734046776],[4.8869043181,52.3733698290],[4.8870813439,52.3733631254],[4.8873133550,52.3733429634],[4.8874353955,52.3733309378]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891976068,52.3732947075],[4.8890246043,52.3733040721],[4.8888341675,52.3733148184],[4.8886973748,52.3733228525],[4.8885458300,52.3733349292],[4.8874434421,52.3734368651],[4.8873187194,52.3734435687],[4.8871054838,52.3734650100],[4.8869995365,52.3734717136],[4.8869217525,52.3734784172],[4.8866803536,52.3735267240],[4.8863906751,52.3736112097],[4.8862914333,52.3736514311],[4.8861895094,52.3736876611],[4.8854934761,52.3739813378],[4.8853204737,52.3740417206]]}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.3:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.3:27]</span>
+                <span class="scenario-name">Functional test : Verify Traffic API returning resposne with different bbox values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>820</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.18">14:34:12.600 karate.env system property was: null 
+14:34:12.644 this thread waited 35 milliseconds for callSingle lock: classpath:helpers/constants.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param bbox = &#39;3.8854592519716675,52.36934334773164,4.897883244144765,52.37496348620152&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">816</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.21">14:34:12.967 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?bbox=3.8854592519716675%2C52.36934334773164%2C4.897883244144765%2C52.37496348620152&amp;key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.420 response time in milliseconds: 446
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 12:34:11 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; tracking-id: bf84dc83-68f0-4416-87be-fb73a3856eef
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;0ff53b21fe44577a562c2c2f56749e49&quot;
+1 &lt; trafficmodelid: 1657542851
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 3
+1 &lt; x-envoy-upstream-service-time: 20
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;incidents&quot;:[{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.5256375858,52.3716437934],[4.5255785772,52.3715646773],[4.5255195686,52.3714734839],[4.5254873821,52.3714131487],[4.5254511723,52.3713259466],[4.5254310557,52.3713045042],[4.5254163035,52.3712790191],[4.5254122802,52.3712575767],[4.5254136213,52.3712294304],[4.5254216680,52.3712052758],[4.5254297146,52.3711931984],[4.5254498312,52.3711703743]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6091280469,52.3707546763],[4.6092098543,52.3712790191],[4.6092246064,52.3715177501],[4.6092071721,52.3717148749],[4.6091615745,52.3719549341],[4.6091374347,52.3721467349],[4.6091495046,52.3722044080],[4.6091776678,52.3722433002],[4.6092313120,52.3722821924],[4.6092702040,52.3723076770],[4.6093345770,52.3723210845],[4.6094311365,52.3723250761],[4.6095867047,52.3723250761],[4.6096242556,52.3723250761],[4.6099032053,52.3723170418]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6302021632,52.3743716244],[4.6301941165,52.3742978350],[4.6301887521,52.3741999437]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6310416946,52.3761633061],[4.6310175547,52.3760305725],[4.6309880504,52.3759286426],[4.6309813449,52.3758977873],[4.6309813449,52.3758790080],[4.6309652516,52.3758428310],[4.6309156308,52.3758119756],[4.6308633277,52.3756188603],[4.6308123657,52.3754887347],[4.6307573804,52.3753465837],[4.6306943485,52.3752178390],[4.6305870602,52.3750435007],[4.6305253693,52.3749456111],[4.6304502675,52.3748530942],[4.6304180810,52.3748195260],[4.6303174981,52.3746559322],[4.6302571484,52.3745419227],[4.6302236208,52.3744239216],[4.6302021632,52.3743716244]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6317685732,52.3712562462],[4.6319844910,52.3712629501],[4.6320354530,52.3712642807],[4.6326711366,52.3712991309],[4.6328481624,52.3712951392],[4.6329420397,52.3712910964],[4.6330385992,52.3712817314],[4.6332022139,52.3712642807]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6424491295,52.3723371531],[4.6425537357,52.3724430828],[4.6427012572,52.3726295083],[4.6428474376,52.3728239671],[4.6429010817,52.3728816393],[4.6429118106,52.3728963772]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6454169938,52.3708404978],[4.6447933802,52.3707439294],[4.6445653924,52.3707117399],[4.6442555973,52.3707130705],[4.6437298843,52.3708042655],[4.6426194498,52.3709732470],[4.6425443479,52.3709920284]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.7025104949,52.3726563232],[4.7027277538,52.3725396475],[4.7029839048,52.3724001992]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8553776333,52.3743662514],[4.8553199658,52.3743595479],[4.8552113364,52.3743474714],[4.8550410161,52.3743179454],[4.8549243400,52.3742911315],[4.8547929118,52.3742535716],[4.8546520958,52.3742039863],[4.8545783350,52.3741476462],[4.8545005510,52.3741167897],[4.8533941398,52.3736608468],[4.8532023618,52.3735830649],[4.8530682514,52.3735401312],[4.8529824207,52.3735133168],[4.8528241703,52.3734703831],[4.8526967654,52.3734435687],[4.8525881359,52.3734234579],[4.8524097690,52.3733926008],[4.8523360083,52.3733832362],[4.8522407899,52.3733912703],[4.8520905862,52.3733671168],[4.8507722804,52.3731149885],[4.8500655184,52.3729714994],[4.8499407956,52.3729460152],[4.8495009134,52.3728749357],[4.8493547330,52.3728521636],[4.8489550838,52.3727877876]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8568622360,52.3712280487],[4.8567147145,52.3712079369],[4.8564129660,52.3711476013],[4.8561983893,52.3711127510]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8663867602,52.3711878250],[4.8665932903,52.3714037325],[4.8666362057,52.3714372521],[4.8666804621,52.3714547027],[4.8667260597,52.3714708228],[4.8670720646,52.3715458962],[4.8671458254,52.3715512696],[4.8671806941,52.3715445657],[4.8672182450,52.3715284968],[4.8672437260,52.3715056728],[4.8676205764,52.3709678736]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8703644762,52.3708887563],[4.8705334554,52.3709276497]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8718155513,52.3712213447],[4.8717256973,52.3710617804],[4.8716747353,52.3709343537],[4.8716371844,52.3707881964],[4.8716210911,52.3706795504],[4.8716103623,52.3705561654],[4.8716023157,52.3704167109],[4.8716049979,52.3702959864],[4.8716184089,52.3701739822]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8726094851,52.3725101715],[4.8726148496,52.3724806443],[4.8725933919,52.3724417523],[4.8723814974,52.3721185380],[4.8720180581,52.3715579734],[4.8718852887,52.3713393544]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8740136216,52.3718302222],[4.8736327479,52.3717390293],[4.8734289000,52.3716960938],[4.8733350227,52.3716719906],[4.8732263932,52.3716504973],[4.8731258104,52.3716290551],[4.8730694840,52.3716169779],[4.8728844116,52.3715740935],[4.8728200386,52.3715606345],[4.8726805637,52.3715244540],[4.8724874446,52.3714775267],[4.8724270949,52.3714614066],[4.8720019648,52.3713662213],[4.8718852887,52.3713393544],[4.8716224322,52.3712803496],[4.8705522308,52.3710362951]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8705334554,52.3709276497],[4.8712817917,52.3711006736],[4.8718155513,52.3712213447],[4.8719255218,52.3712468300],[4.8723573575,52.3713420667],[4.8724445293,52.3713648396],[4.8725544999,52.3713930370],[4.8727181146,52.3714372521],[4.8728937993,52.3714748144],[4.8732317576,52.3715566429],[4.8737413773,52.3716599134],[4.8740538547,52.3717376988]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8727181146,52.3714372521],[4.8727020214,52.3714721533],[4.8726805637,52.3715244540],[4.8726604471,52.3715633468],[4.8726456950,52.3716049007],[4.8726456950,52.3716290551],[4.8727275023,52.3717591409],[4.8732572386,52.3725879554],[4.8733698914,52.3727368189],[4.8734342644,52.3727917791],[4.8735026607,52.3728306708],[4.8735804448,52.3728615283],[4.8736756632,52.3728829698],[4.8738835344,52.3729326078],[4.8741088400,52.3729688384],[4.8741785774,52.3729728299],[4.8742375860,52.3729621347],[4.8742872069,52.3729500579],[4.8743354866,52.3729245736],[4.8744387517,52.3728749357]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8741651664,52.3717591409],[4.8741504142,52.3718006946],[4.8741262743,52.3718570376],[4.8740847001,52.3719965388],[4.8740592191,52.3721655157],[4.8740592191,52.3722191461],[4.8740726302,52.3723210845],[4.8741088400,52.3724270143],[4.8741691897,52.3725410292],[4.8742670903,52.3726603659],[4.8742563615,52.3727260725],[4.8744387517,52.3728749357],[4.8746868560,52.3730412483]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8749805579,52.3733456755],[4.8749255726,52.3732437394],[4.8748665640,52.3731780335],[4.8747928033,52.3731123275],[4.8746908793,52.3730439093],[4.8744387517,52.3728749357],[4.8742563615,52.3727260725],[4.8741758952,52.3726898929],[4.8741316388,52.3726241350],[4.8740538547,52.3725047983],[4.8739921639,52.3723693414],[4.8739546130,52.3722405880],[4.8739412019,52.3721292845],[4.8739425430,52.3720461266],[4.8739693651,52.3719562646]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8764933238,52.3722928877],[4.8764061520,52.3720139380],[4.8763860354,52.3719536036],[4.8763860354,52.3719039645],[4.8764021287,52.3718516643],[4.8764517496,52.3717604714],[4.8765576968,52.3716263940]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8765389214,52.3724350485],[4.8767816613,52.3731203617]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8827924917,52.3738740813],[4.8827737162,52.3736889916],[4.8827254364,52.3732155944]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8828635702,52.3745017021],[4.8828045616,52.3740175675]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8832095752,52.3727327762],[4.8832766304,52.3734878329],[4.8833262513,52.3738941919],[4.8833302746,52.3739236670],[4.8833342979,52.3739558542],[4.8833316157,52.3739934144],[4.8833235691,52.3741087557],[4.8833463678,52.3742106898],[4.8833638022,52.3743286915],[4.8833852599,52.3745674060],[4.8833933065,52.3746613051],[4.8834000120,52.3746948222],[4.8834147642,52.3747229663],[4.8834335396,52.3747497799],[4.8834925482,52.3748209076],[4.8836776206,52.3750126448],[4.8839096317,52.3752379490],[4.8842998931,52.3756644528],[4.8843937705,52.3757556376],[4.8844393680,52.3758012299],[4.8845251987,52.3759018297],[4.8845868895,52.3759715739]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8847236822,52.3739733038],[4.8846686969,52.3732933770],[4.8845909128,52.3723599766]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8848269472,52.3688395390],[4.8849811742,52.3703442967]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8741651664,52.3717591409],[4.8743408511,52.3717993640],[4.8747109959,52.3718798614],[4.8748182843,52.3718972606],[4.8757664452,52.3721051303],[4.8761714587,52.3722097301],[4.8762304673,52.3722245194],[4.8763002047,52.3722433002],[4.8763927410,52.3722660726],[4.8764933238,52.3722928877],[4.8772953043,52.3724994250],[4.8784634063,52.3728011950],[4.8800137231,52.3731753726],[4.8802457342,52.3732316627],[4.8808089981,52.3733671168],[4.8814755270,52.3735401312],[4.8817035148,52.3736004635],[4.8819046805,52.3736501006],[4.8826355824,52.3738338089],[4.8827924917,52.3738740813],[4.8829158733,52.3739062685],[4.8829775641,52.3739210060],[4.8830365727,52.3739357436],[4.8830915580,52.3739464897],[4.8831881175,52.3739666003],[4.8833316157,52.3739934144],[4.8834321985,52.3739974569],[4.8835596034,52.3739987874],[4.8838908563,52.3739987874],[4.8840906808,52.3739974569],[4.8842154036,52.3739961265],[4.8843387852,52.3739920839],[4.8843964527,52.3739894229],[4.8847236822,52.3739733038],[4.8849168012,52.3739625577],[4.8850079963,52.3739585663],[4.8850978503,52.3739505323],[4.8851729522,52.3739397862],[4.8853084037,52.3739183451]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8851555178,52.3723384836],[4.8853030393,52.3738539707],[4.8853084037,52.3739183451],[4.8853204737,52.3740417206],[4.8853312025,52.3740873147],[4.8853446135,52.3742629872],[4.8853687534,52.3743729548],[4.8853902111,52.3744091842],[4.8854586074,52.3744923377],[4.8861331830,52.3752138477]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8853084037,52.3739183451],[4.8853861878,52.3739062685],[4.8854559252,52.3738901493],[4.8855001817,52.3738767422],[4.8855806479,52.3738432245],[4.8858475277,52.3737225094],[4.8862203548,52.3735468348],[4.8863088677,52.3735119864],[4.8864094505,52.3734811293],[4.8865086923,52.3734529333],[4.8867179046,52.3734046776],[4.8869043181,52.3733698290],[4.8870813439,52.3733631254],[4.8873133550,52.3733429634],[4.8874353955,52.3733309378]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8874353955,52.3733309378],[4.8873053083,52.3722486223]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891976068,52.3732947075],[4.8890246043,52.3733040721],[4.8888341675,52.3733148184],[4.8886973748,52.3733228525],[4.8885458300,52.3733349292],[4.8874434421,52.3734368651],[4.8873187194,52.3734435687],[4.8871054838,52.3734650100],[4.8869995365,52.3734717136],[4.8869217525,52.3734784172],[4.8866803536,52.3735267240],[4.8863906751,52.3736112097],[4.8862914333,52.3736514311],[4.8861895094,52.3736876611],[4.8854934761,52.3739813378],[4.8853204737,52.3740417206]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8896535823,52.3731659567],[4.8896213958,52.3729822457],[4.8896053026,52.3728896735],[4.8895972559,52.3728427477],[4.8895892093,52.3727971523],[4.8895074019,52.3722915572]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891332338,52.3731887798],[4.8895878682,52.3731672872],[4.8896535823,52.3731659567]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8895074019,52.3722915572],[4.8896079848,52.3723170418],[4.8897622118,52.3723613072],[4.8899741063,52.3724243532],[4.8900572548,52.3724497866]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905963788,52.3716639050],[4.8902865837,52.3716357590],[4.8897166142,52.3715780851],[4.8893679271,52.3715365312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8904756794,52.3731283958],[4.8905977199,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905266414,52.3725919469],[4.8906352708,52.3726255167],[4.8907143960,52.3726429157],[4.8906848917,52.3728963772],[4.8906781862,52.3729580920],[4.8906647751,52.3730613593],[4.8906553874,52.3730975897],[4.8906513641,52.3731096154],[4.8906459997,52.3731203617],[4.8906366119,52.3731350995],[4.8906258831,52.3731458458],[4.8906044254,52.3731646262],[4.8905266414,52.3731887798],[4.8904555628,52.3732115517],[4.8903415689,52.3732383663],[4.8901994119,52.3732396968],[4.8900357971,52.3732517736],[4.8896696756,52.3732718845]]}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.4:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.4:28]</span>
+                <span class="scenario-name">Functional test : Verify Traffic API returning resposne with different bbox values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>119</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.18">14:34:13.513 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param bbox = &#39;3.8854592519716675,52.36934334773164,2.897883244144765,52.37496348620152&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">117</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.21">14:34:13.540 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?bbox=3.8854592519716675%2C52.36934334773164%2C2.897883244144765%2C52.37496348620152&amp;key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.650 response time in milliseconds: 110
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 12:34:12 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; tracking-id: bdb1f1f2-e30d-4cae-874a-cc23ef3c64cb
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;8ed95093fca812ff8d3fb7e0e2137c2f&quot;
+1 &lt; trafficmodelid: 1657542852
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 5
+1 &lt; x-envoy-upstream-service-time: 20
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;incidents&quot;:[]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.5:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.5:29]</span>
+                <span class="scenario-name">Functional test : Verify Traffic API returning resposne with different bbox values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>114</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.18">14:34:13.522 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param bbox = &#39;3.8854592519716675,52.36934334773164,8.897883244144765,52.37496348620152&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">112</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.21">14:34:13.536 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?bbox=3.8854592519716675%2C52.36934334773164%2C8.897883244144765%2C52.37496348620152&amp;key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.637 response time in milliseconds: 101
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 12:34:12 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; tracking-id: 98ac2ff4-910c-478f-a6f0-508b841e0cef
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;3f1a955cb9ce1c867e123e2ec61514b5&quot;
+1 &lt; trafficmodelid: 1657542852
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 5
+1 &lt; x-envoy-upstream-service-time: 22
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;incidents&quot;:[{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.5256375858,52.3716437934],[4.5255785772,52.3715646773],[4.5255195686,52.3714734839],[4.5254873821,52.3714131487],[4.5254511723,52.3713259466],[4.5254310557,52.3713045042],[4.5254163035,52.3712790191],[4.5254122802,52.3712575767],[4.5254136213,52.3712294304],[4.5254216680,52.3712052758],[4.5254297146,52.3711931984],[4.5254498312,52.3711703743]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6091280469,52.3707546763],[4.6092098543,52.3712790191],[4.6092246064,52.3715177501],[4.6092071721,52.3717148749],[4.6091615745,52.3719549341],[4.6091374347,52.3721467349],[4.6091495046,52.3722044080],[4.6091776678,52.3722433002],[4.6092313120,52.3722821924],[4.6092702040,52.3723076770],[4.6093345770,52.3723210845],[4.6094311365,52.3723250761],[4.6095867047,52.3723250761],[4.6096242556,52.3723250761],[4.6099032053,52.3723170418]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6302021632,52.3743716244],[4.6301941165,52.3742978350],[4.6301887521,52.3741999437]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6310416946,52.3761633061],[4.6310175547,52.3760305725],[4.6309880504,52.3759286426],[4.6309813449,52.3758977873],[4.6309813449,52.3758790080],[4.6309652516,52.3758428310],[4.6309156308,52.3758119756],[4.6308633277,52.3756188603],[4.6308123657,52.3754887347],[4.6307573804,52.3753465837],[4.6306943485,52.3752178390],[4.6305870602,52.3750435007],[4.6305253693,52.3749456111],[4.6304502675,52.3748530942],[4.6304180810,52.3748195260],[4.6303174981,52.3746559322],[4.6302571484,52.3745419227],[4.6302236208,52.3744239216],[4.6302021632,52.3743716244]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6317685732,52.3712562462],[4.6319844910,52.3712629501],[4.6320354530,52.3712642807],[4.6326711366,52.3712991309],[4.6328481624,52.3712951392],[4.6329420397,52.3712910964],[4.6330385992,52.3712817314],[4.6332022139,52.3712642807]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6424491295,52.3723371531],[4.6425537357,52.3724430828],[4.6427012572,52.3726295083],[4.6428474376,52.3728239671],[4.6429010817,52.3728816393],[4.6429118106,52.3728963772]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6454169938,52.3708404978],[4.6447933802,52.3707439294],[4.6445653924,52.3707117399],[4.6442555973,52.3707130705],[4.6437298843,52.3708042655],[4.6426194498,52.3709732470],[4.6425443479,52.3709920284]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.7025104949,52.3726563232],[4.7027277538,52.3725396475],[4.7029839048,52.3724001992]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8553776333,52.3743662514],[4.8553199658,52.3743595479],[4.8552113364,52.3743474714],[4.8550410161,52.3743179454],[4.8549243400,52.3742911315],[4.8547929118,52.3742535716],[4.8546520958,52.3742039863],[4.8545783350,52.3741476462],[4.8545005510,52.3741167897],[4.8533941398,52.3736608468],[4.8532023618,52.3735830649],[4.8530682514,52.3735401312],[4.8529824207,52.3735133168],[4.8528241703,52.3734703831],[4.8526967654,52.3734435687],[4.8525881359,52.3734234579],[4.8524097690,52.3733926008],[4.8523360083,52.3733832362],[4.8522407899,52.3733912703],[4.8520905862,52.3733671168],[4.8507722804,52.3731149885],[4.8500655184,52.3729714994],[4.8499407956,52.3729460152],[4.8495009134,52.3728749357],[4.8493547330,52.3728521636],[4.8489550838,52.3727877876]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8568622360,52.3712280487],[4.8567147145,52.3712079369],[4.8564129660,52.3711476013],[4.8561983893,52.3711127510]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8663867602,52.3711878250],[4.8665932903,52.3714037325],[4.8666362057,52.3714372521],[4.8666804621,52.3714547027],[4.8667260597,52.3714708228],[4.8670720646,52.3715458962],[4.8671458254,52.3715512696],[4.8671806941,52.3715445657],[4.8672182450,52.3715284968],[4.8672437260,52.3715056728],[4.8676205764,52.3709678736]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8703644762,52.3708887563],[4.8705334554,52.3709276497]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8718155513,52.3712213447],[4.8717256973,52.3710617804],[4.8716747353,52.3709343537],[4.8716371844,52.3707881964],[4.8716210911,52.3706795504],[4.8716103623,52.3705561654],[4.8716023157,52.3704167109],[4.8716049979,52.3702959864],[4.8716184089,52.3701739822]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8726094851,52.3725101715],[4.8726148496,52.3724806443],[4.8725933919,52.3724417523],[4.8723814974,52.3721185380],[4.8720180581,52.3715579734],[4.8718852887,52.3713393544]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8740136216,52.3718302222],[4.8736327479,52.3717390293],[4.8734289000,52.3716960938],[4.8733350227,52.3716719906],[4.8732263932,52.3716504973],[4.8731258104,52.3716290551],[4.8730694840,52.3716169779],[4.8728844116,52.3715740935],[4.8728200386,52.3715606345],[4.8726805637,52.3715244540],[4.8724874446,52.3714775267],[4.8724270949,52.3714614066],[4.8720019648,52.3713662213],[4.8718852887,52.3713393544],[4.8716224322,52.3712803496],[4.8705522308,52.3710362951]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8705334554,52.3709276497],[4.8712817917,52.3711006736],[4.8718155513,52.3712213447],[4.8719255218,52.3712468300],[4.8723573575,52.3713420667],[4.8724445293,52.3713648396],[4.8725544999,52.3713930370],[4.8727181146,52.3714372521],[4.8728937993,52.3714748144],[4.8732317576,52.3715566429],[4.8737413773,52.3716599134],[4.8740538547,52.3717376988]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8727181146,52.3714372521],[4.8727020214,52.3714721533],[4.8726805637,52.3715244540],[4.8726604471,52.3715633468],[4.8726456950,52.3716049007],[4.8726456950,52.3716290551],[4.8727275023,52.3717591409],[4.8732572386,52.3725879554],[4.8733698914,52.3727368189],[4.8734342644,52.3727917791],[4.8735026607,52.3728306708],[4.8735804448,52.3728615283],[4.8736756632,52.3728829698],[4.8738835344,52.3729326078],[4.8741088400,52.3729688384],[4.8741785774,52.3729728299],[4.8742375860,52.3729621347],[4.8742872069,52.3729500579],[4.8743354866,52.3729245736],[4.8744387517,52.3728749357]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8741651664,52.3717591409],[4.8741504142,52.3718006946],[4.8741262743,52.3718570376],[4.8740847001,52.3719965388],[4.8740592191,52.3721655157],[4.8740592191,52.3722191461],[4.8740726302,52.3723210845],[4.8741088400,52.3724270143],[4.8741691897,52.3725410292],[4.8742670903,52.3726603659],[4.8742563615,52.3727260725],[4.8744387517,52.3728749357],[4.8746868560,52.3730412483]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8749805579,52.3733456755],[4.8749255726,52.3732437394],[4.8748665640,52.3731780335],[4.8747928033,52.3731123275],[4.8746908793,52.3730439093],[4.8744387517,52.3728749357],[4.8742563615,52.3727260725],[4.8741758952,52.3726898929],[4.8741316388,52.3726241350],[4.8740538547,52.3725047983],[4.8739921639,52.3723693414],[4.8739546130,52.3722405880],[4.8739412019,52.3721292845],[4.8739425430,52.3720461266],[4.8739693651,52.3719562646]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8764933238,52.3722928877],[4.8764061520,52.3720139380],[4.8763860354,52.3719536036],[4.8763860354,52.3719039645],[4.8764021287,52.3718516643],[4.8764517496,52.3717604714],[4.8765576968,52.3716263940]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8765389214,52.3724350485],[4.8767816613,52.3731203617]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8827924917,52.3738740813],[4.8827737162,52.3736889916],[4.8827254364,52.3732155944]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8828635702,52.3745017021],[4.8828045616,52.3740175675]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8832095752,52.3727327762],[4.8832766304,52.3734878329],[4.8833262513,52.3738941919],[4.8833302746,52.3739236670],[4.8833342979,52.3739558542],[4.8833316157,52.3739934144],[4.8833235691,52.3741087557],[4.8833463678,52.3742106898],[4.8833638022,52.3743286915],[4.8833852599,52.3745674060],[4.8833933065,52.3746613051],[4.8834000120,52.3746948222],[4.8834147642,52.3747229663],[4.8834335396,52.3747497799],[4.8834925482,52.3748209076],[4.8836776206,52.3750126448],[4.8839096317,52.3752379490],[4.8842998931,52.3756644528],[4.8843937705,52.3757556376],[4.8844393680,52.3758012299],[4.8845251987,52.3759018297],[4.8845868895,52.3759715739]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8847236822,52.3739733038],[4.8846686969,52.3732933770],[4.8845909128,52.3723599766]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8848269472,52.3688395390],[4.8849811742,52.3703442967]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8741651664,52.3717591409],[4.8743408511,52.3717993640],[4.8747109959,52.3718798614],[4.8748182843,52.3718972606],[4.8757664452,52.3721051303],[4.8761714587,52.3722097301],[4.8762304673,52.3722245194],[4.8763002047,52.3722433002],[4.8763927410,52.3722660726],[4.8764933238,52.3722928877],[4.8772953043,52.3724994250],[4.8784634063,52.3728011950],[4.8800137231,52.3731753726],[4.8802457342,52.3732316627],[4.8808089981,52.3733671168],[4.8814755270,52.3735401312],[4.8817035148,52.3736004635],[4.8819046805,52.3736501006],[4.8826355824,52.3738338089],[4.8827924917,52.3738740813],[4.8829158733,52.3739062685],[4.8829775641,52.3739210060],[4.8830365727,52.3739357436],[4.8830915580,52.3739464897],[4.8831881175,52.3739666003],[4.8833316157,52.3739934144],[4.8834321985,52.3739974569],[4.8835596034,52.3739987874],[4.8838908563,52.3739987874],[4.8840906808,52.3739974569],[4.8842154036,52.3739961265],[4.8843387852,52.3739920839],[4.8843964527,52.3739894229],[4.8847236822,52.3739733038],[4.8849168012,52.3739625577],[4.8850079963,52.3739585663],[4.8850978503,52.3739505323],[4.8851729522,52.3739397862],[4.8853084037,52.3739183451]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8851555178,52.3723384836],[4.8853030393,52.3738539707],[4.8853084037,52.3739183451],[4.8853204737,52.3740417206],[4.8853312025,52.3740873147],[4.8853446135,52.3742629872],[4.8853687534,52.3743729548],[4.8853902111,52.3744091842],[4.8854586074,52.3744923377],[4.8861331830,52.3752138477]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8853084037,52.3739183451],[4.8853861878,52.3739062685],[4.8854559252,52.3738901493],[4.8855001817,52.3738767422],[4.8855806479,52.3738432245],[4.8858475277,52.3737225094],[4.8862203548,52.3735468348],[4.8863088677,52.3735119864],[4.8864094505,52.3734811293],[4.8865086923,52.3734529333],[4.8867179046,52.3734046776],[4.8869043181,52.3733698290],[4.8870813439,52.3733631254],[4.8873133550,52.3733429634],[4.8874353955,52.3733309378]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8874353955,52.3733309378],[4.8873053083,52.3722486223]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891976068,52.3732947075],[4.8890246043,52.3733040721],[4.8888341675,52.3733148184],[4.8886973748,52.3733228525],[4.8885458300,52.3733349292],[4.8874434421,52.3734368651],[4.8873187194,52.3734435687],[4.8871054838,52.3734650100],[4.8869995365,52.3734717136],[4.8869217525,52.3734784172],[4.8866803536,52.3735267240],[4.8863906751,52.3736112097],[4.8862914333,52.3736514311],[4.8861895094,52.3736876611],[4.8854934761,52.3739813378],[4.8853204737,52.3740417206]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8896535823,52.3731659567],[4.8896213958,52.3729822457],[4.8896053026,52.3728896735],[4.8895972559,52.3728427477],[4.8895892093,52.3727971523],[4.8895074019,52.3722915572]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891332338,52.3731887798],[4.8895878682,52.3731672872],[4.8896535823,52.3731659567]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8895074019,52.3722915572],[4.8896079848,52.3723170418],[4.8897622118,52.3723613072],[4.8899741063,52.3724243532],[4.8900572548,52.3724497866]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905963788,52.3716639050],[4.8902865837,52.3716357590],[4.8897166142,52.3715780851],[4.8893679271,52.3715365312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8904756794,52.3731283958],[4.8905977199,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905266414,52.3725919469],[4.8906352708,52.3726255167],[4.8907143960,52.3726429157],[4.8906848917,52.3728963772],[4.8906781862,52.3729580920],[4.8906647751,52.3730613593],[4.8906553874,52.3730975897],[4.8906513641,52.3731096154],[4.8906459997,52.3731203617],[4.8906366119,52.3731350995],[4.8906258831,52.3731458458],[4.8906044254,52.3731646262],[4.8905266414,52.3731887798],[4.8904555628,52.3732115517],[4.8903415689,52.3732383663],[4.8901994119,52.3732396968],[4.8900357971,52.3732517736],[4.8896696756,52.3732718845]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9028460274,52.3724337180],[4.9032926152,52.3721936614],[4.9038639257,52.3718811919],[4.9040758202,52.3717578103],[4.9042488227,52.3716652867],[4.9044070730,52.3715740935]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9108846078,52.3701055594],[4.9098184297,52.3694256242],[4.9096668849,52.3693236791]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9333373795,52.3727770412],[4.9334634433,52.3726000323],[4.9334956298,52.3725597587],[4.9335170875,52.3725262400]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9341567943,52.3717282826],[4.9340709636,52.3719616379],[4.9339918385,52.3721051303],[4.9339435587,52.3721882882],[4.9338309059,52.3723693414],[4.9337490985,52.3724886786],[4.9336713145,52.3725933286]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9505249748,52.3732893344],[4.9501145969,52.3732504431],[4.9490578065,52.3731257348],[4.9488325009,52.3731042934],[4.9485267291,52.3730734361],[4.9479339609,52.3730010263],[4.9455830047,52.3727408105],[4.9445087800,52.3726281777],[4.9430778215,52.3724699490],[4.9428028951,52.3724377608],[4.9425279687,52.3724069030],[4.9422047625,52.3723733842],[4.9416106532,52.3723076770],[4.9411680887,52.3722647421],[4.9407590518,52.3722245194],[4.9403473327,52.3721977042],[4.9398135731,52.3721681768],[4.9395024369,52.3721574302],[4.9391752074,52.3721695073],[4.9390853534,52.3721762111],[4.9385623226,52.3722204766],[4.9383544514,52.3722419185],[4.9381653557,52.3722701153],[4.9379454146,52.3723103380],[4.9367545138,52.3725275705],[4.9362422118,52.3726362120],[4.9358224461,52.3726992577],[4.9355662952,52.3727327762],[4.9353771994,52.3727435227],[4.9352202902,52.3727528874],[4.9351009319,52.3727461837],[4.9350003491,52.3727394800],[4.9347254226,52.3727072919],[4.9344370852,52.3726482889],[4.9343700299,52.3726335510],[4.9342278729,52.3726040238],[4.9339341710,52.3725343255],[4.9338684568,52.3725168752],[4.9337490985,52.3724886786],[4.9337061832,52.3724444645],[4.9336927722,52.3724149373]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9338309059,52.3723693414],[4.9338510225,52.3723720025],[4.9339475820,52.3723894527],[4.9340226839,52.3724122762],[4.9342386017,52.3724726100],[4.9343002925,52.3724860175],[4.9343767355,52.3725047983],[4.9344062398,52.3725115020],[4.9344840238,52.3725275705],[4.9345752189,52.3725396475],[4.9347039650,52.3725503940],[4.9350580165,52.3725772089],[4.9352699111,52.3725785394],[4.9355676363,52.3725557672],[4.9358157406,52.3725155447],[4.9360450695,52.3724752711],[4.9360799382,52.3724699490],[4.9361027370,52.3724659063],[4.9366257677,52.3723733842],[4.9372332881,52.3722741069],[4.9377469311,52.3722057385],[4.9381707201,52.3721560997],[4.9382498453,52.3721467349],[4.9383544514,52.3721386494],[4.9384510110,52.3721319456],[4.9385703693,52.3721239112],[4.9390853534,52.3720944349],[4.9391229043,52.3720917227],[4.9396003375,52.3720836884],[4.9401206861,52.3721091731],[4.9406195769,52.3721493959],[4.9412002752,52.3722044080],[4.9419445882,52.3722781496],[4.9423831294,52.3723264066],[4.9426634202,52.3723559339],[4.9428230116,52.3723773757],[4.9431328068,52.3724041908],[4.9442700634,52.3725302827],[4.9455816636,52.3726670696],[4.9474940786,52.3728722746],[4.9486447463,52.3729969836],[4.9488579819,52.3730197556],[4.9491141329,52.3730492824],[4.9505316804,52.3732035176],[4.9507502804,52.3732290017],[4.9507864902,52.3732329932]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9573847244,52.3731927713],[4.9570615182,52.3732611894],[4.9564566801,52.3733537096],[4.9564204703,52.3733590827]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9578702042,52.3729808641],[4.9582376669,52.3729030809],[4.9589202891,52.3727515569],[4.9596431444,52.3725892859],[4.9602426181,52.3724524988],[4.9606918881,52.3723572644],[4.9610942195,52.3722727764],[4.9616413901,52.3721601425],[4.9619364331,52.3721051303]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9627209792,52.3720676197],[4.9626029620,52.3720930532],[4.9624675105,52.3721225807],[4.9623106012,52.3721574302],[4.9622046540,52.3721815844],[4.9620692024,52.3722044080],[4.9619297276,52.3722298926],[4.9617808650,52.3722647421],[4.9614214490,52.3723411958],[4.9607884476,52.3724484561],[4.9594567309,52.3727368189],[4.9582524190,52.3729943226],[4.9578393588,52.3730855129],[4.9578098545,52.3730935471]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4045947980,52.3734073385],[5.4045398127,52.3733832362],[5.4044580053,52.3733483365],[5.4043815624,52.3733161489],[5.4020694982,52.3723264066]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4044580053,52.3733483365],[5.4047262262,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4047262262,52.3731190312],[5.4044580053,52.3733483365]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4614428769,52.3702276150],[5.4606207799,52.3709182846],[5.4488525878,52.3813869324],[5.4439012300,52.3857897794],[5.4416991364,52.3877464366],[5.4414751719,52.3879556641],[5.4413893412,52.3880549061],[5.4413450848,52.3881179298],[5.4412968050,52.3881903660],[5.4412659596,52.3882762047],[5.4412190210,52.3883982101],[5.4411841523,52.3885081937],[5.4411278259,52.3885994031],[5.4410419952,52.3887053450],[5.4409293424,52.3888045853],[5.4408113252,52.3889064855],[5.4407710921,52.3889413729]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4706026207,52.4017301632],[5.4698931765,52.4014190278],[5.4694318365,52.4012218821],[5.4628791999,52.3984229837],[5.4606650363,52.3975030030],[5.4569153081,52.3959124262],[5.4558209669,52.3954443819],[5.4557954859,52.3954336410],[5.4552429508,52.3951802066],[5.4526961933,52.3940764838],[5.4425158690,52.3896642326],[5.4424501549,52.3896601914],[5.4418989610,52.3894254973],[5.4418184947,52.3893906614],[5.4409642111,52.3890244991],[5.4408394884,52.3889708891],[5.4407710921,52.3889413729],[5.4404854368,52.3888166579],[5.4402091693,52.3886959325],[5.4401675950,52.3886771587],[5.4395037483,52.3883861375],[5.4388439249,52.3881031970],[5.4388157617,52.3880669788],[5.4260095547,52.3825778456],[5.4258647155,52.3825161442],[5.4185100983,52.3793967356],[5.4147000204,52.3777793597],[5.4132824730,52.3771785465],[5.4114719819,52.3763765796],[5.4095783423,52.3755424122],[5.4091813754,52.3753666937],[5.4069283198,52.3744038112],[5.4045880924,52.3734033471]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4044580053,52.3733483365],[5.4045398127,52.3733832362],[5.4069283198,52.3744038112],[5.4091813754,52.3753666937],[5.4095783423,52.3755424122],[5.4114719819,52.3763765796],[5.4132824730,52.3771785465],[5.4147000204,52.3777793597],[5.4185100983,52.3793967356],[5.4258647155,52.3825161442],[5.4260095547,52.3825778456],[5.4388157617,52.3880669788],[5.4388680648,52.3880696389],[5.4392771016,52.3882453580],[5.4400401901,52.3885725468],[5.4402494024,52.3886610960],[5.4408113252,52.3889064855],[5.4424756359,52.3896239745],[5.4425158690,52.3896642326],[5.4526961933,52.3940764838],[5.4552429508,52.3951802066],[5.4557954859,52.3954336410],[5.4558209669,52.3954443819],[5.4569153081,52.3959124262],[5.4606650363,52.3975030030],[5.4628791999,52.3984229837],[5.4694318365,52.4012218821],[5.4698931765,52.4014190278],[5.4706026207,52.4017301632]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:3},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[6.6158911182,52.3610651900],[6.6159179403,52.3612006303],[6.6159434213,52.3613656048],[6.6159715845,52.3615385638],[6.6159863366,52.3616391449],[6.6159943833,52.3618805896],[6.6159863366,52.3621944096],[6.6159621968,52.3624210076],[6.6159246458,52.3625980572],[6.6158723427,52.3627858039],[6.6159018470,52.3628166683],[6.6158870949,52.3628541868],[6.6158200397,52.3630352783],[6.6157503022,52.3631894973],[6.6156617893,52.3633490901],[6.6156416728,52.3633799030],[6.6155612065,52.3635234233],[6.6155223145,52.3635878128],[6.6154793991,52.3636494894],[6.6154136850,52.3637353247],[6.6152742101,52.3639204049],[6.6151481463,52.3640719081],[6.6150529279,52.3641805703],[6.6148396923,52.3644098709],[6.6145580603,52.3646378906],[6.6143126382,52.3648189236],[6.6141718222,52.3649127923],[6.6139854087,52.3650334803],[6.6139478578,52.3650563076],[6.6137520565,52.3651797079],[6.6136072172,52.3652614969],[6.6133752062,52.3653969243],[6.6131686761,52.3655095755],[6.6130654110,52.3655632139],[6.6127033128,52.3657442943],[6.6124109520,52.3658998346],[6.6119254722,52.3661654135],[6.6114896132,52.3664175303],[6.6112093224,52.3665838161],[6.6108847751,52.3667769197],[6.6105722977,52.3669821521],[6.6103684498,52.3671256095],[6.6101418032,52.3673080142],[6.6097502007,52.3676218467],[6.6095557405,52.3677935018],[6.6092942251,52.3680429480],[6.6090313687,52.3683004278],[6.6088758005,52.3684774539],[6.6086679293,52.3687363131],[6.6085271134,52.3689280766],[6.6083782508,52.3691520300],[6.6082816912,52.3693102707],[6.6082132949,52.3694416939],[6.6081274642,52.3695865763],[6.6080443157,52.3697568931],[6.6078954531,52.3700532570],[6.6076768531,52.3705682430],[6.6074837341,52.3710295911],[6.6073563291,52.3713206244],[6.6072570874,52.3715284968],[6.6071739389,52.3716786945],[6.6071216358,52.3717725486],[6.6070358051,52.3719254577],[6.6069875254,52.3720112769],[6.6069164468,52.3721440226],[6.6067997708,52.3723411958],[6.6067662431,52.3723546034],[6.6066267683,52.3725959896],[6.6064846112,52.3728347135],[6.6063920750,52.3729782031],[6.6063317253,52.3730693934],[6.6059723093,52.3736232863],[6.6055686368,52.3742308002],[6.6055149926,52.3743139541],[6.6053017570,52.3746331098],[6.6051274134,52.3749053908],[6.6048954024,52.3753037030],[6.6047183766,52.3756215212],[6.6046405925,52.3757918658],[6.6046097471,52.3758588983],[6.6045842661,52.3759192274],[6.6045319630,52.3760319029],[6.6044112636,52.3763792404],[6.6043522550,52.3765911314],[6.6043106808,52.3767560996],[6.6042731299,52.3769586249],[6.6042302145,52.3772388738],[6.6042168035,52.3773796883],[6.6042127802,52.3775285869],[6.6042007102,52.3777230242],[6.6042087568,52.3778276618],[6.6042194857,52.3780623152],[6.6042261912,52.3781240228],[6.6042369200,52.3782313202],[6.6042543544,52.3783560140],[6.6043039753,52.3786175270],[6.6043187274,52.3786913091],[6.6043348207,52.3787489737],[6.6043723716,52.3788844110],[6.6044474734,52.3791338969],[6.6045319630,52.3793685945],[6.6046312048,52.3795952068],[6.6047304465,52.3798057520],[6.6048350526,52.3799989001],[6.6049450232,52.3801826331],[6.6050134195,52.3802899254],[6.6051072969,52.3804320605],[6.6052762760,52.3806667512],[6.6053956343,52.3808156387],[6.6055243804,52.3809738887],[6.6055860712,52.3810449552],[6.6056450798,52.3811119797],[6.6057912602,52.3812662379],[6.6059441461,52.3814231560],[6.6060635044,52.3815358175],[6.6062083437,52.3816712462],[6.6063370897,52.3818013536],[6.6066187216,52.3820414091],[6.6069741143,52.3823096026],[6.6072946383,52.3825349207],[6.6075427427,52.3826972063],[6.6079048409,52.3829117785],[6.6084654226,52.3831840084],[6.6089361502,52.3834629387],[6.6111060573,52.3844808763],[6.6118946268,52.3848603778],[6.6140444173,52.3858420631],[6.6144172444,52.3860124195],[6.6144990517,52.3860512996],[6.6149147941,52.3862417090],[6.6151400997,52.3863463264],[6.6152178837,52.3863838761],[6.6152540936,52.3863999907],[6.6153305365,52.3864375403],[6.6154150261,52.3864764200],[6.6155169501,52.3865233825],[6.6155558421,52.3865247126],[6.6156456961,52.3865595508],[6.6158267452,52.3866400212],[6.6161486103,52.3867808570],[6.6164758398,52.3869337653],[6.6167427196,52.3870598157],[6.6170444681,52.3871979388],[6.6174991025,52.3874031275],[6.6177726878,52.3875238052],[6.6182474388,52.3877250022],[6.6186014904,52.3878738660],[6.6205501153,52.3886932725],[6.6211857988,52.3889534454],[6.6213145448,52.3890084365],[6.6214540197,52.3890674177],[6.6219529106,52.3892753088],[6.6224182739,52.3894711267],[6.6228796138,52.3896629026],[6.6233060850,52.3898398942],[6.6238894655,52.3900826683],[6.6239364042,52.3901027715],[6.6241389109,52.3901886066],[6.6244111551,52.3903052868],[6.6251997246,52.3906499544],[6.6252117945,52.3906713874],[6.6254974498,52.3907907774],[6.6260741247,52.3910334951],[6.6271376206,52.3914734015],[6.6277706219,52.3917348880],[6.6290942921,52.3922874215],[6.6307009353,52.3929647029],[6.6320111944,52.3935212618],[6.6322753920,52.3936271919],[6.6348006918,52.3946585004],[6.6355074538,52.3949602724],[6.6361082687,52.3952365198],[6.6366178884,52.3954819239],[6.6371972455,52.3958037908],[6.6377283229,52.3961471369],[6.6383009745,52.3965347214],[6.6387408568,52.3968981619],[6.6391579403,52.3972548995],[6.6394798054,52.3975874939],[6.6398043527,52.3979750657],[6.6400819613,52.3984565339],[6.6402147307,52.3986844802],[6.6403086080,52.3988695674],[6.6403515233,52.3989473560],[6.6403810276,52.3990144044],[6.6404480829,52.3991512115],[6.6405365958,52.3993738354],[6.6406452252,52.3996970548],[6.6407431258,52.4000751981],[6.6408007933,52.4004064927],[6.6408262743,52.4006277806],[6.6408396854,52.4007726118],[6.6408463909,52.4010984803],[6.6408155455,52.4015249389],[6.6407820179,52.4017287825],[6.6408074989,52.4017569605],[6.6407659246,52.4019943505],[6.6407404436,52.4021311484],[6.6407136215,52.4022531666],[6.6406452252,52.4024865140],[6.6406318142,52.4025227203]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[6.7033941640,52.3742388342],[6.7029288008,52.3740457120],[6.7025412216,52.3738847762]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[7.1295556024,52.3734811293],[7.1307827130,52.3722030263],[7.1325516298,52.3703469579],[7.1354591444,52.3672704483],[7.1354752377,52.3672530472]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[7.9936252134,52.3744654727],[7.9936453300,52.3744359980],[7.9938304024,52.3741717993],[7.9940624135,52.3738659961],[7.9943427043,52.3735481653],[7.9947289424,52.3731244044],[7.9947785633,52.3730707239],[7.9947825866,52.3730654019],[7.9953740137,52.3724511683],[7.9962738948,52.3715378618],[7.9969296949,52.3708659832],[7.9975439208,52.3702410231],[7.9978054361,52.3699795117],[7.9982627528,52.3695034135],[7.9986114400,52.3691627773],[7.9994348781,52.3683648103],[7.9997607665,52.3680617306],[7.9999136524,52.3679208864],[7.9999672966,52.3678699633],[8.0000477629,52.3677948324],[8.0000960426,52.3677505625],[8.0002623396,52.3675909856],[8.0003401237,52.3675212281],[8.0005667703,52.3672946051],[8.0006137090,52.3672436301],[8.0008081691,52.3670411114],[8.0009851949,52.3668453476],[8.0011421042,52.3666521931],[8.0012346404,52.3665395449],[8.0013057189,52.3664443490],[8.0013821619,52.3663356923],[8.0015725987,52.3660446774],[8.0016544061,52.3659226614],[8.0017616944,52.3657375896],[8.0018595951,52.3655525170],[8.0019735890,52.3653191790],[8.0020406442,52.3651662470],[8.0021251338,52.3649758490],[8.0021908479,52.3648095572],[8.0022941129,52.3645560493],[8.0023531215,52.3644072093],[8.0030357437,52.3626021009],[8.0033576088,52.3617786271],[8.0034917193,52.3614406954],[8.0036338763,52.3610987174],[8.0037398236,52.3608411955],[8.0038806396,52.3605381154],[8.0039986568,52.3603087948],[8.0040925341,52.3601438163],[8.0041823881,52.3599802193],[8.0043848949,52.3596690966],[8.0045887427,52.3593767069],[8.0047523575,52.3591688285],[8.0047858851,52.3591272629],[8.0048381882,52.3590642490],[8.0051587122,52.3587061790],[8.0053451257,52.3585157532],[8.0055208104,52.3583400693],[8.0057286816,52.3581549657],[8.0059700804,52.3579470816],[8.0061484473,52.3578035943],[8.0064287381,52.3575809656],[8.0065252977,52.3575099125],[8.0066285627,52.3574361462],[8.0068431394,52.3572859513],[8.0071100192,52.3571115934],[8.0073232548,52.3569774716],[8.0075646536,52.3568339812],[8.0079347985,52.3566180537],[8.0080984132,52.3565295426],[8.0083639519,52.3563981321],[8.0086616771,52.3562613461],[8.0089392858,52.3561325969],[8.0091967778,52.3560199218],[8.0093536871,52.3559542415],[8.0094167190,52.3559300785],[8.0094609754,52.3559112907],[8.0096004503,52.3558509855],[8.0096996920,52.3558093656],[8.0098297792,52.3557557665],[8.0100188749,52.3556779530],[8.0102186995,52.3555988083],[8.0102696614,52.3555773584],[8.0103836553,52.3555331274],[8.0108436542,52.3553533873],[8.0111628370,52.3552246867],[8.0115222530,52.3550892280],[8.0119688408,52.3549135305],[8.0128942030,52.3545621846],[8.0132375257,52.3544226795],[8.0136935012,52.3542376107],[8.0142983394,52.3539948955],[8.0146979885,52.3538231869],[8.0148562389,52.3537561722],[8.0150037603,52.3536930995],[8.0154409604,52.3535066965],[8.0159358280,52.3532840973],[8.0163247483,52.3530936481],[8.0166278379,52.3529407762],[8.0167632895,52.3528696645],[8.0168759422,52.3528079728],[8.0169604318,52.3527650701],[8.0171052711,52.3526845891],[8.0174405472,52.3524968508],[8.0176202552,52.3523976313],[8.0176671939,52.3523721352],[8.0177570479,52.3523158185],[8.0179555314,52.3521897200],[8.0182143645,52.3520207690],[8.0184182124,52.3518718868],[8.0186327891,52.3517150173],[8.0188165205,52.3515701787],[8.0188755291,52.3515258925],[8.0189801352,52.3514373711],[8.0190659659,52.3513703529],[8.0192792015,52.3511758508],[8.0193636911,52.3510927046],[8.0194951193,52.3509706985],[8.0196989672,52.3507520800],[8.0198491709,52.3505375051],[8.0199926691,52.3503403370],[8.0201415317,52.3501351809],[8.0202260213,52.3500144522],[8.0203561084,52.3497985425],[8.0204821723,52.3495451021],[8.0205358164,52.3494284166],[8.0206149416,52.3492527478],[8.0206806557,52.3490636124],[8.0207396643,52.3488986944],[8.0207973318,52.3487565090],[8.0208295183,52.3486626572],[8.0208643870,52.3485191398],[8.0209032791,52.3483407537],[8.0209166901,52.3482469010],[8.0209260779,52.3480497739],[8.0209301012,52.3479451681],[8.0209381478,52.3477345734],[8.0209260779,52.3475387753],[8.0209260779,52.3474650435],[8.0209220545,52.3473644302],[8.0209166901,52.3473134834],[8.0209059613,52.3472182461],[8.0208684104,52.3470707302],[8.0208053784,52.3467100029],[8.0207249122,52.3464994535],[8.0206659036,52.3463613055],[8.0205827551,52.3461829619],[8.0204861956,52.3459375398],[8.0203775661,52.3456854085],[8.0203239219,52.3455593424],[8.0201643305,52.3451865183],[8.0201348262,52.3451114000],[8.0201106863,52.3450457035],[8.0200919109,52.3449933715],[8.0200463133,52.3448592641],[8.0200315611,52.3448002751],[8.0199859636,52.3446540825],[8.0199537771,52.3445253507],[8.0199135440,52.3443616958],[8.0198934274,52.3442571326],[8.0198840397,52.3442021369],[8.0198518531,52.3440344867],[8.0198169844,52.3438279700],[8.0197646814,52.3434953802],[8.0197271304,52.3431976602],[8.0197190838,52.3430353831],[8.0197096961,52.3428274790],[8.0197110372,52.3427698188],[8.0197164016,52.3426665831],[8.0197231071,52.3425203835],[8.0197619991,52.3423245622],[8.0197955268,52.3421247458],[8.0198169844,52.3420080920],[8.0198491709,52.3418511874],[8.0198719697,52.3417586524],[8.0198907452,52.3416728256],[8.0199215906,52.3415574508],[8.0199457305,52.3414434583],[8.0199779170,52.3413442139],[8.0200624066,52.3410907762],[8.0200986164,52.3409365313],[8.0201187329,52.3408762057],[8.0201589661,52.3407782915],[8.0202085869,52.3406468343],[8.0202568667,52.3405315080],[8.0203373330,52.3403518093],[8.0204714434,52.3401211549],[8.0206498103,52.3398327840],[8.0206752913,52.3397925829],[8.0209394889,52.3393942578],[8.0210642116,52.3392212634],[8.0210977392,52.3391796791],[8.0211674767,52.3390858069],[8.0212439196,52.3389906031],[8.0213042693,52.3389181886],[8.0214061933,52.3387948174],[8.0214638608,52.3387156937]]}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.6:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.6:30]</span>
+                <span class="scenario-name">Functional test : Verify Traffic API returning resposne with different bbox values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>169</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.18">14:34:13.513 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param bbox = &#39;9.8854592519716675,52.36934334773164,1.897883244144765,52.37496348620152&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">162</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.21">14:34:13.540 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?bbox=9.8854592519716675%2C52.36934334773164%2C1.897883244144765%2C52.37496348620152&amp;key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.696 response time in milliseconds: 155
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 12:34:12 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; tracking-id: 41e49581-96cb-436f-830c-30e612daf3e1
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;7bea72cf86ff7f1373d996679e4f51c3&quot;
+1 &lt; trafficmodelid: 1657542852
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 6
+1 &lt; x-envoy-upstream-service-time: 15
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;incidents&quot;:[{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.5256375858,52.3716437934],[4.5255785772,52.3715646773],[4.5255195686,52.3714734839],[4.5254873821,52.3714131487],[4.5254511723,52.3713259466],[4.5254310557,52.3713045042],[4.5254163035,52.3712790191],[4.5254122802,52.3712575767],[4.5254136213,52.3712294304],[4.5254216680,52.3712052758],[4.5254297146,52.3711931984],[4.5254498312,52.3711703743]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6091280469,52.3707546763],[4.6092098543,52.3712790191],[4.6092246064,52.3715177501],[4.6092071721,52.3717148749],[4.6091615745,52.3719549341],[4.6091374347,52.3721467349],[4.6091495046,52.3722044080],[4.6091776678,52.3722433002],[4.6092313120,52.3722821924],[4.6092702040,52.3723076770],[4.6093345770,52.3723210845],[4.6094311365,52.3723250761],[4.6095867047,52.3723250761],[4.6096242556,52.3723250761],[4.6099032053,52.3723170418]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6302021632,52.3743716244],[4.6301941165,52.3742978350],[4.6301887521,52.3741999437]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6310416946,52.3761633061],[4.6310175547,52.3760305725],[4.6309880504,52.3759286426],[4.6309813449,52.3758977873],[4.6309813449,52.3758790080],[4.6309652516,52.3758428310],[4.6309156308,52.3758119756],[4.6308633277,52.3756188603],[4.6308123657,52.3754887347],[4.6307573804,52.3753465837],[4.6306943485,52.3752178390],[4.6305870602,52.3750435007],[4.6305253693,52.3749456111],[4.6304502675,52.3748530942],[4.6304180810,52.3748195260],[4.6303174981,52.3746559322],[4.6302571484,52.3745419227],[4.6302236208,52.3744239216],[4.6302021632,52.3743716244]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6317685732,52.3712562462],[4.6319844910,52.3712629501],[4.6320354530,52.3712642807],[4.6326711366,52.3712991309],[4.6328481624,52.3712951392],[4.6329420397,52.3712910964],[4.6330385992,52.3712817314],[4.6332022139,52.3712642807]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6424491295,52.3723371531],[4.6425537357,52.3724430828],[4.6427012572,52.3726295083],[4.6428474376,52.3728239671],[4.6429010817,52.3728816393],[4.6429118106,52.3728963772]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.6454169938,52.3708404978],[4.6447933802,52.3707439294],[4.6445653924,52.3707117399],[4.6442555973,52.3707130705],[4.6437298843,52.3708042655],[4.6426194498,52.3709732470],[4.6425443479,52.3709920284]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.7025104949,52.3726563232],[4.7027277538,52.3725396475],[4.7029839048,52.3724001992]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8553776333,52.3743662514],[4.8553199658,52.3743595479],[4.8552113364,52.3743474714],[4.8550410161,52.3743179454],[4.8549243400,52.3742911315],[4.8547929118,52.3742535716],[4.8546520958,52.3742039863],[4.8545783350,52.3741476462],[4.8545005510,52.3741167897],[4.8533941398,52.3736608468],[4.8532023618,52.3735830649],[4.8530682514,52.3735401312],[4.8529824207,52.3735133168],[4.8528241703,52.3734703831],[4.8526967654,52.3734435687],[4.8525881359,52.3734234579],[4.8524097690,52.3733926008],[4.8523360083,52.3733832362],[4.8522407899,52.3733912703],[4.8520905862,52.3733671168],[4.8507722804,52.3731149885],[4.8500655184,52.3729714994],[4.8499407956,52.3729460152],[4.8495009134,52.3728749357],[4.8493547330,52.3728521636],[4.8489550838,52.3727877876]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8568622360,52.3712280487],[4.8567147145,52.3712079369],[4.8564129660,52.3711476013],[4.8561983893,52.3711127510]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8663867602,52.3711878250],[4.8665932903,52.3714037325],[4.8666362057,52.3714372521],[4.8666804621,52.3714547027],[4.8667260597,52.3714708228],[4.8670720646,52.3715458962],[4.8671458254,52.3715512696],[4.8671806941,52.3715445657],[4.8672182450,52.3715284968],[4.8672437260,52.3715056728],[4.8676205764,52.3709678736]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8703644762,52.3708887563],[4.8705334554,52.3709276497]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8718155513,52.3712213447],[4.8717256973,52.3710617804],[4.8716747353,52.3709343537],[4.8716371844,52.3707881964],[4.8716210911,52.3706795504],[4.8716103623,52.3705561654],[4.8716023157,52.3704167109],[4.8716049979,52.3702959864],[4.8716184089,52.3701739822]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8726094851,52.3725101715],[4.8726148496,52.3724806443],[4.8725933919,52.3724417523],[4.8723814974,52.3721185380],[4.8720180581,52.3715579734],[4.8718852887,52.3713393544]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8740136216,52.3718302222],[4.8736327479,52.3717390293],[4.8734289000,52.3716960938],[4.8733350227,52.3716719906],[4.8732263932,52.3716504973],[4.8731258104,52.3716290551],[4.8730694840,52.3716169779],[4.8728844116,52.3715740935],[4.8728200386,52.3715606345],[4.8726805637,52.3715244540],[4.8724874446,52.3714775267],[4.8724270949,52.3714614066],[4.8720019648,52.3713662213],[4.8718852887,52.3713393544],[4.8716224322,52.3712803496],[4.8705522308,52.3710362951]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8705334554,52.3709276497],[4.8712817917,52.3711006736],[4.8718155513,52.3712213447],[4.8719255218,52.3712468300],[4.8723573575,52.3713420667],[4.8724445293,52.3713648396],[4.8725544999,52.3713930370],[4.8727181146,52.3714372521],[4.8728937993,52.3714748144],[4.8732317576,52.3715566429],[4.8737413773,52.3716599134],[4.8740538547,52.3717376988]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8727181146,52.3714372521],[4.8727020214,52.3714721533],[4.8726805637,52.3715244540],[4.8726604471,52.3715633468],[4.8726456950,52.3716049007],[4.8726456950,52.3716290551],[4.8727275023,52.3717591409],[4.8732572386,52.3725879554],[4.8733698914,52.3727368189],[4.8734342644,52.3727917791],[4.8735026607,52.3728306708],[4.8735804448,52.3728615283],[4.8736756632,52.3728829698],[4.8738835344,52.3729326078],[4.8741088400,52.3729688384],[4.8741785774,52.3729728299],[4.8742375860,52.3729621347],[4.8742872069,52.3729500579],[4.8743354866,52.3729245736],[4.8744387517,52.3728749357]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8741651664,52.3717591409],[4.8741504142,52.3718006946],[4.8741262743,52.3718570376],[4.8740847001,52.3719965388],[4.8740592191,52.3721655157],[4.8740592191,52.3722191461],[4.8740726302,52.3723210845],[4.8741088400,52.3724270143],[4.8741691897,52.3725410292],[4.8742670903,52.3726603659],[4.8742563615,52.3727260725],[4.8744387517,52.3728749357],[4.8746868560,52.3730412483]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8749805579,52.3733456755],[4.8749255726,52.3732437394],[4.8748665640,52.3731780335],[4.8747928033,52.3731123275],[4.8746908793,52.3730439093],[4.8744387517,52.3728749357],[4.8742563615,52.3727260725],[4.8741758952,52.3726898929],[4.8741316388,52.3726241350],[4.8740538547,52.3725047983],[4.8739921639,52.3723693414],[4.8739546130,52.3722405880],[4.8739412019,52.3721292845],[4.8739425430,52.3720461266],[4.8739693651,52.3719562646]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8764933238,52.3722928877],[4.8764061520,52.3720139380],[4.8763860354,52.3719536036],[4.8763860354,52.3719039645],[4.8764021287,52.3718516643],[4.8764517496,52.3717604714],[4.8765576968,52.3716263940]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8765389214,52.3724350485],[4.8767816613,52.3731203617]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8827924917,52.3738740813],[4.8827737162,52.3736889916],[4.8827254364,52.3732155944]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8828635702,52.3745017021],[4.8828045616,52.3740175675]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8832095752,52.3727327762],[4.8832766304,52.3734878329],[4.8833262513,52.3738941919],[4.8833302746,52.3739236670],[4.8833342979,52.3739558542],[4.8833316157,52.3739934144],[4.8833235691,52.3741087557],[4.8833463678,52.3742106898],[4.8833638022,52.3743286915],[4.8833852599,52.3745674060],[4.8833933065,52.3746613051],[4.8834000120,52.3746948222],[4.8834147642,52.3747229663],[4.8834335396,52.3747497799],[4.8834925482,52.3748209076],[4.8836776206,52.3750126448],[4.8839096317,52.3752379490],[4.8842998931,52.3756644528],[4.8843937705,52.3757556376],[4.8844393680,52.3758012299],[4.8845251987,52.3759018297],[4.8845868895,52.3759715739]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8847236822,52.3739733038],[4.8846686969,52.3732933770],[4.8845909128,52.3723599766]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8848269472,52.3688395390],[4.8849811742,52.3703442967]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8741651664,52.3717591409],[4.8743408511,52.3717993640],[4.8747109959,52.3718798614],[4.8748182843,52.3718972606],[4.8757664452,52.3721051303],[4.8761714587,52.3722097301],[4.8762304673,52.3722245194],[4.8763002047,52.3722433002],[4.8763927410,52.3722660726],[4.8764933238,52.3722928877],[4.8772953043,52.3724994250],[4.8784634063,52.3728011950],[4.8800137231,52.3731753726],[4.8802457342,52.3732316627],[4.8808089981,52.3733671168],[4.8814755270,52.3735401312],[4.8817035148,52.3736004635],[4.8819046805,52.3736501006],[4.8826355824,52.3738338089],[4.8827924917,52.3738740813],[4.8829158733,52.3739062685],[4.8829775641,52.3739210060],[4.8830365727,52.3739357436],[4.8830915580,52.3739464897],[4.8831881175,52.3739666003],[4.8833316157,52.3739934144],[4.8834321985,52.3739974569],[4.8835596034,52.3739987874],[4.8838908563,52.3739987874],[4.8840906808,52.3739974569],[4.8842154036,52.3739961265],[4.8843387852,52.3739920839],[4.8843964527,52.3739894229],[4.8847236822,52.3739733038],[4.8849168012,52.3739625577],[4.8850079963,52.3739585663],[4.8850978503,52.3739505323],[4.8851729522,52.3739397862],[4.8853084037,52.3739183451]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8851555178,52.3723384836],[4.8853030393,52.3738539707],[4.8853084037,52.3739183451],[4.8853204737,52.3740417206],[4.8853312025,52.3740873147],[4.8853446135,52.3742629872],[4.8853687534,52.3743729548],[4.8853902111,52.3744091842],[4.8854586074,52.3744923377],[4.8861331830,52.3752138477]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8853084037,52.3739183451],[4.8853861878,52.3739062685],[4.8854559252,52.3738901493],[4.8855001817,52.3738767422],[4.8855806479,52.3738432245],[4.8858475277,52.3737225094],[4.8862203548,52.3735468348],[4.8863088677,52.3735119864],[4.8864094505,52.3734811293],[4.8865086923,52.3734529333],[4.8867179046,52.3734046776],[4.8869043181,52.3733698290],[4.8870813439,52.3733631254],[4.8873133550,52.3733429634],[4.8874353955,52.3733309378]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8874353955,52.3733309378],[4.8873053083,52.3722486223]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891976068,52.3732947075],[4.8890246043,52.3733040721],[4.8888341675,52.3733148184],[4.8886973748,52.3733228525],[4.8885458300,52.3733349292],[4.8874434421,52.3734368651],[4.8873187194,52.3734435687],[4.8871054838,52.3734650100],[4.8869995365,52.3734717136],[4.8869217525,52.3734784172],[4.8866803536,52.3735267240],[4.8863906751,52.3736112097],[4.8862914333,52.3736514311],[4.8861895094,52.3736876611],[4.8854934761,52.3739813378],[4.8853204737,52.3740417206]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8896535823,52.3731659567],[4.8896213958,52.3729822457],[4.8896053026,52.3728896735],[4.8895972559,52.3728427477],[4.8895892093,52.3727971523],[4.8895074019,52.3722915572]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891332338,52.3731887798],[4.8895878682,52.3731672872],[4.8896535823,52.3731659567]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8895074019,52.3722915572],[4.8896079848,52.3723170418],[4.8897622118,52.3723613072],[4.8899741063,52.3724243532],[4.8900572548,52.3724497866]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905963788,52.3716639050],[4.8902865837,52.3716357590],[4.8897166142,52.3715780851],[4.8893679271,52.3715365312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8904756794,52.3731283958],[4.8905977199,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905266414,52.3725919469],[4.8906352708,52.3726255167],[4.8907143960,52.3726429157],[4.8906848917,52.3728963772],[4.8906781862,52.3729580920],[4.8906647751,52.3730613593],[4.8906553874,52.3730975897],[4.8906513641,52.3731096154],[4.8906459997,52.3731203617],[4.8906366119,52.3731350995],[4.8906258831,52.3731458458],[4.8906044254,52.3731646262],[4.8905266414,52.3731887798],[4.8904555628,52.3732115517],[4.8903415689,52.3732383663],[4.8901994119,52.3732396968],[4.8900357971,52.3732517736],[4.8896696756,52.3732718845]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9028460274,52.3724337180],[4.9032926152,52.3721936614],[4.9038639257,52.3718811919],[4.9040758202,52.3717578103],[4.9042488227,52.3716652867],[4.9044070730,52.3715740935]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9108846078,52.3701055594],[4.9098184297,52.3694256242],[4.9096668849,52.3693236791]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9333373795,52.3727770412],[4.9334634433,52.3726000323],[4.9334956298,52.3725597587],[4.9335170875,52.3725262400]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9341567943,52.3717282826],[4.9340709636,52.3719616379],[4.9339918385,52.3721051303],[4.9339435587,52.3721882882],[4.9338309059,52.3723693414],[4.9337490985,52.3724886786],[4.9336713145,52.3725933286]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9505249748,52.3732893344],[4.9501145969,52.3732504431],[4.9490578065,52.3731257348],[4.9488325009,52.3731042934],[4.9485267291,52.3730734361],[4.9479339609,52.3730010263],[4.9455830047,52.3727408105],[4.9445087800,52.3726281777],[4.9430778215,52.3724699490],[4.9428028951,52.3724377608],[4.9425279687,52.3724069030],[4.9422047625,52.3723733842],[4.9416106532,52.3723076770],[4.9411680887,52.3722647421],[4.9407590518,52.3722245194],[4.9403473327,52.3721977042],[4.9398135731,52.3721681768],[4.9395024369,52.3721574302],[4.9391752074,52.3721695073],[4.9390853534,52.3721762111],[4.9385623226,52.3722204766],[4.9383544514,52.3722419185],[4.9381653557,52.3722701153],[4.9379454146,52.3723103380],[4.9367545138,52.3725275705],[4.9362422118,52.3726362120],[4.9358224461,52.3726992577],[4.9355662952,52.3727327762],[4.9353771994,52.3727435227],[4.9352202902,52.3727528874],[4.9351009319,52.3727461837],[4.9350003491,52.3727394800],[4.9347254226,52.3727072919],[4.9344370852,52.3726482889],[4.9343700299,52.3726335510],[4.9342278729,52.3726040238],[4.9339341710,52.3725343255],[4.9338684568,52.3725168752],[4.9337490985,52.3724886786],[4.9337061832,52.3724444645],[4.9336927722,52.3724149373]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9338309059,52.3723693414],[4.9338510225,52.3723720025],[4.9339475820,52.3723894527],[4.9340226839,52.3724122762],[4.9342386017,52.3724726100],[4.9343002925,52.3724860175],[4.9343767355,52.3725047983],[4.9344062398,52.3725115020],[4.9344840238,52.3725275705],[4.9345752189,52.3725396475],[4.9347039650,52.3725503940],[4.9350580165,52.3725772089],[4.9352699111,52.3725785394],[4.9355676363,52.3725557672],[4.9358157406,52.3725155447],[4.9360450695,52.3724752711],[4.9360799382,52.3724699490],[4.9361027370,52.3724659063],[4.9366257677,52.3723733842],[4.9372332881,52.3722741069],[4.9377469311,52.3722057385],[4.9381707201,52.3721560997],[4.9382498453,52.3721467349],[4.9383544514,52.3721386494],[4.9384510110,52.3721319456],[4.9385703693,52.3721239112],[4.9390853534,52.3720944349],[4.9391229043,52.3720917227],[4.9396003375,52.3720836884],[4.9401206861,52.3721091731],[4.9406195769,52.3721493959],[4.9412002752,52.3722044080],[4.9419445882,52.3722781496],[4.9423831294,52.3723264066],[4.9426634202,52.3723559339],[4.9428230116,52.3723773757],[4.9431328068,52.3724041908],[4.9442700634,52.3725302827],[4.9455816636,52.3726670696],[4.9474940786,52.3728722746],[4.9486447463,52.3729969836],[4.9488579819,52.3730197556],[4.9491141329,52.3730492824],[4.9505316804,52.3732035176],[4.9507502804,52.3732290017],[4.9507864902,52.3732329932]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9573847244,52.3731927713],[4.9570615182,52.3732611894],[4.9564566801,52.3733537096],[4.9564204703,52.3733590827]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9578702042,52.3729808641],[4.9582376669,52.3729030809],[4.9589202891,52.3727515569],[4.9596431444,52.3725892859],[4.9602426181,52.3724524988],[4.9606918881,52.3723572644],[4.9610942195,52.3722727764],[4.9616413901,52.3721601425],[4.9619364331,52.3721051303]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9627209792,52.3720676197],[4.9626029620,52.3720930532],[4.9624675105,52.3721225807],[4.9623106012,52.3721574302],[4.9622046540,52.3721815844],[4.9620692024,52.3722044080],[4.9619297276,52.3722298926],[4.9617808650,52.3722647421],[4.9614214490,52.3723411958],[4.9607884476,52.3724484561],[4.9594567309,52.3727368189],[4.9582524190,52.3729943226],[4.9578393588,52.3730855129],[4.9578098545,52.3730935471]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4045947980,52.3734073385],[5.4045398127,52.3733832362],[5.4044580053,52.3733483365],[5.4043815624,52.3733161489],[5.4020694982,52.3723264066]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4044580053,52.3733483365],[5.4047262262,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4047262262,52.3731190312],[5.4044580053,52.3733483365]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4614428769,52.3702276150],[5.4606207799,52.3709182846],[5.4488525878,52.3813869324],[5.4439012300,52.3857897794],[5.4416991364,52.3877464366],[5.4414751719,52.3879556641],[5.4413893412,52.3880549061],[5.4413450848,52.3881179298],[5.4412968050,52.3881903660],[5.4412659596,52.3882762047],[5.4412190210,52.3883982101],[5.4411841523,52.3885081937],[5.4411278259,52.3885994031],[5.4410419952,52.3887053450],[5.4409293424,52.3888045853],[5.4408113252,52.3889064855],[5.4407710921,52.3889413729]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4706026207,52.4017301632],[5.4698931765,52.4014190278],[5.4694318365,52.4012218821],[5.4628791999,52.3984229837],[5.4606650363,52.3975030030],[5.4569153081,52.3959124262],[5.4558209669,52.3954443819],[5.4557954859,52.3954336410],[5.4552429508,52.3951802066],[5.4526961933,52.3940764838],[5.4425158690,52.3896642326],[5.4424501549,52.3896601914],[5.4418989610,52.3894254973],[5.4418184947,52.3893906614],[5.4409642111,52.3890244991],[5.4408394884,52.3889708891],[5.4407710921,52.3889413729],[5.4404854368,52.3888166579],[5.4402091693,52.3886959325],[5.4401675950,52.3886771587],[5.4395037483,52.3883861375],[5.4388439249,52.3881031970],[5.4388157617,52.3880669788],[5.4260095547,52.3825778456],[5.4258647155,52.3825161442],[5.4185100983,52.3793967356],[5.4147000204,52.3777793597],[5.4132824730,52.3771785465],[5.4114719819,52.3763765796],[5.4095783423,52.3755424122],[5.4091813754,52.3753666937],[5.4069283198,52.3744038112],[5.4045880924,52.3734033471]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4044580053,52.3733483365],[5.4045398127,52.3733832362],[5.4069283198,52.3744038112],[5.4091813754,52.3753666937],[5.4095783423,52.3755424122],[5.4114719819,52.3763765796],[5.4132824730,52.3771785465],[5.4147000204,52.3777793597],[5.4185100983,52.3793967356],[5.4258647155,52.3825161442],[5.4260095547,52.3825778456],[5.4388157617,52.3880669788],[5.4388680648,52.3880696389],[5.4392771016,52.3882453580],[5.4400401901,52.3885725468],[5.4402494024,52.3886610960],[5.4408113252,52.3889064855],[5.4424756359,52.3896239745],[5.4425158690,52.3896642326],[5.4526961933,52.3940764838],[5.4552429508,52.3951802066],[5.4557954859,52.3954336410],[5.4558209669,52.3954443819],[5.4569153081,52.3959124262],[5.4606650363,52.3975030030],[5.4628791999,52.3984229837],[5.4694318365,52.4012218821],[5.4698931765,52.4014190278],[5.4706026207,52.4017301632]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:3},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[6.6158911182,52.3610651900],[6.6159179403,52.3612006303],[6.6159434213,52.3613656048],[6.6159715845,52.3615385638],[6.6159863366,52.3616391449],[6.6159943833,52.3618805896],[6.6159863366,52.3621944096],[6.6159621968,52.3624210076],[6.6159246458,52.3625980572],[6.6158723427,52.3627858039],[6.6159018470,52.3628166683],[6.6158870949,52.3628541868],[6.6158200397,52.3630352783],[6.6157503022,52.3631894973],[6.6156617893,52.3633490901],[6.6156416728,52.3633799030],[6.6155612065,52.3635234233],[6.6155223145,52.3635878128],[6.6154793991,52.3636494894],[6.6154136850,52.3637353247],[6.6152742101,52.3639204049],[6.6151481463,52.3640719081],[6.6150529279,52.3641805703],[6.6148396923,52.3644098709],[6.6145580603,52.3646378906],[6.6143126382,52.3648189236],[6.6141718222,52.3649127923],[6.6139854087,52.3650334803],[6.6139478578,52.3650563076],[6.6137520565,52.3651797079],[6.6136072172,52.3652614969],[6.6133752062,52.3653969243],[6.6131686761,52.3655095755],[6.6130654110,52.3655632139],[6.6127033128,52.3657442943],[6.6124109520,52.3658998346],[6.6119254722,52.3661654135],[6.6114896132,52.3664175303],[6.6112093224,52.3665838161],[6.6108847751,52.3667769197],[6.6105722977,52.3669821521],[6.6103684498,52.3671256095],[6.6101418032,52.3673080142],[6.6097502007,52.3676218467],[6.6095557405,52.3677935018],[6.6092942251,52.3680429480],[6.6090313687,52.3683004278],[6.6088758005,52.3684774539],[6.6086679293,52.3687363131],[6.6085271134,52.3689280766],[6.6083782508,52.3691520300],[6.6082816912,52.3693102707],[6.6082132949,52.3694416939],[6.6081274642,52.3695865763],[6.6080443157,52.3697568931],[6.6078954531,52.3700532570],[6.6076768531,52.3705682430],[6.6074837341,52.3710295911],[6.6073563291,52.3713206244],[6.6072570874,52.3715284968],[6.6071739389,52.3716786945],[6.6071216358,52.3717725486],[6.6070358051,52.3719254577],[6.6069875254,52.3720112769],[6.6069164468,52.3721440226],[6.6067997708,52.3723411958],[6.6067662431,52.3723546034],[6.6066267683,52.3725959896],[6.6064846112,52.3728347135],[6.6063920750,52.3729782031],[6.6063317253,52.3730693934],[6.6059723093,52.3736232863],[6.6055686368,52.3742308002],[6.6055149926,52.3743139541],[6.6053017570,52.3746331098],[6.6051274134,52.3749053908],[6.6048954024,52.3753037030],[6.6047183766,52.3756215212],[6.6046405925,52.3757918658],[6.6046097471,52.3758588983],[6.6045842661,52.3759192274],[6.6045319630,52.3760319029],[6.6044112636,52.3763792404],[6.6043522550,52.3765911314],[6.6043106808,52.3767560996],[6.6042731299,52.3769586249],[6.6042302145,52.3772388738],[6.6042168035,52.3773796883],[6.6042127802,52.3775285869],[6.6042007102,52.3777230242],[6.6042087568,52.3778276618],[6.6042194857,52.3780623152],[6.6042261912,52.3781240228],[6.6042369200,52.3782313202],[6.6042543544,52.3783560140],[6.6043039753,52.3786175270],[6.6043187274,52.3786913091],[6.6043348207,52.3787489737],[6.6043723716,52.3788844110],[6.6044474734,52.3791338969],[6.6045319630,52.3793685945],[6.6046312048,52.3795952068],[6.6047304465,52.3798057520],[6.6048350526,52.3799989001],[6.6049450232,52.3801826331],[6.6050134195,52.3802899254],[6.6051072969,52.3804320605],[6.6052762760,52.3806667512],[6.6053956343,52.3808156387],[6.6055243804,52.3809738887],[6.6055860712,52.3810449552],[6.6056450798,52.3811119797],[6.6057912602,52.3812662379],[6.6059441461,52.3814231560],[6.6060635044,52.3815358175],[6.6062083437,52.3816712462],[6.6063370897,52.3818013536],[6.6066187216,52.3820414091],[6.6069741143,52.3823096026],[6.6072946383,52.3825349207],[6.6075427427,52.3826972063],[6.6079048409,52.3829117785],[6.6084654226,52.3831840084],[6.6089361502,52.3834629387],[6.6111060573,52.3844808763],[6.6118946268,52.3848603778],[6.6140444173,52.3858420631],[6.6144172444,52.3860124195],[6.6144990517,52.3860512996],[6.6149147941,52.3862417090],[6.6151400997,52.3863463264],[6.6152178837,52.3863838761],[6.6152540936,52.3863999907],[6.6153305365,52.3864375403],[6.6154150261,52.3864764200],[6.6155169501,52.3865233825],[6.6155558421,52.3865247126],[6.6156456961,52.3865595508],[6.6158267452,52.3866400212],[6.6161486103,52.3867808570],[6.6164758398,52.3869337653],[6.6167427196,52.3870598157],[6.6170444681,52.3871979388],[6.6174991025,52.3874031275],[6.6177726878,52.3875238052],[6.6182474388,52.3877250022],[6.6186014904,52.3878738660],[6.6205501153,52.3886932725],[6.6211857988,52.3889534454],[6.6213145448,52.3890084365],[6.6214540197,52.3890674177],[6.6219529106,52.3892753088],[6.6224182739,52.3894711267],[6.6228796138,52.3896629026],[6.6233060850,52.3898398942],[6.6238894655,52.3900826683],[6.6239364042,52.3901027715],[6.6241389109,52.3901886066],[6.6244111551,52.3903052868],[6.6251997246,52.3906499544],[6.6252117945,52.3906713874],[6.6254974498,52.3907907774],[6.6260741247,52.3910334951],[6.6271376206,52.3914734015],[6.6277706219,52.3917348880],[6.6290942921,52.3922874215],[6.6307009353,52.3929647029],[6.6320111944,52.3935212618],[6.6322753920,52.3936271919],[6.6348006918,52.3946585004],[6.6355074538,52.3949602724],[6.6361082687,52.3952365198],[6.6366178884,52.3954819239],[6.6371972455,52.3958037908],[6.6377283229,52.3961471369],[6.6383009745,52.3965347214],[6.6387408568,52.3968981619],[6.6391579403,52.3972548995],[6.6394798054,52.3975874939],[6.6398043527,52.3979750657],[6.6400819613,52.3984565339],[6.6402147307,52.3986844802],[6.6403086080,52.3988695674],[6.6403515233,52.3989473560],[6.6403810276,52.3990144044],[6.6404480829,52.3991512115],[6.6405365958,52.3993738354],[6.6406452252,52.3996970548],[6.6407431258,52.4000751981],[6.6408007933,52.4004064927],[6.6408262743,52.4006277806],[6.6408396854,52.4007726118],[6.6408463909,52.4010984803],[6.6408155455,52.4015249389],[6.6407820179,52.4017287825],[6.6408074989,52.4017569605],[6.6407659246,52.4019943505],[6.6407404436,52.4021311484],[6.6407136215,52.4022531666],[6.6406452252,52.4024865140],[6.6406318142,52.4025227203]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[6.7033941640,52.3742388342],[6.7029288008,52.3740457120],[6.7025412216,52.3738847762]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[7.1295556024,52.3734811293],[7.1307827130,52.3722030263],[7.1325516298,52.3703469579],[7.1354591444,52.3672704483],[7.1354752377,52.3672530472]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[7.9936252134,52.3744654727],[7.9936453300,52.3744359980],[7.9938304024,52.3741717993],[7.9940624135,52.3738659961],[7.9943427043,52.3735481653],[7.9947289424,52.3731244044],[7.9947785633,52.3730707239],[7.9947825866,52.3730654019],[7.9953740137,52.3724511683],[7.9962738948,52.3715378618],[7.9969296949,52.3708659832],[7.9975439208,52.3702410231],[7.9978054361,52.3699795117],[7.9982627528,52.3695034135],[7.9986114400,52.3691627773],[7.9994348781,52.3683648103],[7.9997607665,52.3680617306],[7.9999136524,52.3679208864],[7.9999672966,52.3678699633],[8.0000477629,52.3677948324],[8.0000960426,52.3677505625],[8.0002623396,52.3675909856],[8.0003401237,52.3675212281],[8.0005667703,52.3672946051],[8.0006137090,52.3672436301],[8.0008081691,52.3670411114],[8.0009851949,52.3668453476],[8.0011421042,52.3666521931],[8.0012346404,52.3665395449],[8.0013057189,52.3664443490],[8.0013821619,52.3663356923],[8.0015725987,52.3660446774],[8.0016544061,52.3659226614],[8.0017616944,52.3657375896],[8.0018595951,52.3655525170],[8.0019735890,52.3653191790],[8.0020406442,52.3651662470],[8.0021251338,52.3649758490],[8.0021908479,52.3648095572],[8.0022941129,52.3645560493],[8.0023531215,52.3644072093],[8.0030357437,52.3626021009],[8.0033576088,52.3617786271],[8.0034917193,52.3614406954],[8.0036338763,52.3610987174],[8.0037398236,52.3608411955],[8.0038806396,52.3605381154],[8.0039986568,52.3603087948],[8.0040925341,52.3601438163],[8.0041823881,52.3599802193],[8.0043848949,52.3596690966],[8.0045887427,52.3593767069],[8.0047523575,52.3591688285],[8.0047858851,52.3591272629],[8.0048381882,52.3590642490],[8.0051587122,52.3587061790],[8.0053451257,52.3585157532],[8.0055208104,52.3583400693],[8.0057286816,52.3581549657],[8.0059700804,52.3579470816],[8.0061484473,52.3578035943],[8.0064287381,52.3575809656],[8.0065252977,52.3575099125],[8.0066285627,52.3574361462],[8.0068431394,52.3572859513],[8.0071100192,52.3571115934],[8.0073232548,52.3569774716],[8.0075646536,52.3568339812],[8.0079347985,52.3566180537],[8.0080984132,52.3565295426],[8.0083639519,52.3563981321],[8.0086616771,52.3562613461],[8.0089392858,52.3561325969],[8.0091967778,52.3560199218],[8.0093536871,52.3559542415],[8.0094167190,52.3559300785],[8.0094609754,52.3559112907],[8.0096004503,52.3558509855],[8.0096996920,52.3558093656],[8.0098297792,52.3557557665],[8.0100188749,52.3556779530],[8.0102186995,52.3555988083],[8.0102696614,52.3555773584],[8.0103836553,52.3555331274],[8.0108436542,52.3553533873],[8.0111628370,52.3552246867],[8.0115222530,52.3550892280],[8.0119688408,52.3549135305],[8.0128942030,52.3545621846],[8.0132375257,52.3544226795],[8.0136935012,52.3542376107],[8.0142983394,52.3539948955],[8.0146979885,52.3538231869],[8.0148562389,52.3537561722],[8.0150037603,52.3536930995],[8.0154409604,52.3535066965],[8.0159358280,52.3532840973],[8.0163247483,52.3530936481],[8.0166278379,52.3529407762],[8.0167632895,52.3528696645],[8.0168759422,52.3528079728],[8.0169604318,52.3527650701],[8.0171052711,52.3526845891],[8.0174405472,52.3524968508],[8.0176202552,52.3523976313],[8.0176671939,52.3523721352],[8.0177570479,52.3523158185],[8.0179555314,52.3521897200],[8.0182143645,52.3520207690],[8.0184182124,52.3518718868],[8.0186327891,52.3517150173],[8.0188165205,52.3515701787],[8.0188755291,52.3515258925],[8.0189801352,52.3514373711],[8.0190659659,52.3513703529],[8.0192792015,52.3511758508],[8.0193636911,52.3510927046],[8.0194951193,52.3509706985],[8.0196989672,52.3507520800],[8.0198491709,52.3505375051],[8.0199926691,52.3503403370],[8.0201415317,52.3501351809],[8.0202260213,52.3500144522],[8.0203561084,52.3497985425],[8.0204821723,52.3495451021],[8.0205358164,52.3494284166],[8.0206149416,52.3492527478],[8.0206806557,52.3490636124],[8.0207396643,52.3488986944],[8.0207973318,52.3487565090],[8.0208295183,52.3486626572],[8.0208643870,52.3485191398],[8.0209032791,52.3483407537],[8.0209166901,52.3482469010],[8.0209260779,52.3480497739],[8.0209301012,52.3479451681],[8.0209381478,52.3477345734],[8.0209260779,52.3475387753],[8.0209260779,52.3474650435],[8.0209220545,52.3473644302],[8.0209166901,52.3473134834],[8.0209059613,52.3472182461],[8.0208684104,52.3470707302],[8.0208053784,52.3467100029],[8.0207249122,52.3464994535],[8.0206659036,52.3463613055],[8.0205827551,52.3461829619],[8.0204861956,52.3459375398],[8.0203775661,52.3456854085],[8.0203239219,52.3455593424],[8.0201643305,52.3451865183],[8.0201348262,52.3451114000],[8.0201106863,52.3450457035],[8.0200919109,52.3449933715],[8.0200463133,52.3448592641],[8.0200315611,52.3448002751],[8.0199859636,52.3446540825],[8.0199537771,52.3445253507],[8.0199135440,52.3443616958],[8.0198934274,52.3442571326],[8.0198840397,52.3442021369],[8.0198518531,52.3440344867],[8.0198169844,52.3438279700],[8.0197646814,52.3434953802],[8.0197271304,52.3431976602],[8.0197190838,52.3430353831],[8.0197096961,52.3428274790],[8.0197110372,52.3427698188],[8.0197164016,52.3426665831],[8.0197231071,52.3425203835],[8.0197619991,52.3423245622],[8.0197955268,52.3421247458],[8.0198169844,52.3420080920],[8.0198491709,52.3418511874],[8.0198719697,52.3417586524],[8.0198907452,52.3416728256],[8.0199215906,52.3415574508],[8.0199457305,52.3414434583],[8.0199779170,52.3413442139],[8.0200624066,52.3410907762],[8.0200986164,52.3409365313],[8.0201187329,52.3408762057],[8.0201589661,52.3407782915],[8.0202085869,52.3406468343],[8.0202568667,52.3405315080],[8.0203373330,52.3403518093],[8.0204714434,52.3401211549],[8.0206498103,52.3398327840],[8.0206752913,52.3397925829],[8.0209394889,52.3393942578],[8.0210642116,52.3392212634],[8.0210977392,52.3391796791],[8.0211674767,52.3390858069],[8.0212439196,52.3389906031],[8.0213042693,52.3389181886],[8.0214061933,52.3387948174],[8.0214638608,52.3387156937]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:7},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[9.7141201398,52.3622949891],[9.7138854465,52.3623941864],[9.7136762342,52.3624733189],[9.7133087715,52.3625993881],[9.7132457396,52.3626195038],[9.7128916880,52.3627334929],[9.7127441665,52.3627858039],[9.7124504647,52.3628716408],[9.7120856842,52.3629722189],[9.7114821872,52.3631157405],[9.7109189233,52.3632283975],[9.7105085453,52.3633182260],[9.7102550766,52.3633597876],[9.7098970017,52.3634442927],[9.7092881402,52.3635676975],[9.7091339132,52.3635998410],[9.7087584039,52.3636722662],[9.7086256346,52.3637004685],[9.7083815536,52.3637634758],[9.7081897756,52.3638265342],[9.7079215547,52.3639083256],[9.7076774737,52.3640048578],[9.7075004479,52.3640826566],[9.7073851129,52.3641282610],[9.7072858712,52.3641738653],[9.7066837153,52.3644595184],[9.7065804502,52.3645198630],[9.7062331042,52.3647129756],[9.7059380612,52.3648859727],[9.7057020268,52.3650334803],[9.7055759629,52.3651246871],[9.7054136893,52.3652400516],[9.7053010365,52.3653379116],[9.7052245936,52.3653942629],[9.7050904831,52.3654921737],[9.7049939236,52.3655819976],[9.7049255273,52.3656343052],[9.7047337493,52.3658153854],[9.7045406303,52.3660017876],[9.7044454118,52.3661036892],[9.7042724094,52.3662954642],[9.7041517100,52.3664389750],[9.7040015063,52.3666334611],[9.7038499614,52.3668480090],[9.7036796412,52.3670920867],[9.7035508951,52.3672758222],[9.7034757933,52.3673871379],[9.7033832571,52.3675198975],[9.7031700215,52.3678350592],[9.7031431994,52.3678712939],[9.7029339871,52.3681609662],[9.7027717134,52.3684063672],[9.7026617429,52.3685753579],[9.7023224434,52.3690501355],[9.7022339305,52.3691855513],[9.7021708986,52.3692861661],[9.7020448348,52.3694698925],[9.7018476924,52.3697448153],[9.7015808126,52.3701591922],[9.7008150419,52.3712857230]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[9.7149449190,52.3716491667],[9.7152225277,52.3718194756],[9.7155309817,52.3720139380],[9.7157361707,52.3721413616],[9.7161344787,52.3723773757],[9.7162900469,52.3724592025],[9.7163597843,52.3724967640],[9.7167259058,52.3726845197],[9.7169136605,52.3727824144],[9.7172596654,52.3729607530],[9.7173602483,52.3730103909],[9.7174273035,52.3730425788],[9.7175667784,52.3731190312],[9.7177022299,52.3731873982],[9.7180468938,52.3733818546],[9.7182426950,52.3734958670],[9.7183888754,52.3735870563],[9.7185149392,52.3736769149],[9.7185860178,52.3738445550],[9.7186611196,52.3739089294],[9.7187375626,52.3739746343]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[9.7203415236,52.3753761090],[9.7201242646,52.3751910256],[9.7200089297,52.3750864329],[9.7195435664,52.3746693390],[9.7195019922,52.3746344914],[9.7190500399,52.3742495802],[9.7187375626,52.3739746343]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[9.7230036160,52.3727984828],[9.7227394184,52.3728628588],[9.7218006453,52.3730895044],[9.7210201225,52.3732920465],[9.7205990156,52.3733899398],[9.7202087542,52.3734784172],[9.7200625738,52.3735106047],[9.7199123701,52.3735374702],[9.7197809419,52.3735535384],[9.7196052572,52.3736071671],[9.7192029259,52.3737278825],[9.7190674743,52.3737788500],[9.7189709148,52.3738204018],[9.7188502154,52.3738807848],[9.7187375626,52.3739746343]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:6},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[9.7271342179,52.3737761379],[9.7271503112,52.3737815109],[9.7273689112,52.3738512585],[9.7277618548,52.3739800073],[9.7279429039,52.3740390085],[9.7281038365,52.3740899757],[9.7282178304,52.3741208322],[9.7283452353,52.3741570618],[9.7285142144,52.3742079777],[9.7287086746,52.3742670297],[9.7288213274,52.3742992167],[9.7289514145,52.3743394375],[9.7291807434,52.3744105147],[9.7295039496,52.3745070750],[9.7299143276,52.3746438558],[9.7301745018,52.3747256784],[9.7305070957,52.3748343144],[9.7307096025,52.3749040092],[9.7308544418,52.3749509840],[9.7310515842,52.3750099839],[9.7312232456,52.3750703142],[9.7313882014,52.3751293139],[9.7314592799,52.3751682547],[9.7315316996,52.3752232119],[9.7315893671,52.3752795505],[9.7317261597,52.3754820314],[9.7318683168,52.3756765289],[9.7319742641,52.3758347461],[9.7320480248,52.3759447099],[9.7320828935,52.3760064204],[9.7321056923,52.3760560549],[9.7321955463,52.3763550886],[9.7322076163,52.3763966891],[9.7322183451,52.3764422808],[9.7322223684,52.3764972875],[9.7321982285,52.3766018768],[9.7321807942,52.3766474683],[9.7321687242,52.3766796535],[9.7321445844,52.3767306176]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[9.7407397231,52.3740162370],[9.7406056127,52.3740121944],[9.7403776249,52.3740068214],[9.7403306863,52.3740028300],[9.7402864298,52.3739907534],[9.7400128445,52.3738888188],[9.7395220002,52.3737144754],[9.7394482395,52.3736889916],[9.7394133708,52.3736702114],[9.7393744788,52.3736474397],[9.7393503389,52.3736152523],[9.7393369278,52.3735776918],[9.7393396100,52.3735455043],[9.7393610677,52.3734999097],[9.7393798432,52.3734797989],[9.7396225831,52.3732115517],[9.7397754690,52.3730425788],[9.7403601906,52.3724095640],[9.7405238053,52.3722204766],[9.7406887612,52.3720394227],[9.7412895760,52.3713581356]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[9.7528901300,52.3700814041],[9.7529424331,52.3700411794],[9.7530161938,52.3699862158]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[9.7608294687,52.3739531932],[9.7610856196,52.3732638503]]}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.7:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.7:31]</span>
+                <span class="scenario-name">Functional test : Verify Traffic API returning resposne with different bbox values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>119</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url trafficFindpath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.18">14:34:13.516 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param key = trafficAPIkey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param bbox = &#39;4.8854592519716675,52.36934334773164,6.897883244144765,52.37496348620152&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">117</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.21">14:34:13.536 request:
+1 &gt; GET https://api.tomtom.com/traffic/services/5/incidentDetails?bbox=4.8854592519716675%2C52.36934334773164%2C6.897883244144765%2C52.37496348620152&amp;key=nATjYXl9VsGcxyZsxWGbItnxQzmcWcGR
+1 &gt; Host: api.tomtom.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:34:13.647 response time in milliseconds: 110
+1 &lt; 200
+1 &lt; date: Mon, 11 Jul 2022 12:34:12 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; tracking-id: 25dfed12-bd54-4e12-a960-532cd11a4731
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;6df39ad132d96a9bd9c0da19b7561ed2&quot;
+1 &lt; trafficmodelid: 1657542852
+1 &lt; strict-transport-security: max-age=15724800; includeSubDomains
+1 &lt; access-control-expose-headers: Tracking-ID
+1 &lt; x-accel-buffering: no
+1 &lt; x-apigee.target-latency: 3
+1 &lt; x-envoy-upstream-service-time: 23
+1 &lt; server: tomtom
+1 &lt; x-tomtom-processed-by: westeurope
+1 &lt; transfer-encoding: chunked
+{&quot;incidents&quot;:[{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8851555178,52.3723384836],[4.8853030393,52.3738539707],[4.8853084037,52.3739183451],[4.8853204737,52.3740417206],[4.8853312025,52.3740873147],[4.8853446135,52.3742629872],[4.8853687534,52.3743729548],[4.8853902111,52.3744091842],[4.8854586074,52.3744923377],[4.8861331830,52.3752138477]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8853084037,52.3739183451],[4.8853861878,52.3739062685],[4.8854559252,52.3738901493],[4.8855001817,52.3738767422],[4.8855806479,52.3738432245],[4.8858475277,52.3737225094],[4.8862203548,52.3735468348],[4.8863088677,52.3735119864],[4.8864094505,52.3734811293],[4.8865086923,52.3734529333],[4.8867179046,52.3734046776],[4.8869043181,52.3733698290],[4.8870813439,52.3733631254],[4.8873133550,52.3733429634],[4.8874353955,52.3733309378]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8874353955,52.3733309378],[4.8873053083,52.3722486223]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891976068,52.3732947075],[4.8890246043,52.3733040721],[4.8888341675,52.3733148184],[4.8886973748,52.3733228525],[4.8885458300,52.3733349292],[4.8874434421,52.3734368651],[4.8873187194,52.3734435687],[4.8871054838,52.3734650100],[4.8869995365,52.3734717136],[4.8869217525,52.3734784172],[4.8866803536,52.3735267240],[4.8863906751,52.3736112097],[4.8862914333,52.3736514311],[4.8861895094,52.3736876611],[4.8854934761,52.3739813378],[4.8853204737,52.3740417206]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8896535823,52.3731659567],[4.8896213958,52.3729822457],[4.8896053026,52.3728896735],[4.8895972559,52.3728427477],[4.8895892093,52.3727971523],[4.8895074019,52.3722915572]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8891332338,52.3731887798],[4.8895878682,52.3731672872],[4.8896535823,52.3731659567]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8895074019,52.3722915572],[4.8896079848,52.3723170418],[4.8897622118,52.3723613072],[4.8899741063,52.3724243532],[4.8900572548,52.3724497866]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905963788,52.3716639050],[4.8902865837,52.3716357590],[4.8897166142,52.3715780851],[4.8893679271,52.3715365312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8904756794,52.3731283958],[4.8905977199,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.8905266414,52.3725919469],[4.8906352708,52.3726255167],[4.8907143960,52.3726429157],[4.8906848917,52.3728963772],[4.8906781862,52.3729580920],[4.8906647751,52.3730613593],[4.8906553874,52.3730975897],[4.8906513641,52.3731096154],[4.8906459997,52.3731203617],[4.8906366119,52.3731350995],[4.8906258831,52.3731458458],[4.8906044254,52.3731646262],[4.8905266414,52.3731887798],[4.8904555628,52.3732115517],[4.8903415689,52.3732383663],[4.8901994119,52.3732396968],[4.8900357971,52.3732517736],[4.8896696756,52.3732718845]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9028460274,52.3724337180],[4.9032926152,52.3721936614],[4.9038639257,52.3718811919],[4.9040758202,52.3717578103],[4.9042488227,52.3716652867],[4.9044070730,52.3715740935]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9108846078,52.3701055594],[4.9098184297,52.3694256242],[4.9096668849,52.3693236791]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9333373795,52.3727770412],[4.9334634433,52.3726000323],[4.9334956298,52.3725597587],[4.9335170875,52.3725262400]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9341567943,52.3717282826],[4.9340709636,52.3719616379],[4.9339918385,52.3721051303],[4.9339435587,52.3721882882],[4.9338309059,52.3723693414],[4.9337490985,52.3724886786],[4.9336713145,52.3725933286]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9505249748,52.3732893344],[4.9501145969,52.3732504431],[4.9490578065,52.3731257348],[4.9488325009,52.3731042934],[4.9485267291,52.3730734361],[4.9479339609,52.3730010263],[4.9455830047,52.3727408105],[4.9445087800,52.3726281777],[4.9430778215,52.3724699490],[4.9428028951,52.3724377608],[4.9425279687,52.3724069030],[4.9422047625,52.3723733842],[4.9416106532,52.3723076770],[4.9411680887,52.3722647421],[4.9407590518,52.3722245194],[4.9403473327,52.3721977042],[4.9398135731,52.3721681768],[4.9395024369,52.3721574302],[4.9391752074,52.3721695073],[4.9390853534,52.3721762111],[4.9385623226,52.3722204766],[4.9383544514,52.3722419185],[4.9381653557,52.3722701153],[4.9379454146,52.3723103380],[4.9367545138,52.3725275705],[4.9362422118,52.3726362120],[4.9358224461,52.3726992577],[4.9355662952,52.3727327762],[4.9353771994,52.3727435227],[4.9352202902,52.3727528874],[4.9351009319,52.3727461837],[4.9350003491,52.3727394800],[4.9347254226,52.3727072919],[4.9344370852,52.3726482889],[4.9343700299,52.3726335510],[4.9342278729,52.3726040238],[4.9339341710,52.3725343255],[4.9338684568,52.3725168752],[4.9337490985,52.3724886786],[4.9337061832,52.3724444645],[4.9336927722,52.3724149373]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9338309059,52.3723693414],[4.9338510225,52.3723720025],[4.9339475820,52.3723894527],[4.9340226839,52.3724122762],[4.9342386017,52.3724726100],[4.9343002925,52.3724860175],[4.9343767355,52.3725047983],[4.9344062398,52.3725115020],[4.9344840238,52.3725275705],[4.9345752189,52.3725396475],[4.9347039650,52.3725503940],[4.9350580165,52.3725772089],[4.9352699111,52.3725785394],[4.9355676363,52.3725557672],[4.9358157406,52.3725155447],[4.9360450695,52.3724752711],[4.9360799382,52.3724699490],[4.9361027370,52.3724659063],[4.9366257677,52.3723733842],[4.9372332881,52.3722741069],[4.9377469311,52.3722057385],[4.9381707201,52.3721560997],[4.9382498453,52.3721467349],[4.9383544514,52.3721386494],[4.9384510110,52.3721319456],[4.9385703693,52.3721239112],[4.9390853534,52.3720944349],[4.9391229043,52.3720917227],[4.9396003375,52.3720836884],[4.9401206861,52.3721091731],[4.9406195769,52.3721493959],[4.9412002752,52.3722044080],[4.9419445882,52.3722781496],[4.9423831294,52.3723264066],[4.9426634202,52.3723559339],[4.9428230116,52.3723773757],[4.9431328068,52.3724041908],[4.9442700634,52.3725302827],[4.9455816636,52.3726670696],[4.9474940786,52.3728722746],[4.9486447463,52.3729969836],[4.9488579819,52.3730197556],[4.9491141329,52.3730492824],[4.9505316804,52.3732035176],[4.9507502804,52.3732290017],[4.9507864902,52.3732329932]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9573847244,52.3731927713],[4.9570615182,52.3732611894],[4.9564566801,52.3733537096],[4.9564204703,52.3733590827]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9578702042,52.3729808641],[4.9582376669,52.3729030809],[4.9589202891,52.3727515569],[4.9596431444,52.3725892859],[4.9602426181,52.3724524988],[4.9606918881,52.3723572644],[4.9610942195,52.3722727764],[4.9616413901,52.3721601425],[4.9619364331,52.3721051303]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[4.9627209792,52.3720676197],[4.9626029620,52.3720930532],[4.9624675105,52.3721225807],[4.9623106012,52.3721574302],[4.9622046540,52.3721815844],[4.9620692024,52.3722044080],[4.9619297276,52.3722298926],[4.9617808650,52.3722647421],[4.9614214490,52.3723411958],[4.9607884476,52.3724484561],[4.9594567309,52.3727368189],[4.9582524190,52.3729943226],[4.9578393588,52.3730855129],[4.9578098545,52.3730935471]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4045947980,52.3734073385],[5.4045398127,52.3733832362],[5.4044580053,52.3733483365],[5.4043815624,52.3733161489],[5.4020694982,52.3723264066]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4044580053,52.3733483365],[5.4047262262,52.3731190312]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:9},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4047262262,52.3731190312],[5.4044580053,52.3733483365]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4614428769,52.3702276150],[5.4606207799,52.3709182846],[5.4488525878,52.3813869324],[5.4439012300,52.3857897794],[5.4416991364,52.3877464366],[5.4414751719,52.3879556641],[5.4413893412,52.3880549061],[5.4413450848,52.3881179298],[5.4412968050,52.3881903660],[5.4412659596,52.3882762047],[5.4412190210,52.3883982101],[5.4411841523,52.3885081937],[5.4411278259,52.3885994031],[5.4410419952,52.3887053450],[5.4409293424,52.3888045853],[5.4408113252,52.3889064855],[5.4407710921,52.3889413729]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4706026207,52.4017301632],[5.4698931765,52.4014190278],[5.4694318365,52.4012218821],[5.4628791999,52.3984229837],[5.4606650363,52.3975030030],[5.4569153081,52.3959124262],[5.4558209669,52.3954443819],[5.4557954859,52.3954336410],[5.4552429508,52.3951802066],[5.4526961933,52.3940764838],[5.4425158690,52.3896642326],[5.4424501549,52.3896601914],[5.4418989610,52.3894254973],[5.4418184947,52.3893906614],[5.4409642111,52.3890244991],[5.4408394884,52.3889708891],[5.4407710921,52.3889413729],[5.4404854368,52.3888166579],[5.4402091693,52.3886959325],[5.4401675950,52.3886771587],[5.4395037483,52.3883861375],[5.4388439249,52.3881031970],[5.4388157617,52.3880669788],[5.4260095547,52.3825778456],[5.4258647155,52.3825161442],[5.4185100983,52.3793967356],[5.4147000204,52.3777793597],[5.4132824730,52.3771785465],[5.4114719819,52.3763765796],[5.4095783423,52.3755424122],[5.4091813754,52.3753666937],[5.4069283198,52.3744038112],[5.4045880924,52.3734033471]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[5.4044580053,52.3733483365],[5.4045398127,52.3733832362],[5.4069283198,52.3744038112],[5.4091813754,52.3753666937],[5.4095783423,52.3755424122],[5.4114719819,52.3763765796],[5.4132824730,52.3771785465],[5.4147000204,52.3777793597],[5.4185100983,52.3793967356],[5.4258647155,52.3825161442],[5.4260095547,52.3825778456],[5.4388157617,52.3880669788],[5.4388680648,52.3880696389],[5.4392771016,52.3882453580],[5.4400401901,52.3885725468],[5.4402494024,52.3886610960],[5.4408113252,52.3889064855],[5.4424756359,52.3896239745],[5.4425158690,52.3896642326],[5.4526961933,52.3940764838],[5.4552429508,52.3951802066],[5.4557954859,52.3954336410],[5.4558209669,52.3954443819],[5.4569153081,52.3959124262],[5.4606650363,52.3975030030],[5.4628791999,52.3984229837],[5.4694318365,52.4012218821],[5.4698931765,52.4014190278],[5.4706026207,52.4017301632]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:3},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[6.6158911182,52.3610651900],[6.6159179403,52.3612006303],[6.6159434213,52.3613656048],[6.6159715845,52.3615385638],[6.6159863366,52.3616391449],[6.6159943833,52.3618805896],[6.6159863366,52.3621944096],[6.6159621968,52.3624210076],[6.6159246458,52.3625980572],[6.6158723427,52.3627858039],[6.6159018470,52.3628166683],[6.6158870949,52.3628541868],[6.6158200397,52.3630352783],[6.6157503022,52.3631894973],[6.6156617893,52.3633490901],[6.6156416728,52.3633799030],[6.6155612065,52.3635234233],[6.6155223145,52.3635878128],[6.6154793991,52.3636494894],[6.6154136850,52.3637353247],[6.6152742101,52.3639204049],[6.6151481463,52.3640719081],[6.6150529279,52.3641805703],[6.6148396923,52.3644098709],[6.6145580603,52.3646378906],[6.6143126382,52.3648189236],[6.6141718222,52.3649127923],[6.6139854087,52.3650334803],[6.6139478578,52.3650563076],[6.6137520565,52.3651797079],[6.6136072172,52.3652614969],[6.6133752062,52.3653969243],[6.6131686761,52.3655095755],[6.6130654110,52.3655632139],[6.6127033128,52.3657442943],[6.6124109520,52.3658998346],[6.6119254722,52.3661654135],[6.6114896132,52.3664175303],[6.6112093224,52.3665838161],[6.6108847751,52.3667769197],[6.6105722977,52.3669821521],[6.6103684498,52.3671256095],[6.6101418032,52.3673080142],[6.6097502007,52.3676218467],[6.6095557405,52.3677935018],[6.6092942251,52.3680429480],[6.6090313687,52.3683004278],[6.6088758005,52.3684774539],[6.6086679293,52.3687363131],[6.6085271134,52.3689280766],[6.6083782508,52.3691520300],[6.6082816912,52.3693102707],[6.6082132949,52.3694416939],[6.6081274642,52.3695865763],[6.6080443157,52.3697568931],[6.6078954531,52.3700532570],[6.6076768531,52.3705682430],[6.6074837341,52.3710295911],[6.6073563291,52.3713206244],[6.6072570874,52.3715284968],[6.6071739389,52.3716786945],[6.6071216358,52.3717725486],[6.6070358051,52.3719254577],[6.6069875254,52.3720112769],[6.6069164468,52.3721440226],[6.6067997708,52.3723411958],[6.6067662431,52.3723546034],[6.6066267683,52.3725959896],[6.6064846112,52.3728347135],[6.6063920750,52.3729782031],[6.6063317253,52.3730693934],[6.6059723093,52.3736232863],[6.6055686368,52.3742308002],[6.6055149926,52.3743139541],[6.6053017570,52.3746331098],[6.6051274134,52.3749053908],[6.6048954024,52.3753037030],[6.6047183766,52.3756215212],[6.6046405925,52.3757918658],[6.6046097471,52.3758588983],[6.6045842661,52.3759192274],[6.6045319630,52.3760319029],[6.6044112636,52.3763792404],[6.6043522550,52.3765911314],[6.6043106808,52.3767560996],[6.6042731299,52.3769586249],[6.6042302145,52.3772388738],[6.6042168035,52.3773796883],[6.6042127802,52.3775285869],[6.6042007102,52.3777230242],[6.6042087568,52.3778276618],[6.6042194857,52.3780623152],[6.6042261912,52.3781240228],[6.6042369200,52.3782313202],[6.6042543544,52.3783560140],[6.6043039753,52.3786175270],[6.6043187274,52.3786913091],[6.6043348207,52.3787489737],[6.6043723716,52.3788844110],[6.6044474734,52.3791338969],[6.6045319630,52.3793685945],[6.6046312048,52.3795952068],[6.6047304465,52.3798057520],[6.6048350526,52.3799989001],[6.6049450232,52.3801826331],[6.6050134195,52.3802899254],[6.6051072969,52.3804320605],[6.6052762760,52.3806667512],[6.6053956343,52.3808156387],[6.6055243804,52.3809738887],[6.6055860712,52.3810449552],[6.6056450798,52.3811119797],[6.6057912602,52.3812662379],[6.6059441461,52.3814231560],[6.6060635044,52.3815358175],[6.6062083437,52.3816712462],[6.6063370897,52.3818013536],[6.6066187216,52.3820414091],[6.6069741143,52.3823096026],[6.6072946383,52.3825349207],[6.6075427427,52.3826972063],[6.6079048409,52.3829117785],[6.6084654226,52.3831840084],[6.6089361502,52.3834629387],[6.6111060573,52.3844808763],[6.6118946268,52.3848603778],[6.6140444173,52.3858420631],[6.6144172444,52.3860124195],[6.6144990517,52.3860512996],[6.6149147941,52.3862417090],[6.6151400997,52.3863463264],[6.6152178837,52.3863838761],[6.6152540936,52.3863999907],[6.6153305365,52.3864375403],[6.6154150261,52.3864764200],[6.6155169501,52.3865233825],[6.6155558421,52.3865247126],[6.6156456961,52.3865595508],[6.6158267452,52.3866400212],[6.6161486103,52.3867808570],[6.6164758398,52.3869337653],[6.6167427196,52.3870598157],[6.6170444681,52.3871979388],[6.6174991025,52.3874031275],[6.6177726878,52.3875238052],[6.6182474388,52.3877250022],[6.6186014904,52.3878738660],[6.6205501153,52.3886932725],[6.6211857988,52.3889534454],[6.6213145448,52.3890084365],[6.6214540197,52.3890674177],[6.6219529106,52.3892753088],[6.6224182739,52.3894711267],[6.6228796138,52.3896629026],[6.6233060850,52.3898398942],[6.6238894655,52.3900826683],[6.6239364042,52.3901027715],[6.6241389109,52.3901886066],[6.6244111551,52.3903052868],[6.6251997246,52.3906499544],[6.6252117945,52.3906713874],[6.6254974498,52.3907907774],[6.6260741247,52.3910334951],[6.6271376206,52.3914734015],[6.6277706219,52.3917348880],[6.6290942921,52.3922874215],[6.6307009353,52.3929647029],[6.6320111944,52.3935212618],[6.6322753920,52.3936271919],[6.6348006918,52.3946585004],[6.6355074538,52.3949602724],[6.6361082687,52.3952365198],[6.6366178884,52.3954819239],[6.6371972455,52.3958037908],[6.6377283229,52.3961471369],[6.6383009745,52.3965347214],[6.6387408568,52.3968981619],[6.6391579403,52.3972548995],[6.6394798054,52.3975874939],[6.6398043527,52.3979750657],[6.6400819613,52.3984565339],[6.6402147307,52.3986844802],[6.6403086080,52.3988695674],[6.6403515233,52.3989473560],[6.6403810276,52.3990144044],[6.6404480829,52.3991512115],[6.6405365958,52.3993738354],[6.6406452252,52.3996970548],[6.6407431258,52.4000751981],[6.6408007933,52.4004064927],[6.6408262743,52.4006277806],[6.6408396854,52.4007726118],[6.6408463909,52.4010984803],[6.6408155455,52.4015249389],[6.6407820179,52.4017287825],[6.6408074989,52.4017569605],[6.6407659246,52.4019943505],[6.6407404436,52.4021311484],[6.6407136215,52.4022531666],[6.6406452252,52.4024865140],[6.6406318142,52.4025227203]]}},{&quot;type&quot;:&quot;Feature&quot;,&quot;properties&quot;:{&quot;iconCategory&quot;:8},&quot;geometry&quot;:{&quot;type&quot;:&quot;LineString&quot;,&quot;coordinates&quot;:[[6.7033941640,52.3742388342],[6.7029288008,52.3740457120],[6.7025412216,52.3738847762]]}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
