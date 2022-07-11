@@ -40,17 +40,16 @@ mvn test -Dtest=<name of runner class>
 
 ```
 Right click on the runner file and select run as JUnit test
-![image](https://user-images.githubusercontent.com/70334232/178341686-b37d7e12-061a-44b5-935a-d49024b20827.png)
-
 ```
+![image](https://user-images.githubusercontent.com/70334232/178341686-b37d7e12-061a-44b5-935a-d49024b20827.png)
 
 ##### Run against different environment
 * Currently the default test environment is passed as dev , but in a case where the project has different levels like dev,test,stage and prod, we can easily configure the base url to each environment and pass the env value in config.js file
-* ![image](https://user-images.githubusercontent.com/70334232/178341808-ad7ee2b7-a99f-44e4-8073-e8fd53f05531.png)
+![image](https://user-images.githubusercontent.com/70334232/178341808-ad7ee2b7-a99f-44e4-8073-e8fd53f05531.png)
 
 ##### Reporting
 * Karate has default reporting system thats generates Summary report, Tag reports , Timeline reports etc and they can be found under atrget folder
-* ![image](https://user-images.githubusercontent.com/70334232/178341905-1d96916a-2ecd-4d80-a96d-ec6e31ab92d5.png)
+![image](https://user-images.githubusercontent.com/70334232/178341905-1d96916a-2ecd-4d80-a96d-ec6e31ab92d5.png)
 
 #### Quick Walkthrough 
 ![image](https://user-images.githubusercontent.com/70334232/178342035-2d1a5cde-12b1-4e55-aa2a-606b8afe0044.png)
@@ -58,22 +57,22 @@ Right click on the runner file and select run as JUnit test
  
   Major components are 
 * Feature file : Where the automation test script is written in Gherkin BDD format
-* ![image](https://user-images.githubusercontent.com/70334232/178342122-8441f323-25d5-4f94-b315-bceb7a41214e.png)
+![image](https://user-images.githubusercontent.com/70334232/178342122-8441f323-25d5-4f94-b315-bceb7a41214e.png)
  
 * Runner File : It is a java class which decides the execution manner and execution control of test automation
-* ![image](https://user-images.githubusercontent.com/70334232/178342181-ca96390a-dacc-4114-a41a-da46813e8d96.png)
+![image](https://user-images.githubusercontent.com/70334232/178342181-ca96390a-dacc-4114-a41a-da46813e8d96.png)
  
 * Karate config file : It is the core controller of Karate framework where the execution starts and the config file controls environment selection, secret handling and resource handlings and many more controlling tasks
-* ![image](https://user-images.githubusercontent.com/70334232/178342328-36ed7c82-3ee1-4754-9a69-fc7766cd143e.png)
+![image](https://user-images.githubusercontent.com/70334232/178342328-36ed7c82-3ee1-4754-9a69-fc7766cd143e.png)
  
 * Resource file : The additional resource handlings such as validating out put of a an API response , handling the payload, passing one API response as input to other API etc. For demo purpose a schema file is defined as one of resource file 
-* ![image](https://user-images.githubusercontent.com/70334232/178342413-5428d254-691d-4e88-9b3c-e75dc628e6ae.png)
+![image](https://user-images.githubusercontent.com/70334232/178342413-5428d254-691d-4e88-9b3c-e75dc628e6ae.png)
  
 * Helpers : Helpers are direction agents who helps the script in understanding where to find the resources, reusable function and other constants
-* ![image](https://user-images.githubusercontent.com/70334232/178342531-3d8fe723-16e2-4ccc-ac4c-5cc724d4bc09.png)
-* 
+![image](https://user-images.githubusercontent.com/70334232/178342531-3d8fe723-16e2-4ccc-ac4c-5cc724d4bc09.png)
+
 * Logback file : For debugging and logging , INFO level gives basic and DEBUG level give detailed debugging logs
-* ![image](https://user-images.githubusercontent.com/70334232/178342631-8d021e4c-7be1-4163-a502-2a98a7ebf9eb.png)
+![image](https://user-images.githubusercontent.com/70334232/178342631-8d021e4c-7be1-4163-a502-2a98a7ebf9eb.png)
 
 #### Sample Test Results 
 
