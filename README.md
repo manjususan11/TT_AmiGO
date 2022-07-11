@@ -1,6 +1,5 @@
 #### AmiGO QA Tests - Karate Automation Scripts
-![Karate_Logo](https://user-images.githubusercontent.com/70334232/178340681-a52655b8-eb89-45fd-aa12-d709286292b3.png)
-
+![Karate_Logo](https://user-images.githubusercontent.com/70334232/178341220-32e8b41f-717b-4e44-973c-4eec04b9b7ea.png)
 
 * This project will have/has automation tests for TomTom API calls
 * IntelliJ IDE is preferred (community version is fine), I have used Eclipse for the scripting which is also compatible
