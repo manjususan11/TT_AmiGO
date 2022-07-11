@@ -12,7 +12,7 @@
 
 ##### Setting up 
 
-* Download convenient IDE
+* Download convenient IDE preferably IntelliJ/eclipse
 * Install plug-in called "Cucumber for Java"
 * In your IntelliJ for this project...
 * go to File ---> Project Structure. Under Project Settings ---> Project ---> make sure Project SDK is set to 1.8 (or accordingly) and Project language level to 8 (or accordingly from dropdown)
