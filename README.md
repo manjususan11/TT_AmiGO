@@ -48,7 +48,8 @@ Right click on the runner file and select run as JUnit test
 ![image](https://user-images.githubusercontent.com/70334232/178341808-ad7ee2b7-a99f-44e4-8073-e8fd53f05531.png)
 
 ##### Reporting
-* Karate has default reporting system thats generates Summary report, Tag reports , Timeline reports etc and they can be found under atrget folder
+* Karate has default reporting system thats generates Summary report, Tag reports , Timeline reports etc and they can be found under target folder
+
 ![image](https://user-images.githubusercontent.com/70334232/178341905-1d96916a-2ecd-4d80-a96d-ec6e31ab92d5.png)
 
 #### Quick Walkthrough 
