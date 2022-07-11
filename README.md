@@ -5,14 +5,14 @@
 * IntelliJ IDE is preferred (community version is fine), I have used Eclipse for the scripting which is also compatible
 
 
-##### Why to automate 
+#### Why to automate 
 * Considering the input parameters , we could arrive on N numbers of test cases and doing each test manually after every deployment is not practically possible hence making valid combination for positive test and negative tests are good practice which can be triggered after each deplyment multiple times 
 * The outcome of each request contains a schema and validating each json array OR elements manually is time taking and chances for human errors are high , hence automating schema validation will benefit in making sure that the contract between clients are not broken
 * Overall all reduction in manual effort, cost and time
 * Once we have stable automation farmework, every sprint we need to just decide which tests to run and which are not to, and addition of newly added features
 
 
-##### Kick starter 
+#### Kick starter 
 
 ![image](https://user-images.githubusercontent.com/70334232/178350945-08c8691d-e0c0-4e9d-be96-f132cab41f33.png)
 
@@ -27,7 +27,7 @@ Sample test case management
 
 
 
-##### Setting up 
+#### Setting up 
 
 * Download convenient IDE preferably IntelliJ/eclipse
 * Install plug-in called "Cucumber for Java"
@@ -38,7 +38,7 @@ Sample test case management
 * Add Karate dependencies
 
 
-##### Things to note before running a test
+#### Things to note before running a test
 
 * For the demo purpose test can be run only locally
 * Tests can be run at service level using the runner file for each specific service(either parallel or sequential)
@@ -49,25 +49,25 @@ Sample test case management
 * If you have no API key in handy , you can visit https://developer.tomtom.com/ and generate key for respective API
 
 
-##### Run test from command line
+#### Run test from command line
 
 ```
 mvn test -Dtest=<name of runner class>
 ```
 
-##### Run from IDE
+#### Run from IDE
 
 ```
 Right click on the runner file and select run as JUnit test
 ```
 ![image](https://user-images.githubusercontent.com/70334232/178341686-b37d7e12-061a-44b5-935a-d49024b20827.png)
 
-##### Run against different environment
+#### Run against different environment
 * Currently the default test environment is passed as dev , but in a case where the project has different levels like dev,test,stage and prod, we can easily configure the base url to each environment and pass the env value in config.js file
 ![image](https://user-images.githubusercontent.com/70334232/178341808-ad7ee2b7-a99f-44e4-8073-e8fd53f05531.png)
 
 
-##### Reporting
+#### Reporting
 * Karate has default reporting system thats generates Summary report, Tag reports , Timeline reports etc and they can be found under target folder
 
 ![image](https://user-images.githubusercontent.com/70334232/178341905-1d96916a-2ecd-4d80-a96d-ec6e31ab92d5.png)
