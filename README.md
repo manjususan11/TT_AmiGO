@@ -4,6 +4,12 @@
 * This project will have/has automation tests for TomTom API calls
 * IntelliJ IDE is preferred (community version is fine), I have used Eclipse for the scripting which is also compatible
 
+##### Why to automate 
+* Considering the input parameters , we could arrive on N numbers of test cases and doing each test manually after every deployment is not practically possible hence making valid combination for positive test and negative tests are good practice which can be triggered after each deplyment multiple times 
+* The outcome of each request contains a schema and validating each json array OR elements manually is time taking and chances for human errors are high , hence automating schema validation will benefit in making sure that the contract between clients are not broken
+* Overall all reduction in manual effort, cost and time
+* Once we have stable automation farmework, every sprint we need to just decide which tests to run and which are not to, and addition of newly added features
+
 ##### Kick starter 
 
 * TomTom's API documentation are used to develop test scenarios(e.g. https://developer.tomtom.com/traffic-api/api-explorer)
