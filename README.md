@@ -18,6 +18,9 @@
 * Identified test scenarios are converted into meaningful test cases in an excel(in real time can be use any of test case management tool for mapping)
 * Test cases are converted into executable postman scripts and then to Karate BDD test
 * The authorization keys are generated from TomTom developer account
+Sample test case management
+![image](https://user-images.githubusercontent.com/70334232/178348586-479b109a-4003-4438-865d-bdb0e7877607.png)
+
 
 
 ##### Setting up 
