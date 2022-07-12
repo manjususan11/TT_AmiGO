@@ -14,7 +14,7 @@ function fn() {
         mapDisplayPath: 'https://api.tomtom.com/map/1/tile/basic/main/0/0/0.pbf',
         trafficFindpath: 'https://api.tomtom.com/traffic/services/5/incidentDetails',
 
-        //Please pass the working API keys , if not handy you can get it generated from 
+        //Please pass the working API keys , if not handy you can get it generated from TomTOM developer account
         searchAPIkey: '<<pass valid key here>>',
         mapAPIkey: '<<pass valid key here>>',
         trafficAPIkey: '<<pass valid key here>>',
