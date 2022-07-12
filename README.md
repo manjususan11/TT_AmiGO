@@ -6,13 +6,13 @@
 
 
 #### Why to automate 
-* Considering the input parameters , we could arrive on N numbers of test cases and doing each test manually after every deployment is not practically possible hence making valid combination for positive test and negative tests are good practice which can be triggered after each deplyment multiple times 
+* Considering the input parameters , we could arrive on N numbers of test cases and doing each test manually after every deployment is not practically possible hence making valid combination for positive test and negative tests are good practice which can be triggered after each deployment multiple times 
 * The outcome of each request contains a schema and validating each json array OR elements manually is time taking and chances for human errors are high , hence automating schema validation will benefit in making sure that the contract between clients are not broken
 * Overall all reduction in manual effort, cost and time
-* Once we have stable automation farmework, every sprint we need to just decide which tests to run and which are not to, and addition of newly added features
+* Once we have stable automation framework, every sprint we need to just decide which tests to run and which are not to, and addition of newly added features
 
 
-#### Kick starter 
+#### Kick-starter 
 
 ![image](https://user-images.githubusercontent.com/70334232/178350945-08c8691d-e0c0-4e9d-be96-f132cab41f33.png)
 
@@ -40,7 +40,7 @@ Sample test case management
 
 #### Things to note before running a test
 
-* For the demo purpose test can be run only locally
+* For the demo purpose, test can be run only locally
 * Tests can be run at service level using the runner file for each specific service(either parallel or sequential)
 * Tests can be run at tag level based on your requirements, for example sanity, functional,negative test etc.
 * All the tests can be run using the common runner file
@@ -61,7 +61,7 @@ mvn test -Dtest=<name of runner class>
 Right click on the runner file and select run as JUnit test
 ```
 
-A sample execution video recording can be found under Demo flder
+A sample execution video recording can be found under Demo folder
 ![image](https://user-images.githubusercontent.com/70334232/178341686-b37d7e12-061a-44b5-935a-d49024b20827.png)
 
 
@@ -91,15 +91,15 @@ Basic Framework Hierarchy : 3 features are picked to proceed with the automation
 ![image](https://user-images.githubusercontent.com/70334232/178342181-ca96390a-dacc-4114-a41a-da46813e8d96.png)
 
  
-* Karate config file : It is the core controller of Karate framework where the execution starts and the config file controls environment selection, secret handling and resource handlings and many more controlling tasks
+* Karate config file : It is the core controller of Karate framework where the execution starts and the config file controls environment selection, secret handling and resource handling and many more controlling tasks
 ![image](https://user-images.githubusercontent.com/70334232/178342328-36ed7c82-3ee1-4754-9a69-fc7766cd143e.png)
 
  
-* Resource file : The additional resource handlings such as validating out put of a an API response , handling the payload, passing one API response as input to other API etc. For demo purpose a schema file is defined as one of resource file 
+* Resource file : The additional resource handling such as validating out put of a an API response , handling the payload, passing one API response as input to other API etc. For demo purpose a schema file is defined as one of resource file 
 ![image](https://user-images.githubusercontent.com/70334232/178342413-5428d254-691d-4e88-9b3c-e75dc628e6ae.png)
 
  
-* Helpers : Helpers are direction agents who helps the script in understanding where to find the resources, reusable function and other constants
+* Helpers : Helpers are direction agents who help the script in understanding where to find the resources, reusable function and other constants
 ![image](https://user-images.githubusercontent.com/70334232/178342531-3d8fe723-16e2-4ccc-ac4c-5cc724d4bc09.png)
 
 
@@ -118,7 +118,7 @@ A failed test
 ![image](https://user-images.githubusercontent.com/70334232/178343053-10e8048b-b1e6-4f29-a282-b30ebf308d7e.png)
 
 #### Performance Testing(POC)
-By reusing Karate test we can extend a performance testing framework usiing Gatling (and Scala) by defining a load-model. In this project a sample simulation class(not executable) can be found under classpath:trafficAPI/UserSimulation.scala , which does the user injection to already defined test scenarios. Note that due to some version conflicts the performance tests are not executable right now.
+By reusing Karate test we can extend a performance testing framework using Gatling (and Scala) by defining a load-model. In this project, a sample simulation class(not executable) can be found under classpath:trafficAPI/UserSimulation.scala , which does the user injection to already defined test scenarios. Note that due to some version conflicts the performance tests are not executable right now.
 ![image](https://user-images.githubusercontent.com/70334232/178439420-dd3f3a09-a21d-4b8b-b090-dc7c0db98abc.png)
 
 A sample Gatling performance test report
