@@ -11,7 +11,7 @@ class UserSimulation extends Simulation{
   val getUser = scenario(scenarioName = "getCall").exec(karateFeature("classpath:trafficAPI/traffic.feature"))
   setUp(
 
-    getUser.inject(rampUsers(5) during(5 seconds)
+    getUser.inject(rampUsers(5) during(5 seconds))
   )
 
 }
