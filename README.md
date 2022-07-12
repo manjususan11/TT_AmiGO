@@ -23,7 +23,7 @@
 
 Sample test case management
 
-![image](https://user-images.githubusercontent.com/70334232/178348586-479b109a-4003-4438-865d-bdb0e7877607.png)
+![image](https://user-images.githubusercontent.com/70334232/178494550-a376199d-00f2-4a8e-8fb1-ee5f4bac2951.png)
 
 
 
