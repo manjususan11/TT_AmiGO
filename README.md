@@ -115,7 +115,7 @@ A failed test
 ![image](https://user-images.githubusercontent.com/70334232/178343053-10e8048b-b1e6-4f29-a282-b30ebf308d7e.png)
 
 #### Performance Testing(POC)
-By reusing Karate test we can extend a performance testing framework usiing Gatling (and Scala) by defining a load-model. In this project a sample simulation file(not executable) can be found under classpath:trafficAPI/UserSimulation , which does the user injection to already defined test scenarios. Note that due to some version conflicts the performance tests are not executable right now.
+By reusing Karate test we can extend a performance testing framework usiing Gatling (and Scala) by defining a load-model. In this project a sample simulation class(not executable) can be found under classpath:trafficAPI/UserSimulation.scala , which does the user injection to already defined test scenarios. Note that due to some version conflicts the performance tests are not executable right now.
 ![image](https://user-images.githubusercontent.com/70334232/178439420-dd3f3a09-a21d-4b8b-b090-dc7c0db98abc.png)
 
 A sample Gatling performance test report
