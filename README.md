@@ -14,7 +14,7 @@
 
 #### Kick-starter 
 
-![image](https://user-images.githubusercontent.com/70334232/178350945-08c8691d-e0c0-4e9d-be96-f132cab41f33.png)
+![image](https://user-images.githubusercontent.com/70334232/178507981-db216bcf-d885-45b5-96e7-6e8aa986bc74.png)
 
 * TomTom's API documentation are used to develop test scenarios-Search,Traffic & Map Display(e.g. https://developer.tomtom.com/traffic-api/api-explorer)
 * Identified test scenarios are converted into meaningful test cases in an excel(in real time can be use any of test case management tool for mapping)
