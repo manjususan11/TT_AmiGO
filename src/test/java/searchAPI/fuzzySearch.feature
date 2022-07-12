@@ -27,8 +27,7 @@
 	When method GET
 	Then status 400
 	
-	#This test approach is not ideal stress test, instead can approach with performace tools such as Apache Jmeter,RPT,Load Runner etc
-	Scenario: Stress test : Verify that the API handles a larger payload(request body)
+	Scenario: Larger payload test : Verify that the API handles a larger payload(request body)
 	Given url geometrySearchPath
 	And param key = searchAPIkey
 	And request {"geometryList":[{"type":"POLYGON","vertices":["37.7524152343544,-122.43576049804686","37.70660472542312,-122.43301391601562","37.712059855877314,-122.36434936523438","37.75350561243041,-122.37396240234374"]},{"type":"CIRCLE","position":"37.71205,-121.36434","radius":6000},{"type":"CIRCLE","position":"37.31205,-121.36434","radius":1000}]}
