@@ -59,8 +59,10 @@ mvn test -Dtest=<name of runner class>
 
 ```
 Right click on the runner file and select run as JUnit test
+A sample execution video recording can be found under Demo flder
 ```
 ![image](https://user-images.githubusercontent.com/70334232/178341686-b37d7e12-061a-44b5-935a-d49024b20827.png)
+
 
 #### Run against different environment
 * Currently the default test environment is passed as dev , but in a case where the project has different levels like dev,test,stage and prod, we can easily configure the base url to each environment and pass the env value in config.js file
