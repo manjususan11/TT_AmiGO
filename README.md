@@ -59,8 +59,9 @@ mvn test -Dtest=<name of runner class>
 
 ```
 Right click on the runner file and select run as JUnit test
-A sample execution video recording can be found under Demo flder
 ```
+
+A sample execution video recording can be found under Demo flder
 ![image](https://user-images.githubusercontent.com/70334232/178341686-b37d7e12-061a-44b5-935a-d49024b20827.png)
 
 
